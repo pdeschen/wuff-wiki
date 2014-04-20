@@ -1,0 +1,4 @@
+- Automatic download and "mavenization" of Eclipse bundles.
+- Automatic configurable generation of runnable Eclipse products.
+- Automatic configurable generation and merge of OSGi-specific MANIFEST.MF.
+- Automatic configurable generation and merge of plugin.xml.
