@@ -40,11 +40,7 @@
 
   Build task generates product in "build/output" folder.
 
-You can run the program either by invoking launch script within the product
-or by invoking "gradle run" in project's directory.
-
-**Expected program's output** 
-
-When you run the program, it prints to stdout:
-
-*Hello, world! I am equinox application!*
+4. You can run the program either by invoking launch script within the product or by invoking "gradle run" 
+  in project's directory. When you run the program, it prints to stdout:
+  
+  *Hello, world! I am equinox application!*
