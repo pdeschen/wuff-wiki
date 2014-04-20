@@ -1,6 +1,6 @@
 Repeat steps (1) and (2) from [First equinox app](First-equinox-app), then do the following:
 
-3. Edit the file "build.gradle", insert at the end:
+1. Edit the file "build.gradle", insert at the end:
   ```groovy
   products {
     product platform: 'linux', arch: 'x86_32'
@@ -14,13 +14,13 @@ Repeat steps (1) and (2) from [First equinox app](First-equinox-app), then do th
   Optional archiveProducts flag instructs wuff to archive the generated products. Linux versions will be 
   archived as .tar.gz, Windows versions - as .zip. The default value of archiveProducts is false.
 
-4. Invoke on command line:
+2. Invoke on command line:
   ```shell
   gradle build
   ```
   Build task generates product in "build/output" folder.
 
-5. You can run the program either by invoking launch script within the product or by invoking "gradle run" 
+3. You can run the program either by invoking launch script within the product or by invoking "gradle run" 
   in project's directory. When you run the program, it prints to stdout:
   
   *Hello, world! I am equinox application!*
