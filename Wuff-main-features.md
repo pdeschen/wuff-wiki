@@ -13,3 +13,5 @@ Wuff does the following work for you:
 - Generation and merge of intro pages.
 
 - Flexible wrapping of non-OSGi dependencies into OSGi-bundles.
+
+Every feature of wuff is highly automated yet configurable.
