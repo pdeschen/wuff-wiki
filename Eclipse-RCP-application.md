@@ -73,7 +73,7 @@ The compilable examples corresponding to this tutorial are located in [tutorial 
 
   **CHECK:** There are 4 products in "tutorials/MyEquinoxApp/build/output" folder. Each product contains "MyRcpApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
-  **CHECK:** The product matching your OS/architecture is runnable and shows window with title "Hello, RCP".
+  **CHECK:** The product matching your OS/architecture is runnable and shows window with title "Hello, RCP" and multiline text field with text "Hello, world!".
 
   **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
   If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
@@ -163,7 +163,7 @@ The compilable examples corresponding to this tutorial are located in [tutorial 
   }
   ```
 
-11. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/View.java", replace content to:
+11. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/View.java", replace content with:
 
   ```groovy
   package myrcpapp;
@@ -196,3 +196,14 @@ The compilable examples corresponding to this tutorial are located in [tutorial 
     }
   }
   ```
+
+12. Invoke on command line in "tutorials" folder:
+  ```shell
+  gradle build
+  ```
+
+  **CHECK:** folder "tutorials/MyBundle/build/libs" contains file "MyBundle-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
+
+  **CHECK:** Each product in "tutorials/MyRcpApp/build/output" contains "MyBundle" and "MyRcpApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
+
+  **CHECK:** The product matching your OS/architecture is runnable and shows window with title "Hello, RCP" and with button "Show dialog". When you click the button, the program shows modal dialog with text "Hello, world!".
