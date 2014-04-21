@@ -27,19 +27,15 @@ Let's build equinox application with wuff.
   and that we apply "eclipse-equinox-app" plugin to this project.
 
 2. Invoke on command line:
-
   ```shell
   gradle scaffold
   ```
-
   Scaffold task creates Application class required by equinox library.
 
 3. Invoke on command line:
-
   ```shell
   gradle build
   ```
-
   Build task generates product in "build/output" folder.
 
   Note that you don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
@@ -91,7 +87,6 @@ Let's build equinox application with wuff.
   }
   ```
 8. Create subfolder "src/main/java/mybundle", create file "HelloWorld.java" in it, insert code:
-
   ```java
   package mybundle;
 
@@ -102,3 +97,12 @@ Let's build equinox application with wuff.
     }
   }
   ```
+9. Invoke on command line:
+  ```shell
+  gradle build
+  ```
+  Build task generates OSGi bundle "build/libs/MyBundle-1.0.0.0.jar" with the proper OSGi manifest. 
+
+  Your project may optionally contain "plugin.xml", "plugin_xx.properties", "OSGI-INF", "META-INF/MANIFEST.MF", "nl", "intro", "splash.bmp" in projectDir or "src/main/resources". If such files/directories are present, they are included into the generated OSGi bundle.
+
+  Note that user-supplied "MANIFEST.MF" is being merged with the generated "MANIFEST.MF". Some properties of the generated "MANIFEST.MF" overwrite properties of the user-supplied "MANIFEST.MF" (for example, "Bundle-Name" and "Bundle-Version"). Some properties are merged as lists (for example, "Require-Bundle", "Import-Package").
