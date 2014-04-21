@@ -50,7 +50,7 @@ Let's build equinox application with wuff.
 
   **CHECK:** There's one product in "tutorials/MyEquinoxApp/build/output" folder. It contains "MyEquinoxApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
-  **CHECK:** The product is runnable and shows "Hello, world!" in console.
+  **CHECK:** The product is runnable and prints "Hello, world! I am equinox application!" to the console.
 
 4. Now let's add product definitions to "build.gradle":
 
@@ -72,7 +72,7 @@ Let's build equinox application with wuff.
 
   **CHECK:** There are 4 products in "tutorials/MyEquinoxApp/build/output" folder. Each product contains "MyEquinoxApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
-  **CHECK:** The product matching your OS/architecture is runnable and shows "Hello, world!" in console.
+  **CHECK:** The product matching your OS/architecture is runnable and prints "Hello, world! I am equinox application!" to the console.
 
   **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
   If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
@@ -194,4 +194,4 @@ Let's build equinox application with wuff.
 
   **CHECK:** Each product in "tutorials/MyEquinoxApp/build/output" contains "MyBundle" and "MyEquinoxApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
 
-  **CHECK:** Each product is runnable and shows "Hello, world!".
+  **CHECK:** The product matching your OS/architecture is runnable and prints "Hello, world!" to the console.
