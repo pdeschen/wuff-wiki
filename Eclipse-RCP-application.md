@@ -77,3 +77,50 @@ The compilable examples corresponding to this tutorial are located in [tutorial 
 
   **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
   If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
+
+6. Now let's create Eclipse bundle and use it in RCP application. First, we reorganize "MyRcpApp" for multi-project build:
+
+  6.1. Create "build.gradle" in "tutorials" folder (parent of "MyRcpApp" folder) 
+
+  6.2. Move "buildscript" and "repositories" from "tutorials/MyRcpApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
+
+    "tutorials/build.gradle":
+    ```groovy
+    buildscript {
+      repositories {
+        mavenLocal()
+        jcenter()
+      }
+      
+      dependencies {
+        classpath 'org.akhikhl.wuff:wuff-plugin:0.0.1'
+      }
+    }
+
+    subprojects {
+      repositories {
+        mavenLocal()
+        jcenter()
+      }
+    }
+    ```
+
+    "tutorials/MyRcpApp/build.gradle":
+    ```groovy
+    apply plugin: 'java'
+    apply plugin: 'eclipse-rcp-app'
+      
+    products {
+      product platform: 'linux', arch: 'x86_32'
+      product platform: 'linux', arch: 'x86_64'
+      product platform: 'windows', arch: 'x86_32'
+      product platform: 'windows', arch: 'x86_64'
+      archiveProducts = true
+    }
+    ```
+
+  6.3. Create "settings.gradle" in "tutorials" folder (parent of "MyRcpApp" folder), insert code:
+
+    ```groovy
+    include 'MyRcpApp'
+    ```
