@@ -46,7 +46,7 @@ The compilable examples corresponding to this tutorial are located in [tutorial 
 
   Note that you don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
 
-  **Attention:** first build make time some time, because wuff will download Eclipse and install it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
+  **Attention:** first build is slow, because wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
 
   **CHECK:** folder "tutorials/MyEquinoxApp/build/libs" contains file "MyEquinoxApp-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest and "plugin.xml".
 
