@@ -27,15 +27,19 @@ Let's build equinox application with wuff.
   and that we apply "eclipse-equinox-app" plugin to this project.
 
 2. Invoke on command line:
+
   ```shell
   gradle scaffold
   ```
+
   Scaffold task creates Application class required by equinox library.
 
 3. Invoke on command line:
+
   ```shell
   gradle build
   ```
+
   Build task generates product in "build/output" folder.
 
   Note that you don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
@@ -47,6 +51,7 @@ Let's build equinox application with wuff.
   *Hello, world! I am equinox application!*
 
 5. Now let's add product definitions to "build.gradle":
+
   ```groovy
   products {
     product platform: 'linux', arch: 'x86_32'
@@ -56,6 +61,7 @@ Let's build equinox application with wuff.
     archiveProducts = true
   }
   ```
+
   Here we define 4 products: 32-bit and 64-bit versions for Linux and 32-bit and 64-bit versions for Windows.
   Optional archiveProducts flag instructs wuff to archive the generated products. Linux versions will be 
   archived as .tar.gz, Windows versions - as .zip. The default value of archiveProducts is false.
@@ -107,15 +113,20 @@ Let's build equinox application with wuff.
     ```
 
   7.3. Create "settings.gradle" in "tutorials" folder (parent of "MyEquinoxApp" folder), insert code:
+
     ```groovy
     include 'MyEquinoxApp'
     ```
+
 8. Create new folder "tutorials/MyBundle", create file "build.gradle" in it, insert code:
+
   ```groovy
   apply plugin: 'java'
   apply plugin: 'osgi-bundle'
   ```
+
 9. Create subfolder "src/main/java/mybundle", create file "HelloWorld.java" in it, insert code:
+
   ```java
   package mybundle;
 
@@ -126,13 +137,16 @@ Let's build equinox application with wuff.
     }
   }
   ```
+
 10. Edit file "tutorials/settings.gradle", insert code:
+
   ```groovy
   include 'MyBundle'
   ```
   so that there are two includes - "MyEquinoxApp" and "MyBundle".
 
 11. Edit file "tutorials/MyEquinoxApp/build.gradle", insert code:
+
   ```groovy
   dependencies {
     compile project(':MyBundle')
@@ -140,6 +154,7 @@ Let's build equinox application with wuff.
   ```
 
 12. Edit file "tutorials/MyEquinoxApp/src/main/java/myequinoxapp/Application.java", replace line containing `System.out.println` with `mybundle.HelloWorld.sayHello();` so that the file looks like this:
+
   ```java
   package myequinoxapp;
 
@@ -164,12 +179,13 @@ Let's build equinox application with wuff.
   }
   ```
 
-9. Invoke on command line:
+9. Invoke on command line in "tutorials" folder:
   ```shell
   gradle build
   ```
-  Build task generates OSGi bundle "build/libs/MyBundle-1.0.0.0.jar" with the proper OSGi manifest. 
 
-  Your project may optionally contain "plugin.xml", "plugin_xx.properties", "OSGI-INF", "META-INF/MANIFEST.MF", "nl", "intro", "splash.bmp" in projectDir or "src/main/resources". If such files/directories are present, they are included into the generated OSGi bundle.
+  **CHECK:** folder "tutorials/MyBundle/build/libs" contains file "MyBundle-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
 
-  Note that user-supplied "MANIFEST.MF" is being merged with the generated "MANIFEST.MF". Some properties of the generated "MANIFEST.MF" overwrite properties of the user-supplied "MANIFEST.MF" (for example, "Bundle-Name" and "Bundle-Version"). Some properties are merged as lists (for example, "Require-Bundle", "Import-Package").
+  **CHECK:** Each product in "tutorials/MyEquinoxApp/build/output" contains "MyBundle" and "MyEquinoxApp" bundles in "plugins" subfolder. 
+
+  **CHECK:** Each product is runnable and shows "Hello, world!".
