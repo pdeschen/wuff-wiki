@@ -1,6 +1,6 @@
 In this tutorial we show how to build Eclipse RCP application with wuff.
 
-The compilable examples corresponding to this tutorial are located in [tutorial examples](../tree/master/tutorialExamples) sources.
+The compilable examples corresponding to this tutorial are located in [tutorial examples](../tree/master/tutorialExamples).
 
 1. Create folder "tutorials/MyRcpApp", create file "build.gradle" in it, insert code:
 
