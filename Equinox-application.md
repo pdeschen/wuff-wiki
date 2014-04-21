@@ -1,6 +1,6 @@
 Let's build equinox application with wuff.
 
-1. Create new folder, create file "build.gradle" in it, insert code:
+1. Create new folder "MyEquinoxApp", create file "build.gradle" in it, insert code:
 
   ```groovy
   buildscript {
@@ -46,8 +46,7 @@ Let's build equinox application with wuff.
 
   **Attention:** first build make time some time, because wuff will download Eclipse and install it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
 
-4. You can run the program either by invoking launch script within the product or by invoking "gradle run" 
-  in project's directory. When you run the program, it prints to stdout:
+4. You can run the program either by invoking launch script (.bat or .sh, depending on OS) within the product or by invoking "gradle run" in project's directory. When you run the program, it prints to stdout:
   
   *Hello, world! I am equinox application!*
 
@@ -65,7 +64,29 @@ Let's build equinox application with wuff.
   Optional archiveProducts flag instructs wuff to archive the generated products. Linux versions will be 
   archived as .tar.gz, Windows versions - as .zip. The default value of archiveProducts is false.
 
-6. Repeat steps (3) and (4), see how products are generated "build/output".
+6. Repeat steps (3) and (4), see which products are generated in "build/output".
 
   **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
   If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
+
+7. Now let's create OSGi bundle and use it in equinox application. First, create new folder "MyBundle", create file "build.gradle" in it, insert code:
+  ```groovy
+  buildscript {
+    repositories {
+      mavenLocal()
+      jcenter()
+    }
+    
+    dependencies {
+      classpath 'org.akhikhl.wuff:wuff-plugin:0.0.1'
+    }
+  }
+
+  apply plugin: 'java'
+  apply plugin: 'osgi-bundle'
+
+  repositories {
+    mavenLocal()
+    jcenter()
+  }
+  ```
