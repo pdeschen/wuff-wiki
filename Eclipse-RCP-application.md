@@ -147,3 +147,18 @@ The compilable examples corresponding to this tutorial are located in [tutorial 
     }
   }
   ```
+
+9. Edit file "tutorials/settings.gradle", insert code:
+
+  ```groovy
+  include 'MyBundle'
+  ```
+  so that there are two includes - "MyEquinoxApp" and "MyBundle".
+
+10. Edit file "tutorials/MyRcpApp/build.gradle", insert code:
+
+  ```groovy
+  dependencies {
+    compile project(':MyBundle')
+  }
+  ```
