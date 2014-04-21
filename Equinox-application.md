@@ -62,3 +62,6 @@ Let's build equinox application with wuff. Our prerequisites: JDK, gradle and ac
   archived as .tar.gz, Windows versions - as .zip. The default value of archiveProducts is false.
 
 6. Repeat steps (3) and (4), see how products are generated "build/output".
+
+  **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
+  If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
