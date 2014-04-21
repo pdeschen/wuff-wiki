@@ -124,3 +124,26 @@ The compilable examples corresponding to this tutorial are located in [tutorial 
     ```groovy
     include 'MyRcpApp'
     ```
+
+7. Create folder "tutorials/MyBundle", create file "build.gradle" in it, insert code:
+
+  ```groovy
+  apply plugin: 'java'
+  apply plugin: 'eclipse-bundle'
+  ```
+
+8. Create folder "tutorials/MyBundle/src/main/java/mybundle", create file "HelloWorld.java" in it, insert code:
+
+  ```java
+  package mybundle;
+
+  import org.eclipse.jface.dialogs.MessageDialog;
+  import org.eclipse.swt.widgets.Shell;
+
+  public class HelloWorld {
+
+    public static void showMessageDialog(Shell shell) {
+      MessageDialog.openQuestion(shell, "Information", "Hello, world!");
+    }
+  }
+  ```
