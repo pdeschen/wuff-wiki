@@ -90,3 +90,15 @@ Let's build equinox application with wuff.
     jcenter()
   }
   ```
+8. Create subfolder "src/main/java/mybundle", create file "HelloWorld.java" in it, insert code:
+
+  ```java
+  package mybundle;
+
+  public class HelloWorld {
+
+    public static void sayHello() {
+      System.out.println("Hello, world!");
+    }
+  }
+  ```
