@@ -42,7 +42,7 @@ Let's build equinox application with wuff.
 
   Build task generates product in "build/output" folder.
 
-  **Attention:** first build make time some time, because wuff will download and configure eclipse for you. Consequent builds will be much faster.
+  **Attention:** first build make time some time, because wuff will download Eclipse and install it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
 
   Note that you don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
 
