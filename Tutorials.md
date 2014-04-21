@@ -4,7 +4,7 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 
 [Equinox application](Equinox-application)
 
-[Eclipse RCP application](Eclipse-rcp-application)
+[Eclipse RCP application](Eclipse-RCP-application)
 
-[Eclipse IDE application](Eclipse-ide-application)
+[Eclipse IDE application](Eclipse-IDE-application)
 
