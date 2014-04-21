@@ -1,17 +1,17 @@
-Wuff does the following work for you:
+Wuff does the following for you:
 
-- Download and "mavenization" of Eclipse bundles.
+- downloads and "mavenizes" Eclipse bundles.
 
-- Generation of runnable Eclipse products for multiple platforms and locales.
+- generates runnable Eclipse products for multiple platforms and locales.
 
-- Generation and merge of OSGi-specific MANIFEST.MF.
+- generates OSGi-specific MANIFEST.MF.
 
-- Generation and merge of plugin.xml.
+- generates plugin.xml.
 
-- Generation and merge of plugin_customization.ini.
+- generates plugin_customization.ini.
 
-- Generation and merge of intro pages.
+- generates intro pages.
 
-- Flexible wrapping of non-OSGi dependencies into OSGi-bundles.
+- wraps non-OSGi dependencies into OSGi-bundles.
 
-Every feature of wuff is highly automated yet configurable.
+Every wuff feature is highly automated yet configurable.
