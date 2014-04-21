@@ -1,4 +1,4 @@
-Let's build equinox application with wuff. Our prerequisites: JDK, gradle and access to jcenter.
+Let's build equinox application with wuff.
 
 1. Create new folder, create file "build.gradle" in it, insert code:
 
