@@ -52,3 +52,28 @@ The compilable examples corresponding to this tutorial are located in [tutorial 
   **CHECK:** There's one product in "tutorials/MyEquinoxApp/build/output" folder. It contains "MyRcpApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
   **CHECK:** The product is runnable and shows window with title "Hello, RCP".
+
+4. Now let's add product definitions to "build.gradle":
+
+  ```groovy
+  products {
+    product platform: 'linux', arch: 'x86_32'
+    product platform: 'linux', arch: 'x86_64'
+    product platform: 'windows', arch: 'x86_32'
+    product platform: 'windows', arch: 'x86_64'
+    archiveProducts = true
+  }
+  ```
+
+  Here we define 4 products: 32-bit and 64-bit versions for Linux and 32-bit and 64-bit versions for Windows.
+  Optional archiveProducts flag instructs wuff to archive the generated products. Linux versions will be 
+  archived as .tar.gz, Windows versions - as .zip. The default value of archiveProducts is false.
+
+5. Repeat steps (3) and (4), see which products are generated in "build/output".
+
+  **CHECK:** There are 4 products in "tutorials/MyEquinoxApp/build/output" folder. Each product contains "MyRcpApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
+
+  **CHECK:** The product matching your OS/architecture is runnable and shows window with title "Hello, RCP".
+
+  **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
+  If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
