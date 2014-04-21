@@ -66,8 +66,10 @@ Let's build equinox application with wuff.
   If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
 
 7. Now let's create OSGi bundle and use it in equinox application. First, we reorganize "MyEquinoxApp" for multi-project build:
-  7.1. reate "build.gradle" in "tutorials" folder (parent of "MyEquinoxApp" folder) 
-  7.2. move "buildscript" and "repositories" from "tutorials/MyEquinoxApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
+
+  7.1. Create "build.gradle" in "tutorials" folder (parent of "MyEquinoxApp" folder) 
+
+  7.2. Move "buildscript" and "repositories" from "tutorials/MyEquinoxApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
 
     "tutorials/build.gradle":
     ```groovy
@@ -104,28 +106,16 @@ Let's build equinox application with wuff.
     }
     ```
 
-create new folder "MyBundle", create file "build.gradle" in it, insert code:
+  7.3. Create "settings.gradle" in "tutorials" folder (parent of "MyEquinoxApp" folder), insert code:
+    ```groovy
+    include 'MyEquinoxApp'
+    ```
+8. Create new folder "tutorials/MyBundle", create file "build.gradle" in it, insert code:
   ```groovy
-  buildscript {
-    repositories {
-      mavenLocal()
-      jcenter()
-    }
-    
-    dependencies {
-      classpath 'org.akhikhl.wuff:wuff-plugin:0.0.1'
-    }
-  }
-
   apply plugin: 'java'
   apply plugin: 'osgi-bundle'
-
-  repositories {
-    mavenLocal()
-    jcenter()
-  }
   ```
-8. Create subfolder "src/main/java/mybundle", create file "HelloWorld.java" in it, insert code:
+9. Create subfolder "src/main/java/mybundle", create file "HelloWorld.java" in it, insert code:
   ```java
   package mybundle;
 
@@ -136,6 +126,44 @@ create new folder "MyBundle", create file "build.gradle" in it, insert code:
     }
   }
   ```
+10. Edit file "tutorials/settings.gradle", insert code:
+  ```groovy
+  include 'MyBundle'
+  ```
+  so that there are two includes - "MyEquinoxApp" and "MyBundle".
+
+11. Edit file "tutorials/MyEquinoxApp/build.gradle", insert code:
+  ```groovy
+  dependencies {
+    compile project(':MyBundle')
+  }
+  ```
+
+12. Edit file "tutorials/MyEquinoxApp/src/main/java/myequinoxapp/Application.java", replace line containing `System.out.println` with `mybundle.HelloWorld.sayHello();` so that the file looks like this:
+  ```java
+  package myequinoxapp;
+
+  import java.io.IOException;
+
+  import org.eclipse.equinox.app.IApplication;
+  import org.eclipse.equinox.app.IApplicationContext;
+
+  public class Application implements IApplication {
+
+    @Override
+    public Object start(IApplicationContext ctx) throws Exception {
+      mybundle.HelloWorld.sayHello();
+      return IApplication.EXIT_OK;
+    }
+
+    @Override
+    public void stop() {
+      // From eclipse doc:
+      // This method will not be called if an application exits normally from the start(IApplicationContext) method. 
+    }
+  }
+  ```
+
 9. Invoke on command line:
   ```shell
   gradle build
