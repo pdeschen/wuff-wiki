@@ -1,6 +1,6 @@
 Let's build equinox application with wuff.
 
-1. Create new folder "MyEquinoxApp", create file "build.gradle" in it, insert code:
+1. Create new folder "tutorials/MyEquinoxApp", create file "build.gradle" in it, insert code:
 
   ```groovy
   buildscript {
@@ -65,7 +65,46 @@ Let's build equinox application with wuff.
   **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
   If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
 
-7. Now let's create OSGi bundle and use it in equinox application. First, create new folder "MyBundle", create file "build.gradle" in it, insert code:
+7. Now let's create OSGi bundle and use it in equinox application. First, we reorganize "MyEquinoxApp" for multi-project build:
+  7.1. reate "build.gradle" in "tutorials" folder (parent of "MyEquinoxApp" folder) 
+  7.2. move "buildscript" and "repositories" from "tutorials/MyEquinoxApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
+
+    "tutorials/build.gradle":
+    ```groovy
+    buildscript {
+      repositories {
+        mavenLocal()
+        jcenter()
+      }
+      
+      dependencies {
+        classpath 'org.akhikhl.wuff:wuff-plugin:0.0.1'
+      }
+    }
+
+    subprojects {
+      repositories {
+        mavenLocal()
+        jcenter()
+      }
+    }
+    ```
+
+    "tutorials/MyEquinoxApp/build.gradle":
+    ```groovy
+    apply plugin: 'java'
+    apply plugin: 'eclipse-equinox-app'
+      
+    products {
+      product platform: 'linux', arch: 'x86_32'
+      product platform: 'linux', arch: 'x86_64'
+      product platform: 'windows', arch: 'x86_32'
+      product platform: 'windows', arch: 'x86_64'
+      archiveProducts = true
+    }
+    ```
+
+create new folder "MyBundle", create file "build.gradle" in it, insert code:
   ```groovy
   buildscript {
     repositories {
