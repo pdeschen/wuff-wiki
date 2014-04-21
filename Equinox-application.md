@@ -1,6 +1,6 @@
 Let's build equinox application with wuff.
 
-1. Create new folder "tutorials/MyEquinoxApp", create file "build.gradle" in it, insert code:
+1. Create folder "tutorials/MyEquinoxApp", create file "build.gradle" in it, insert code:
 
   ```groovy
   buildscript {
