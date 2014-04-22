@@ -48,6 +48,6 @@
 
   Note that you don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
 
-The example code corresponding to this page is located [here](../tree/master/tutorialExamples/EquinoxApp-1).
+The example code corresponding to this page is located in [tutorialExamples/EquinoxApp-1](../tree/master/tutorialExamples/EquinoxApp-1).
 
 Now we can move on to [Configure Equinox products](Configure-Equinox-products).
