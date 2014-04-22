@@ -1,3 +1,5 @@
+Provided that we already [configured Equinox products](Configure-Equinox-products), we can now prepare Equinox app for multiproject build.
+
 1. Create "build.gradle" in "tutorials" folder (parent of "MyRcpApp" folder) 
 
 2. Move "buildscript" and "repositories" from "tutorials/MyRcpApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
