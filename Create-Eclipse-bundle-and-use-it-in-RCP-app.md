@@ -81,4 +81,8 @@ Provided that we already [prepared RCP app for multiproject build](Prepare-RCP-a
 
   **CHECK:** Each product in "tutorials/MyRcpApp/build/output" contains "MyBundle" and "MyRcpApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
 
-  **CHECK:** The product matching your OS/architecture is runnable and shows window with title "Hello, RCP" and with button "Show dialog". When you click the button, the program shows modal dialog with text "Hello, world!".
+  **CHECK:** The product matching your OS/architecture is runnable. Upon run, it shows window with title "Hello, RCP" and with button "Show dialog". When you click the button, the program shows modal dialog with text "Hello, world!".
+
+The example code corresponding to this page is located in [tutorialExamples/RcpApp-4](../tree/master/tutorialExamples/RcpApp-4).
+
+Now we can move on to [add splash to RCP app](Add-splash-to-RCP-app).
