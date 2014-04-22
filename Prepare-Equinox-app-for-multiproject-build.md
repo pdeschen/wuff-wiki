@@ -54,3 +54,5 @@ Provided that we already [configured Equinox products](Configure-Equinox-product
   **CHECK**: Build task generates products in "MyRcpApp/build/output" folder.
 
 The example code corresponding to this page is located [here](../tree/master/tutorialExamples/EquinoxApp-3).
+
+Now we can move on to [Create OSGi-bundle and use it in Equinox app](Create-OSGi-bundle-and-use-it-in-Equinox-app).
