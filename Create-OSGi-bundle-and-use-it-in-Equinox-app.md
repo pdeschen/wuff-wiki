@@ -1,3 +1,5 @@
+Provided that we already [prepared Equinox app for multiproject build](Prepare-Equinox-app-for-multiproject-build), we can now create OSGi-bundle and use it in Equinox app.
+
 1. Create folder "tutorials/MyBundle", create file "build.gradle" in it, insert code:
 
   ```groovy
