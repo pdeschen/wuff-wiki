@@ -1,1 +1,1 @@
-Provided that we already [prepared RCP app for multiproject build], we can now create Eclipse bundle and use it in RCP app.
+Provided that we already [prepared RCP app for multiproject build](Prepare-RCP-app-for-multiproject-build), we can now create Eclipse bundle and use it in RCP app.
