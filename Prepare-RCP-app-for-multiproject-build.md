@@ -39,8 +39,20 @@ Provided that we already [configured RCP products](Configure-RCP-products), we c
   }
   ```
 
-6.3. Create "settings.gradle" in "tutorials" folder (parent of "MyRcpApp" folder), insert code:
+3. Create "settings.gradle" in "tutorials" folder (parent of "MyRcpApp" folder), insert code:
 
   ```groovy
   include 'MyRcpApp'
   ```
+
+4. Invoke on command line in "tutorials" folder:
+
+  ```shell
+  gradle build
+  ```
+
+  **CHECK**: Build task generates products in "tutorials/MyRcpApp/build/output" folder.
+
+The example code corresponding to this page is located in [tutorialExamples/RcpApp-3](../tree/master/tutorialExamples/RcpApp-3).
+
+Now we can move on to [Create Eclipse bundle and use it in RCP app](Create-Eclipse-bundle-and-use-it-in-RCP-app).
