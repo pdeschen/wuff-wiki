@@ -8,7 +8,7 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 
 2. [Configure Equinox products](Configure-Equinox-products)
 
-3. [Reorganize Equinox application for multi-project build](Reorganize-Equinox-application-for-multi--project-build)
+3. [Reorganize Equinox application for multi-project build](Reorganize-Equinox-application-for-multi-project-build)
 
 ### Eclipe RCP
 
