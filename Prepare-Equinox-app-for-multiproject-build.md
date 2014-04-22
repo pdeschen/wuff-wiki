@@ -50,3 +50,5 @@
   ```
 
   **CHECK**: Build task generates products in "MyRcpApp/build/output" folder.
+
+The example code corresponding to this page is located [here](../tree/master/tutorialExamples/EquinoxApp-3).
