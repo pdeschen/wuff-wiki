@@ -71,3 +71,5 @@ Provided that we already [prepared Equinox app for multiproject build](Prepare-E
   **CHECK:** Each product in "tutorials/MyEquinoxApp/build/output" contains "MyBundle" and "MyEquinoxApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
 
   **CHECK:** The product matching your OS/architecture is runnable and prints "Hello, world!" to the console.
+
+The example code corresponding to this page is located in [tutorialExamples/EquinoxApp-4](../tree/master/tutorialExamples/EquinoxApp-4).
