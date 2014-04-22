@@ -10,6 +10,8 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 
 3. [Prepare Equinox app for multi-project build](Prepare-Equinox-app-for-multiproject-build)
 
+4. [Create OSGi-bundle and use it in Equinox app](Create-OSGi-bundle-and-use-it-in-Equinox-app)
+
 ### Eclipe RCP
 
 [Eclipse RCP application](Eclipse-RCP-application)
