@@ -51,3 +51,5 @@
   **CHECK:** The product is runnable and prints "Hello, world! I am equinox application!" to the console.
 
 The example code corresponding to this page is located [here](../tree/master/tutorialExamples/EquinoxApp-1).
+
+Now we can move on to [Configure Equinox products](Configure-Equinox-products).
