@@ -73,3 +73,5 @@ Provided that we already [prepared Equinox app for multiproject build](Prepare-E
   **CHECK:** The product matching your OS/architecture is runnable and prints "Hello, world!" to the console.
 
 The example code corresponding to this page is located in [tutorialExamples/EquinoxApp-4](../tree/master/tutorialExamples/EquinoxApp-4).
+
+Now we can move on to [create first RCP app](Create-first-RCP-app).
