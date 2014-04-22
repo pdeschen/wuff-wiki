@@ -49,3 +49,5 @@
   **CHECK:** There's one product in "tutorials/MyEquinoxApp/build/output" folder. It contains "MyEquinoxApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
   **CHECK:** The product is runnable and prints "Hello, world! I am equinox application!" to the console.
+
+The example code corresponding to this page is located [here](../tree/master/tutorialExamples/EquinoxApp-1).
