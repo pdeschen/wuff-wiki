@@ -28,3 +28,7 @@ Provided that we already created our [first RCP application](Create-first-RCP-ap
 
   **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
   If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
+
+The example code corresponding to this page is located in [tutorialExamples/RcpApp-2](../tree/master/tutorialExamples/RcpApp-2).
+
+Now we can move on to [Prepare RCP app for multiproject build](Prepare-RCP-app-for-multiproject-build).
