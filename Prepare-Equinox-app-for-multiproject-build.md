@@ -51,7 +51,7 @@ Provided that we already [configured Equinox products](Configure-Equinox-product
   gradle build
   ```
 
-  **CHECK**: Build task generates products in "MyEquinoxApp/build/output" folder.
+  **CHECK**: Build task generates products in "tutorials/MyEquinoxApp/build/output" folder.
 
 The example code corresponding to this page is located in [tutorialExamples/EquinoxApp-3](../tree/master/tutorialExamples/EquinoxApp-3).
 
