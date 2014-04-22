@@ -16,6 +16,8 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 
 - [Create first RCP app](Create-first-RCP-app)
 
+- [Configure RCP products](Configure-RCP-products)
+
 [Eclipse RCP application](Eclipse-RCP-application)
 
 ### Eclipse IDE
