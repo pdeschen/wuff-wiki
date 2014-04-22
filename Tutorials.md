@@ -5,6 +5,7 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 ### Equinox
 
 [Create first Equinox application](Create-first-equinox-application)
+[Configure Equinox products](Configure-equinox-products)
 
 ### Eclipe RCP
 
