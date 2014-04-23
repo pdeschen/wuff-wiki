@@ -21,5 +21,5 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 
 ### Eclipse IDE
 
-[Eclipse IDE application](Eclipse-IDE-application)
+- [Create first IDE app](Create-first-IDE-app)
 
