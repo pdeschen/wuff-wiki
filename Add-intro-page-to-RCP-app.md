@@ -40,13 +40,14 @@ We already [added splash to RCP app](Add-splash-to-RCP-app). Now we add intro pa
   Note that you don't have to configure intro page in configuration files - wuff does this for you automatically.
 
 4. Run the compiled product from command line. The expected output:
-   
+
   ![RcpApp-6-run-1](images/RcpApp-6-run-1.png "RcpApp-6-run-1")
 
-  When the program is started for the first time, it displays intro page. As soon as you close intro page, you see the default perspective.
+  When the program is started for the first time, it displays intro page. As soon as you close intro page, you see the default perspective:
+
+  ![RcpApp-5-run-1](images/RcpApp-5-run-1.png "RcpApp-5-run-1")
   
-  Note that intro page is filtered with groovy.text.SimpleTemplateEngine, so you can render arbitrary content on intro page
-  with the help of java and groovy functions.
+  Note that intro page is filtered with groovy.text.SimpleTemplateEngine, so you can render arbitrary content on intro page with the help of java and groovy functions.
 
 The example code for this page: [tutorialExamples/RcpApp-6](../tree/master/tutorialExamples/RcpApp-6).
 
