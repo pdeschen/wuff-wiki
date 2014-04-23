@@ -1,1 +1,1 @@
-TBD
+We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we localize RCP app.
