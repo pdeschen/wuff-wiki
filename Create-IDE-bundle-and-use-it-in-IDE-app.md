@@ -80,9 +80,13 @@ We already [prepared IDE app for multiproject build](Prepare-IDE-app-for-multipr
 
   ![IdeApp-4-run-1](images/IdeApp-4-run-1.png "IdeApp-4-run-1")
 
-  Fully started program looks like Eclipse IDE with "Resource" perspective:
+  Fully started program looks like Eclipse IDE with "Resource" perspective. Main menu contains new submenu "My Menu" with menu item "Show greeting":
 
   ![IdeApp-4-run-2](images/IdeApp-4-run-2.png "IdeApp-4-run-2")
+
+  When you click "Show greeting", the program shows message dialog:
+
+  ![IdeApp-4-run-3](images/IdeApp-4-run-3.png "IdeApp-4-run-3")
 
 The example code for this page: [tutorialExamples/IdeApp-4](../tree/master/tutorialExamples/IdeApp-4).
 
