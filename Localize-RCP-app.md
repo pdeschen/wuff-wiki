@@ -191,10 +191,10 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
 
   ![RcpApp-7-run-1](images/RcpApp-7-run-1.png "RcpApp-7-run-1")
 
+  Note that localized intro page is also filtered with groovy.text.SimpleTemplateEngine, so you can render arbitrary content on intro page with the help of java and groovy functions.
+
   As soon as you close intro page, you see the default perspective:
 
   ![RcpApp-7-run-2](images/RcpApp-7-run-2.png "RcpApp-7-run-2")
-
-  Note that localized intro page is also filtered with groovy.text.SimpleTemplateEngine, so you can render arbitrary content on intro page with the help of java and groovy functions.
 
 The example code for this page: [tutorialExamples/RcpApp-7](../tree/master/tutorialExamples/RcpApp-7).
