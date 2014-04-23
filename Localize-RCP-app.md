@@ -1,6 +1,6 @@
 We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we localize RCP app.
 
-1. Let's add language-specific product definitions to "build.gradle":
+1. Add language-specific product definitions to "build.gradle":
 
   ```groovy
   products {
@@ -18,13 +18,28 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
 
   Here we define 8 products: 4 are English, 4 are German.
 
-2. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/View.java", replace content with:
+2. Create file "tutorials/MyRcpApp/src/main/java/myrcpapp/Messages.java", insert code:
 
   ```java
   package myrcpapp;
 
   import java.util.Locale;
   import java.util.ResourceBundle;
+
+  public class Messages {
+
+    private static ResourceBundle res = ResourceBundle.getBundle(Messages.class.getName(), Locale.getDefault());
+    
+    public static String getString(String key) {
+      return res.getString(key);
+    }  
+  }
+  ```
+
+2. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/View.java", replace line `btnShowDialog.setText("Show dialog");` with `btnShowDialog.setText(Messages.getString("btnShowDialog_Label"));`, so that file looks like this:
+
+  ```java
+  package myrcpapp;
 
   import org.eclipse.swt.SWT;
   import org.eclipse.swt.widgets.Composite;
@@ -36,13 +51,11 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
 
   public class View extends ViewPart {
 
-    private static ResourceBundle res = ResourceBundle.getBundle(View.class.getName(), Locale.getDefault());
-
     @Override
     public void createPartControl(final Composite parent) {
       parent.setLayout(new RowLayout());
       Button btnShowDialog = new Button(parent, SWT.PUSH);
-      btnShowDialog.setText(res.getString("btnShowDialog_Label"));
+      btnShowDialog.setText(Messages.getString("btnShowDialog_Label"));
       btnShowDialog.addSelectionListener(new SelectionAdapter() {
         @Override
         public void widgetSelected(SelectionEvent event) {
@@ -68,3 +81,6 @@ btnShowDialog_Label=Show dialog
 ```
 btnShowDialog_Label=Dialogfenster anzeigen
 ```
+
+5. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/ApplicationWorkbenchWindowAdvisor.java", replace content with:
+
