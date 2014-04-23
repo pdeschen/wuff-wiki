@@ -84,14 +84,6 @@ We already [prepared IDE app for multiproject build](Prepare-IDE-app-for-multipr
 
   ![IdeApp-4-run-2](images/IdeApp-4-run-2.png "IdeApp-4-run-2")
 
-4. Run the compiled product from command line. Expect to see:
-   
-  ![IdeApp-4-run-1](images/IdeApp-4-run-1.png "IdeApp-4-run-1")
-
-  When you click on "Show dialog" button, the program shows message dialog:
-
-  ![IdeApp-4-run-2](images/IdeApp-4-run-2.png "IdeApp-4-run-2")
-
 The example code for this page: [tutorialExamples/IdeApp-4](../tree/master/tutorialExamples/IdeApp-4).
 
 Next page: [add splash to IDE app](Add-splash-to-IDE-app).
