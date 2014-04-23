@@ -47,7 +47,7 @@ We already [added splash to RCP app](Add-splash-to-RCP-app). Now we add intro pa
 
   As soon as you close intro page, you see the default perspective:
 
-  ![RcpApp-6-run-2](images/RcpApp-6-run-6.png "RcpApp-6-run-2")
+  ![RcpApp-6-run-2](images/RcpApp-6-run-2.png "RcpApp-6-run-2")
 
 The example code for this page: [tutorialExamples/RcpApp-6](../tree/master/tutorialExamples/RcpApp-6).
 
