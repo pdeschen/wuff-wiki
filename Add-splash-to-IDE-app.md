@@ -16,11 +16,11 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
 
   ![IdeApp-5-run-1](images/IdeApp-5-run-1.png "IdeApp-5-run-1")
    
-  As soon as main window is shown, splash screen disappears and default perspective is shown:
+  The program, when run for the first time, shows workspace selection dialog:
 
   ![IdeApp-5-run-2](images/IdeApp-5-run-2.png "IdeApp-5-run-2")
 
-  When you click on "Show dialog" button, the program shows message dialog:
+  As soon as main window is shown, splash screen disappears and default perspective is shown:
 
   ![IdeApp-5-run-3](images/IdeApp-5-run-3.png "IdeApp-5-run-3")
 
