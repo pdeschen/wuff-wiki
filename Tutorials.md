@@ -22,4 +22,6 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 ### Eclipse IDE
 
 - [Create first IDE app](Create-first-IDE-app)
+- [Configure IDE products](Configure-IDE-products)
+- [Prepare IDE app for multiproject build](Prepare-IDE-app-for-multiproject-build)
 
