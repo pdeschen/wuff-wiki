@@ -24,7 +24,7 @@ We already [created first Equinox app](Create-first-Equinox-app). Now we configu
 
   **CHECK:** There are 4 products in "tutorials/MyEquinoxApp/build/output" folder. Each product contains "MyEquinoxApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
-  **CHECK:** Each generated product is runnable on corresponding OS and architecture. Upon run, it prints "Hello, world! I am equinox application!" to the console.
+  **CHECK:** Each generated product is runnable on corresponding OS and architecture.
 
   **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
   If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
