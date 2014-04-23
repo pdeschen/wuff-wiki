@@ -47,7 +47,7 @@ In this tutorial we start from scratch and build RCP app. Other tutorials are av
 
   Note that you don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
   
-4. Run the compiled product from command line. The expected output:
+4. Run the compiled product from command line. Expect to see:
    
    ![RcpApp-1-run-1](images/RcpApp-1-run-1.png "RcpApp-1-run-1")
 
