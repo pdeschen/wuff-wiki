@@ -1,4 +1,4 @@
-Provided that we already [configured RCP products](Configure-RCP-products), we can now prepare RCP app for multiproject build.
+We already [configured RCP products](Configure-RCP-products). Now we prepare RCP app for multiproject build.
 
 1. Create "build.gradle" in "tutorials" folder (parent of "MyRcpApp" folder) 
 
@@ -53,6 +53,6 @@ Provided that we already [configured RCP products](Configure-RCP-products), we c
 
   **CHECK**: Build task generates products in "tutorials/MyRcpApp/build/output" folder.
 
-The example code corresponding to this page is located in [tutorialExamples/RcpApp-3](../tree/master/tutorialExamples/RcpApp-3).
+The example code for this page: [tutorialExamples/RcpApp-3](../tree/master/tutorialExamples/RcpApp-3).
 
-Now we can move on to [Create Eclipse bundle and use it in RCP app](Create-Eclipse-bundle-and-use-it-in-RCP-app).
+Next page: [Create Eclipse bundle and use it in RCP app](Create-Eclipse-bundle-and-use-it-in-RCP-app).
