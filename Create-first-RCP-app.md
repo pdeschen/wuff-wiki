@@ -49,7 +49,7 @@ In this tutorial we start from scratch and build RCP app. Other tutorials are av
   
 4. Run the compiled product from command line. The expected output:
    
-   ![Rcp-1-run-1](images/Rcp-1-run-1.png "Rcp-1-run-1")
+   ![RcpApp-1-run-1](images/RcpApp-1-run-1.png "RcpApp-1-run-1")
 
 The example code for this page: [tutorialExamples/RcpApp-1](../tree/master/tutorialExamples/RcpApp-1).
 
