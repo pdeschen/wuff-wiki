@@ -42,12 +42,12 @@ We already [added splash to RCP app](Add-splash-to-RCP-app). Now we add intro pa
 4. Run the compiled product from command line. When the program is started for the first time, it displays intro page:
 
   ![RcpApp-6-run-1](images/RcpApp-6-run-1.png "RcpApp-6-run-1")
+  
+  Note that intro page is filtered with groovy.text.SimpleTemplateEngine, so you can render arbitrary content on intro page with the help of java and groovy functions.
 
   As soon as you close intro page, you see the default perspective:
 
   ![RcpApp-5-run-1](images/RcpApp-4-run-1.png "RcpApp-4-run-1")
-  
-  Note that intro page is filtered with groovy.text.SimpleTemplateEngine, so you can render arbitrary content on intro page with the help of java and groovy functions.
 
 The example code for this page: [tutorialExamples/RcpApp-6](../tree/master/tutorialExamples/RcpApp-6).
 
