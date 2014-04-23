@@ -1,16 +1,16 @@
-Provided that we already [prepared RCP app for multiproject build](Prepare-RCP-app-for-multiproject-build), we can now create Eclipse bundle and use it in RCP app.
+We already [prepared RCP app for multiproject build](Prepare-RCP-app-for-multiproject-build). Now we create Eclipse plugin and use it in RCP app.
 
-1. Create folder "tutorials/MyBundle", create file "build.gradle" in it, insert code:
+1. Create folder "tutorials/MyPlugin", create file "build.gradle" in it, insert code:
 
   ```groovy
   apply plugin: 'java'
   apply plugin: 'eclipse-bundle'
   ```
 
-2. Create folder "tutorials/MyBundle/src/main/java/mybundle", create file "HelloWorld.java" in it, insert code:
+2. Create folder "tutorials/MyPlugin/src/main/java/myplugin", create file "HelloWorld.java" in it, insert code:
 
   ```java
-  package mybundle;
+  package myplugin;
 
   import org.eclipse.jface.dialogs.MessageDialog;
   import org.eclipse.swt.widgets.Shell;
@@ -26,15 +26,15 @@ Provided that we already [prepared RCP app for multiproject build](Prepare-RCP-a
 3. Edit file "tutorials/settings.gradle", insert code:
 
   ```groovy
-  include 'MyBundle'
+  include 'MyPlugin'
   ```
-  so that there are two includes - "MyRcpApp" and "MyBundle".
+  so that there are two includes - "MyRcpApp" and "MyPlugin".
 
 4. Edit file "tutorials/MyRcpApp/build.gradle", insert code:
 
   ```groovy
   dependencies {
-    compile project(':MyBundle')
+    compile project(':MyPlugin')
   }
   ```
 
@@ -61,7 +61,7 @@ Provided that we already [prepared RCP app for multiproject build](Prepare-RCP-a
       btnShowDialog.addSelectionListener(new SelectionAdapter() {
         @Override
         public void widgetSelected(SelectionEvent event) {
-          mybundle.HelloWorld.showMessageDialog(parent.getShell());
+          myplugin.HelloWorld.showMessageDialog(parent.getShell());
         }
       });
     }
@@ -77,12 +77,12 @@ Provided that we already [prepared RCP app for multiproject build](Prepare-RCP-a
   gradle build
   ```
 
-  **CHECK:** folder "tutorials/MyBundle/build/libs" contains file "MyBundle-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
+  **CHECK:** folder "tutorials/MyPlugin/build/libs" contains file "MyPlugin-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
 
-  **CHECK:** Each product in "tutorials/MyRcpApp/build/output" contains "MyBundle" and "MyRcpApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
+  **CHECK:** Each product in "tutorials/MyRcpApp/build/output" contains "MyPlugin" and "MyRcpApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
 
   **CHECK:** The product matching your OS/architecture is runnable. Upon run, it shows window with title "Hello, RCP" and with button "Show dialog". When you click the button, the program shows modal dialog with text "Hello, world!".
 
-The example code corresponding to this page is located in [tutorialExamples/RcpApp-4](../tree/master/tutorialExamples/RcpApp-4).
+The example code for this page: [tutorialExamples/RcpApp-4](../tree/master/tutorialExamples/RcpApp-4).
 
-Now we can move on to [add splash to RCP app](Add-splash-to-RCP-app).
+Next page: [add splash to RCP app](Add-splash-to-RCP-app).
