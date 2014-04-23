@@ -43,16 +43,14 @@ In this tutorial we start from scratch and build Equinox app. Other tutorials ar
   **CHECK:** folder "tutorials/MyEquinoxApp/build/libs" contains file "MyEquinoxApp-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest and "plugin.xml".
 
   **CHECK:** There's one product in "tutorials/MyEquinoxApp/build/output" folder. It contains "MyEquinoxApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
-  
-4. Run the compiled product from command line. The expected output:
-   
-   ![EquinoxApp-1-run-1](images/EquinoxApp-1-run-1.png "EquinoxApp-1-run-1")
-
-  **CHECK:** The product is runnable and prints "Hello, world! I am equinox application!" to the console.
 
   **Attention:** first build is slow, because wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
 
   Note that you don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
+  
+4. Run the compiled product from command line. The expected output:
+   
+   ![EquinoxApp-1-run-1](images/EquinoxApp-1-run-1.png "EquinoxApp-1-run-1")
 
 The example code for this page: [tutorialExamples/EquinoxApp-1](../tree/master/tutorialExamples/EquinoxApp-1).
 
