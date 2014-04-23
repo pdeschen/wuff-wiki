@@ -74,4 +74,4 @@ We already [prepared Equinox app for multiproject build](Prepare-Equinox-app-for
 
 The example code for this page: [tutorialExamples/EquinoxApp-4](../tree/master/tutorialExamples/EquinoxApp-4).
 
-Next page: [Create first RCP app](Create-first-RCP-app).
+Now we are done with Equinox tutorial. Other tutorials are available [here](Tutorials).
