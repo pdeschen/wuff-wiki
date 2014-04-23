@@ -24,7 +24,7 @@ We already [created first RCP app](Create-first-RCP-app). Now we configure RCP p
 
   **CHECK:** There are 4 products in "tutorials/MyRcpApp/build/output" folder. Each product contains "MyRcpApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
-  **CHECK:** The product matching your OS/architecture is runnable. Upon run, it shows window with title "Hello, RCP" and multiline text field with text "Hello, world!".
+  **CHECK:** Each generated product is runnable on corresponding OS and architecture. Upon run, it shows window with title "Hello, RCP" and multiline text field with text "Hello, world!".
 
   **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
   If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
