@@ -155,9 +155,46 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
   DialogMessage=Hello, world!
   ```
 
-6. Create file "Messages_de.properties" in the same folder, insert content:
+10. Create file "Messages_de.properties" in the same folder, insert content:
 
   ```
   DialogTitle=Meldung
   DialogMessage=Hallo, Welt!
   ```
+
+11. Create folder "tutorials/MyRcpApp/src/main/resources/nl/de/intro", then copy all files from "tutorials/MyRcpApp/src/main/resources/intro" into it.
+
+12. Edit file "tutorials/MyRcpApp/src/main/resources/nl/de/intro/welcome.html", replace content with:
+
+  ```html
+  <html>
+    <head>
+      <meta charset="UTF-8">
+      <title>Willkommen</title>
+      <link rel="stylesheet" type="text/css" href="default.css">
+    </head>
+    <body>
+      <h1>Hallo, Welt!</h1>
+      <p>Sie können diese Seite anpassen.</p>
+      <p>${project.name} Version ${project.version}</p>
+    </body>
+  </html>
+  ```
+
+13. Invoke on command line in "tutorials" folder:
+
+  ```shell
+  gradle build
+  ```
+
+14. Run the German-language product from command line. When the program is started for the first time, it displays intro page:
+
+  ![RcpApp-7-run-1](images/RcpApp-7-run-1.png "RcpApp-7-run-1")
+
+  As soon as you close intro page, you see the default perspective:
+
+  ![RcpApp-7-run-2](images/RcpApp-7-run-2.png "RcpApp-7-run-2")
+
+  Note that localized intro page is also filtered with groovy.text.SimpleTemplateEngine, so you can render arbitrary content on intro page with the help of java and groovy functions.
+
+The example code for this page: [tutorialExamples/RcpApp-7](../tree/master/tutorialExamples/RcpApp-7).
