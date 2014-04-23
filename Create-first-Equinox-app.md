@@ -1,3 +1,5 @@
+In this tutorial we start from scratch and build Equinox app. Other tutorials are available [here](Tutorials).
+
 1. Create folder "tutorials/MyEquinoxApp", create file "build.gradle" in it, insert code:
 
   ```groovy
