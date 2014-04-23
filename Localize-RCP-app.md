@@ -147,3 +147,17 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
     }
   }
   ```
+
+9. Create folder "tutorials/MyPlugin/src/main/resources/myplugin", create file "Messages.properties" in it, insert content:
+
+  ```
+  DialogTitle=Message
+  DialogMessage=Hello, world!
+  ```
+
+6. Create file "Messages_de.properties" in the same folder, insert content:
+
+  ```
+  DialogTitle=Meldung
+  DialogMessage=Hallo, Welt!
+  ```
