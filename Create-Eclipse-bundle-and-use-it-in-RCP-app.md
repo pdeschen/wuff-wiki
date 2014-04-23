@@ -81,9 +81,13 @@ We already [prepared RCP app for multiproject build](Prepare-RCP-app-for-multipr
 
   **CHECK:** Each product in "tutorials/MyRcpApp/build/output" contains "MyPlugin" and "MyRcpApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
   
-4. Run the compiled product from command line. Click the button, expect to see:
+4. Run the compiled product from command line. Expect to see:
    
-   ![RcpApp-4-run-1](images/RcpApp-4-run-1.png "RcpApp-4-run-1")
+  ![RcpApp-4-run-1](images/RcpApp-4-run-1.png "RcpApp-4-run-1")
+
+  When you click on "Show dialog" button, the program shows message dialog:
+
+  ![RcpApp-4-run-2](images/RcpApp-4-run-2.png "RcpApp-4-run-2")
 
 The example code for this page: [tutorialExamples/RcpApp-4](../tree/master/tutorialExamples/RcpApp-4).
 
