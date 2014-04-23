@@ -17,6 +17,7 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 - [Create Eclipse bundle and use it in RCP app](Create-Eclipse-bundle-and-use-it-in-RCP-app)
 - [Add splash to RCP app](Add-splash-to-RCP-app)
 - [Add intro page to RCP app](Add-intro-page-to-RCP-app)
+- [Localize RCP app](Localize-RCP-app)
 
 ### Eclipse IDE
 
