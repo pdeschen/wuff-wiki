@@ -6,11 +6,11 @@ We already [created Eclipse bundle and used it in RCP app](Create-Eclipse-bundle
 
 3. Invoke on command line in "tutorials" folder:
 
-```shell
-gradle build
-```
+  ```shell
+  gradle build
+  ```
 
-Note that you don't have to configure splash screen in configuration files - wuff does this for you automatically.
+  Note that you don't have to configure splash screen in configuration files - wuff does this for you automatically.
   
 4. Run the compiled product from command line. The expected output:
    
