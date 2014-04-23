@@ -1,4 +1,4 @@
-In this tutorial we start from scratch and build RCP app.
+In this tutorial we start from scratch and build RCP app. No IDE needed, just gradle and text editor.
 
 1. Create folder "tutorials/MyRcpApp", create file "build.gradle" in it, insert code:
 
