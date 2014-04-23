@@ -37,7 +37,7 @@ In this tutorial we start from scratch and build Eclipse IDE app. Other tutorial
 
   Note that you don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically. It's not even necessary to write any java code - you need only "build.gradle" and that's it.
   
-3. Run the compiled product from command line. The program, when run for the first time, shows workspace selection dialog. You just click "OK":
+3. Run the compiled product from command line. The program, when run for the first time, shows workspace selection dialog:
 
   ![IdeApp-1-run-1](images/IdeApp-1-run-1.png "IdeApp-1-run-1")
 
