@@ -43,6 +43,10 @@ In this tutorial we start from scratch and build Equinox app. Other tutorials ar
   **CHECK:** folder "tutorials/MyEquinoxApp/build/libs" contains file "MyEquinoxApp-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest and "plugin.xml".
 
   **CHECK:** There's one product in "tutorials/MyEquinoxApp/build/output" folder. It contains "MyEquinoxApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
+  
+4. Run the compiled product from command line. The expected output:
+   
+   ![EquinoxApp-1-run-1](images/EquinoxApp-1-run-1.png "EquinoxApp-1-run-1")
 
   **CHECK:** The product is runnable and prints "Hello, world! I am equinox application!" to the console.
 
