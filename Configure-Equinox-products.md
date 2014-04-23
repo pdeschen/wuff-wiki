@@ -1,4 +1,4 @@
-We already [created first Equinox app](Create-first-Equinox-app), now we can configure Equinox products.
+Previous page: [Create first Equinox app](Create-first-Equinox-app).
 
 1. Let's add product definitions to "build.gradle":
 
@@ -29,6 +29,6 @@ We already [created first Equinox app](Create-first-Equinox-app), now we can con
   **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
   If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
 
-The example code corresponding to this page is located in [tutorialExamples/EquinoxApp-2](../tree/master/tutorialExamples/EquinoxApp-2).
+The example code for this page: [tutorialExamples/EquinoxApp-2](../tree/master/tutorialExamples/EquinoxApp-2).
 
-Now we can move on to [Prepare Equinox app for multiproject build](Prepare-Equinox-app-for-multiproject-build).
+Next page: [Prepare Equinox app for multiproject build](Prepare-Equinox-app-for-multiproject-build).
