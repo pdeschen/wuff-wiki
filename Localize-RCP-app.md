@@ -36,7 +36,7 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
   }
   ```
 
-2. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/View.java", replace line `btnShowDialog.setText("Show dialog");` with `btnShowDialog.setText(Messages.getString("btnShowDialog_Label"));`, so that the file looks like this:
+3. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/View.java", replace line `btnShowDialog.setText("Show dialog");` with `btnShowDialog.setText(Messages.getString("btnShowDialog_Label"));`, so that the file looks like this:
 
   ```java
   package myrcpapp;
@@ -69,7 +69,7 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
     }
   }
   ```
-3. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/ApplicationWorkbenchWindowAdvisor.java", replace line `configurer.setTitle("Hello RCP");` with `configurer.setTitle(Messages.getString("WindowTitle"));`, so that the file looks like this:
+4. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/ApplicationWorkbenchWindowAdvisor.java", replace line `configurer.setTitle("Hello RCP");` with `configurer.setTitle(Messages.getString("WindowTitle"));`, so that the file looks like this:
 
   ```java
   package myrcpapp;
@@ -100,16 +100,50 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
   }
   ```
 
-4. Create folder "tutorials/MyRcpApp/src/main/resources/myrcpapp", create file "Messages.properties" in it, insert content:
+5. Create folder "tutorials/MyRcpApp/src/main/resources/myrcpapp", create file "Messages.properties" in it, insert content:
 
   ```
   WindowTitle=RCP application
   btnShowDialog_Label=Show dialog
   ```
 
-4. Create file "Messages_de.properties" in the same folder, insert content:
+6. Create file "Messages_de.properties" in the same folder, insert content:
 
   ```
   WindowTitle=RCP Anwendung
   btnShowDialog_Label=Dialogfenster anzeigen
+  ```
+
+7. Create file "tutorials/MyPlugin/src/main/java/myplugin/Messages.java", insert code:
+
+  ```java
+  package myplugin;
+
+  import java.util.Locale;
+  import java.util.ResourceBundle;
+
+  public class Messages {
+
+    private static ResourceBundle res = ResourceBundle.getBundle(Messages.class.getName(), Locale.getDefault());
+    
+    public static String getString(String key) {
+      return res.getString(key);
+    }  
+  }
+  ```
+
+8. Edit file "tutorials/MyPlugin/src/main/java/myplugin/HelloWorld.java", replace line `MessageDialog.openInformation(shell, "Information", "Hello, world!");` with `MessageDialog.openInformation(shell, Messages.getString("DialogTitle"), Messages.getString("DialogMessage"));`, so that the file looks like this:
+
+  ```java
+  package myplugin;
+
+  import org.eclipse.jface.dialogs.MessageDialog;
+  import org.eclipse.swt.widgets.Shell;
+
+  public class HelloWorld {
+
+    public static void showMessageDialog(Shell shell) {
+      MessageDialog.openInformation(shell, Messages.getString("DialogTitle"), Messages.getString("DialogMessage"));
+    }
+  }
   ```
