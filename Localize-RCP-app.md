@@ -56,3 +56,15 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
     }
   }
   ```
+
+3. Create folder "tutorials/MyRcpApp/src/main/resources/myrcpapp", create file "View.properties" in it, insert content:
+
+```
+btnShowDialog_Label=Show dialog
+```
+
+4. Create file "View_de.properties" in the same folder, insert content:
+
+```
+btnShowDialog_Label=Dialogfenster anzeigen
+```
