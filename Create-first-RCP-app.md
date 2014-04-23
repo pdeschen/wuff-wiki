@@ -1,3 +1,5 @@
+In this tutorial we start from scratch and build RCP app.
+
 1. Create folder "tutorials/MyRcpApp", create file "build.gradle" in it, insert code:
 
   ```groovy
