@@ -15,7 +15,8 @@ We already [created Eclipse bundle and used it in RCP app](Create-Eclipse-bundle
 4. Run the compiled product from command line. The expected output:
    
    ![RcpApp-5-run-1](images/RcpApp-5-run-1.png "RcpApp-5-run-1")
-   ![RcpApp-4-run-1](images/RcpApp-4-run-1.png "RcpApp-4-run-1")
+   
+   The program shows splash screen while starting. As soon as main window is shown, splash screen disappears.
 
 The example code for this page: [tutorialExamples/RcpApp-5](../tree/master/tutorialExamples/RcpApp-5).
 
