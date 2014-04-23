@@ -75,7 +75,15 @@ We already [prepared IDE app for multiproject build](Prepare-IDE-app-for-multipr
   **CHECK:** folder "tutorials/MyIdePlugin/build/libs" contains file "MyIdePlugin-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
 
   **CHECK:** Each product in "tutorials/MyIdeApp/build/output" contains "MyIdePlugin" and "MyIdeApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
-  
+
+7. Run the compiled product from command line. The program, when run for the first time, shows workspace selection dialog:
+
+  ![IdeApp-4-run-1](images/IdeApp-4-run-1.png "IdeApp-4-run-1")
+
+  Fully started program looks like Eclipse IDE with "Resource" perspective:
+
+  ![IdeApp-4-run-2](images/IdeApp-4-run-2.png "IdeApp-4-run-2")
+
 4. Run the compiled product from command line. Expect to see:
    
   ![IdeApp-4-run-1](images/IdeApp-4-run-1.png "IdeApp-4-run-1")
