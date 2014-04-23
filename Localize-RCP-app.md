@@ -100,17 +100,16 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
   }
   ```
 
-3. Create folder "tutorials/MyRcpApp/src/main/resources/myrcpapp", create file "View.properties" in it, insert content:
+4. Create folder "tutorials/MyRcpApp/src/main/resources/myrcpapp", create file "Messages.properties" in it, insert content:
 
-```
-btnShowDialog_Label=Show dialog
-```
+  ```
+  WindowTitle=RCP application
+  btnShowDialog_Label=Show dialog
+  ```
 
-4. Create file "View_de.properties" in the same folder, insert content:
+4. Create file "Messages_de.properties" in the same folder, insert content:
 
-```
-btnShowDialog_Label=Dialogfenster anzeigen
-```
-
-5. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/ApplicationWorkbenchWindowAdvisor.java", replace content with:
-
+  ```
+  WindowTitle=RCP Anwendung
+  btnShowDialog_Label=Dialogfenster anzeigen
+  ```
