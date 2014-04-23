@@ -32,8 +32,27 @@ We already [prepared IDE app for multiproject build](Prepare-IDE-app-for-multipr
     }
   }
   ```
+3. Create folder "tutorials/MyIdePlugin/src/main/resources/myideplugin", create file "plugin.xml" in it, insert code:
 
-3. Edit file "tutorials/settings.gradle", insert code:
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <?eclipse version="3.4"?>
+  <plugin>
+    <extension point="org.eclipse.ui.commands">
+      <command id="cmdHelloWorld" name="Show greeting" defaultHandler="myideplugin.MenuHandler">
+      </command>
+    </extension>
+    <extension point="org.eclipse.ui.menus">
+      <menuContribution allPopups="true" locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+        <menu id="MyMenu" label="My Menu">
+          <command commandId="cmdHelloWorld" style="push"/>
+        </menu>
+      </menuContribution>
+    </extension>
+  </plugin>
+  ```
+
+4. Edit file "tutorials/settings.gradle", insert code:
 
   ```groovy
   include 'MyIdePlugin'
