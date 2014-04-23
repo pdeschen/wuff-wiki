@@ -36,7 +36,7 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
   }
   ```
 
-2. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/View.java", replace line `btnShowDialog.setText("Show dialog");` with `btnShowDialog.setText(Messages.getString("btnShowDialog_Label"));`, so that file looks like this:
+2. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/View.java", replace line `btnShowDialog.setText("Show dialog");` with `btnShowDialog.setText(Messages.getString("btnShowDialog_Label"));`, so that the file looks like this:
 
   ```java
   package myrcpapp;
@@ -66,6 +66,36 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
 
     @Override
     public void setFocus() {
+    }
+  }
+  ```
+3. Edit file "tutorials/MyRcpApp/src/main/java/myrcpapp/ApplicationWorkbenchWindowAdvisor.java", replace line `configurer.setTitle("Hello RCP");` with `configurer.setTitle(Messages.getString("WindowTitle"));`, so that the file looks like this:
+
+  ```java
+  package myrcpapp;
+
+  import org.eclipse.swt.graphics.Point;
+  import org.eclipse.ui.application.ActionBarAdvisor;
+  import org.eclipse.ui.application.IActionBarConfigurer;
+  import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
+  import org.eclipse.ui.application.WorkbenchWindowAdvisor;
+
+  public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
+
+    public ApplicationWorkbenchWindowAdvisor(IWorkbenchWindowConfigurer configurer) {
+      super(configurer);
+    }
+
+    public ActionBarAdvisor createActionBarAdvisor(IActionBarConfigurer configurer) {
+      return new ApplicationActionBarAdvisor(configurer);
+    }
+    
+    public void preWindowOpen() {
+      IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
+      configurer.setInitialSize(new Point(400, 300));
+      configurer.setShowCoolBar(false);
+      configurer.setShowStatusLine(false);
+      configurer.setTitle(Messages.getString("WindowTitle"));
     }
   }
   ```
