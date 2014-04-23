@@ -1,4 +1,4 @@
-We already [configured Equinox products](Configure-Equinox-products), now we can prepare Equinox app for multiproject build.
+We already [configured Equinox products](Configure-Equinox-products). Now we prepare Equinox app for multiproject build.
 
 1. Create "build.gradle" in "tutorials" folder (parent of "MyRcpApp" folder) 
 
@@ -53,6 +53,6 @@ We already [configured Equinox products](Configure-Equinox-products), now we can
 
   **CHECK**: Build task generates products in "tutorials/MyEquinoxApp/build/output" folder.
 
-The example code corresponding to this page is located in [tutorialExamples/EquinoxApp-3](../tree/master/tutorialExamples/EquinoxApp-3).
+The example code for this page: [tutorialExamples/EquinoxApp-3](../tree/master/tutorialExamples/EquinoxApp-3).
 
-Now we can move on to [Create OSGi-bundle and use it in Equinox app](Create-OSGi-bundle-and-use-it-in-Equinox-app).
+Next page: [Create OSGi-bundle and use it in Equinox app](Create-OSGi-bundle-and-use-it-in-Equinox-app).
