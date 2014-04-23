@@ -12,18 +12,23 @@ We already [prepared IDE app for multiproject build](Prepare-IDE-app-for-multipr
   ```
   We add dependency on org.eclipse.core.commands because we are going to implement menu handler.
 
-2. Create folder "tutorials/MyIdePlugin/src/main/java/myideplugin", create file "HelloWorld.java" in it, insert code:
+2. Create folder "tutorials/MyIdePlugin/src/main/java/myideplugin", create file "MenuHandler.java" in it, insert code:
 
   ```java
   package myideplugin;
 
+  import org.eclipse.core.commands.AbstractHandler;
+  import org.eclipse.core.commands.ExecutionEvent;
+  import org.eclipse.core.commands.ExecutionException;
   import org.eclipse.jface.dialogs.MessageDialog;
-  import org.eclipse.swt.widgets.Shell;
+  import org.eclipse.ui.PlatformUI;
 
-  public class HelloWorld {
+  public final class MenuHandler extends AbstractHandler {
 
-    public static void showMessageDialog(Shell shell) {
-      MessageDialog.openQuestion(shell, "Information", "I am Eclipse plugin!");
+    @Override
+    public Object execute(ExecutionEvent event) throws ExecutionException {
+      MessageDialog.openQuestion(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell(), "Information", "Hello, world!");
+      return null;
     }
   }
   ```
