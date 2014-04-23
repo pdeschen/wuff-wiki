@@ -55,4 +55,4 @@ We already [configured IDE products](Configure-IDE-products). Now we prepare IDE
 
 The example code for this page: [tutorialExamples/IdeApp-3](../tree/master/tutorialExamples/IdeApp-3).
 
-Next page: [Create Eclipse bundle and use it in IDE app](Create-Eclipse-bundle-and-use-it-in-IDE-app).
+Next page: [Create IDE bundle and use it in IDE app](Create-IDE-bundle-and-use-it-in-IDE-app).
