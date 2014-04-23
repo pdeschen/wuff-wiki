@@ -1,4 +1,4 @@
-Provided that we already [prepared Equinox app for multiproject build](Prepare-Equinox-app-for-multiproject-build), we can now create OSGi-bundle and use it in Equinox app.
+We already [prepared Equinox app for multiproject build](Prepare-Equinox-app-for-multiproject-build). Now we create OSGi-bundle and use it in Equinox app.
 
 1. Create folder "tutorials/MyBundle", create file "build.gradle" in it, insert code:
 
@@ -72,6 +72,6 @@ Provided that we already [prepared Equinox app for multiproject build](Prepare-E
 
   **CHECK:** The product matching your OS/architecture is runnable. Upon run, it prints "Hello, world!" to the console.
 
-The example code corresponding to this page is located in [tutorialExamples/EquinoxApp-4](../tree/master/tutorialExamples/EquinoxApp-4).
+The example code for this page: [tutorialExamples/EquinoxApp-4](../tree/master/tutorialExamples/EquinoxApp-4).
 
-Now we can move on to [create first RCP app](Create-first-RCP-app).
+Next page: [Create first RCP app](Create-first-RCP-app).
