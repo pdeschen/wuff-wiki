@@ -1,4 +1,4 @@
-Provided that we already created our [first Equinox app](Create-first-Equinox-app), we can now configure Equinox products.
+We already [created first Equinox app](Create-first-Equinox-app), now we can configure Equinox products.
 
 1. Let's add product definitions to "build.gradle":
 
