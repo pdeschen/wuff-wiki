@@ -49,6 +49,6 @@ In this tutorial we start from scratch and build RCP app. Other tutorials are av
 
   Note that you don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
 
-The example code corresponding to this page is located in [tutorialExamples/RcpApp-1](../tree/master/tutorialExamples/RcpApp-1).
+The example code for this page: [tutorialExamples/RcpApp-1](../tree/master/tutorialExamples/RcpApp-1).
 
-Now we can move on to [Configure RCP products](Configure-RCP-products).
+Next page: [Configure RCP products](Configure-RCP-products).
