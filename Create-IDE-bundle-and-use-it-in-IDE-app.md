@@ -27,7 +27,7 @@ We already [prepared IDE app for multiproject build](Prepare-IDE-app-for-multipr
 
     @Override
     public Object execute(ExecutionEvent event) throws ExecutionException {
-      MessageDialog.openQuestion(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell(), "Information", "Hello, world!");
+      MessageDialog.openInformation(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell(), "Information", "Hello, world!");
       return null;
     }
   }
@@ -59,45 +59,11 @@ We already [prepared IDE app for multiproject build](Prepare-IDE-app-for-multipr
   ```
   so that there are two includes - "MyIdeApp" and "MyIdePlugin".
 
-4. Edit file "tutorials/MyIdeApp/build.gradle", insert code:
+5. Edit file "tutorials/MyIdeApp/build.gradle", insert code:
 
   ```groovy
   dependencies {
     compile project(':MyIdePlugin')
-  }
-  ```
-
-5. Edit file "tutorials/MyIdeApp/src/main/java/myideapp/View.java", replace content with:
-
-  ```groovy
-  package myideapp;
-
-  import org.eclipse.swt.SWT;
-  import org.eclipse.swt.widgets.Composite;
-  import org.eclipse.swt.events.SelectionAdapter;
-  import org.eclipse.swt.events.SelectionEvent;
-  import org.eclipse.swt.layout.RowLayout;
-  import org.eclipse.swt.widgets.Button;
-  import org.eclipse.ui.part.ViewPart;
-
-  public class View extends ViewPart {
-
-    @Override
-    public void createPartControl(final Composite parent) {
-      parent.setLayout(new RowLayout());
-      Button btnShowDialog = new Button(parent, SWT.PUSH);
-      btnShowDialog.setText("Show dialog");
-      btnShowDialog.addSelectionListener(new SelectionAdapter() {
-        @Override
-        public void widgetSelected(SelectionEvent event) {
-          myideplugin.HelloWorld.showMessageDialog(parent.getShell());
-        }
-      });
-    }
-
-    @Override
-    public void setFocus() {
-    }
   }
   ```
 
