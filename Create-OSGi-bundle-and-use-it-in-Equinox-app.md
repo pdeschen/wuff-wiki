@@ -70,7 +70,9 @@ We already [prepared Equinox app for multiproject build](Prepare-Equinox-app-for
 
   **CHECK:** Each product in "tutorials/MyEquinoxApp/build/output" contains "MyBundle" and "MyEquinoxApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
 
-  **CHECK:** Each generated product is runnable on corresponding OS and architecture. Upon run, it prints "Hello, world!" to the console.
+7. Run the compiled product from command line. The expected output:
+
+   ![EquinoxApp-4-run-1](images/EquinoxApp-4-run-1.png "EquinoxApp-4-run-1")
 
 The example code for this page: [tutorialExamples/EquinoxApp-4](../tree/master/tutorialExamples/EquinoxApp-4).
 
