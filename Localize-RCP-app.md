@@ -198,3 +198,5 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
   ![RcpApp-7-run-2](images/RcpApp-7-run-2.png "RcpApp-7-run-2")
 
 The example code for this page: [tutorialExamples/RcpApp-7](../tree/master/tutorialExamples/RcpApp-7).
+
+Now we are done with RCP tutorial. Other tutorials are available [here](Tutorials).
