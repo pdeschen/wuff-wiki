@@ -10,9 +10,12 @@ We already [created Eclipse bundle and used it in RCP app](Create-Eclipse-bundle
 gradle build
 ```
 
-**CHECK**: When you run the product, it shows splash screen before the main window is fully opened.
-
 Note that you don't have to configure splash screen in configuration files - wuff does this for you automatically.
+  
+4. Run the compiled product from command line. The expected output:
+   
+   ![RcpApp-5-run-1](images/RcpApp-5-run-1.png "RcpApp-5-run-1")
+   ![RcpApp-4-run-1](images/RcpApp-4-run-1.png "RcpApp-4-run-1")
 
 The example code for this page: [tutorialExamples/RcpApp-5](../tree/master/tutorialExamples/RcpApp-5).
 
