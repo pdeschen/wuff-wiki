@@ -80,8 +80,10 @@ We already [prepared RCP app for multiproject build](Prepare-RCP-app-for-multipr
   **CHECK:** folder "tutorials/MyPlugin/build/libs" contains file "MyPlugin-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
 
   **CHECK:** Each product in "tutorials/MyRcpApp/build/output" contains "MyPlugin" and "MyRcpApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
-
-  **CHECK:** The product matching your OS/architecture is runnable. Upon run, it shows window with title "Hello, RCP" and with button "Show dialog". When you click the button, the program shows modal dialog with text "Hello, world!".
+  
+4. Run the compiled product from command line. The expected output:
+   
+   ![RcpApp-4-run-1](images/RcpApp-4-run-1.png "RcpApp-4-run-1")
 
 The example code for this page: [tutorialExamples/RcpApp-4](../tree/master/tutorialExamples/RcpApp-4).
 
