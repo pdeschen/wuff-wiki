@@ -16,6 +16,7 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 - [Prepare RCP app for multiproject build](Prepare-RCP-app-for-multiproject-build)
 - [Create Eclipse bundle and use it in RCP app](Create-Eclipse-bundle-and-use-it-in-RCP-app)
 - [Add splash to RCP app](Add-splash-to-RCP-app)
+- [Add intro page to RCP app](Add-intro-page-to-RCP-app)
 
 ### Eclipse IDE
 
