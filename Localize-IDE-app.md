@@ -84,7 +84,7 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   ```
   btnShowDialog_Label=Dialogfenster anzeigen
   dialogTitle=Meldung
-  dialogMessage=Es gibt kein L\u00f6ffel
+  dialogMessage=Es gibt kein Löffel
   ```
 
 7. Create file "tutorials/MyPlugin/src/main/java/myplugin/Messages.java", insert code:
