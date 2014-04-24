@@ -81,7 +81,7 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
   </plugin>
   ```
 
-  then do "gradle clean build" and start product. Now perspective has proper label:
+  then do "gradle clean build" and start the product. Now perspective has proper label:
 
   ![IdeApp-5-run-3](images/IdeApp-5-run-3.png "IdeApp-5-run-3")
 
