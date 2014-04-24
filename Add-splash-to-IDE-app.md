@@ -1,4 +1,4 @@
-We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use-it-in-IDE-app). Now we add splash screen to the IDE app.
+We already [added perspective and view to IDE app](Add-perspective-and-view-to-IDE-app). Now we add splash screen to the IDE app.
 
 1. Download or create some bmp-file with bit depth 8 or 24 (not 32). Name it "splash.bmp".
 
