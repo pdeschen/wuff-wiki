@@ -46,7 +46,7 @@ In this tutorial we start from scratch and build Equinox app. Other tutorials ar
 
   **Attention:** first wuff build might be slow, because wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
 
-  Note that you don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
+  Note that we don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
   
 4. Run the compiled product from command line. The expected output:
    
