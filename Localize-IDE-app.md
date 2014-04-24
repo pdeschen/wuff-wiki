@@ -87,10 +87,10 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   dialogMessage=Es gibt kein Löffel
   ```
 
-7. Create file "tutorials/MyPlugin/src/main/java/myplugin/Messages.java", insert code:
+7. Create file "tutorials/MyIdePlugin/src/main/java/myideplugin/Messages.java", insert code:
 
   ```java
-  package myplugin;
+  package myideplugin;
 
   import java.util.Locale;
   import java.util.ResourceBundle;
@@ -105,23 +105,29 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   }
   ```
 
-8. Edit file "tutorials/MyPlugin/src/main/java/myplugin/HelloWorld.java", replace line `MessageDialog.openInformation(shell, "Information", "Hello, world!");` with `MessageDialog.openInformation(shell, Messages.getString("DialogTitle"), Messages.getString("DialogMessage"));`, so that the file looks like this:
+8. Edit file "tutorials/MyIdePlugin/src/main/java/myideplugin/MenuHandler.java", replace literal strings with `Messages.getString` calls, so that the file looks like this:
 
   ```java
-  package myplugin;
+  package myideplugin;
 
+  import org.eclipse.core.commands.AbstractHandler;
+  import org.eclipse.core.commands.ExecutionEvent;
+  import org.eclipse.core.commands.ExecutionException;
   import org.eclipse.jface.dialogs.MessageDialog;
-  import org.eclipse.swt.widgets.Shell;
+  import org.eclipse.ui.PlatformUI;
 
-  public class HelloWorld {
+  public final class MenuHandler extends AbstractHandler {
 
-    public static void showMessageDialog(Shell shell) {
-      MessageDialog.openInformation(shell, Messages.getString("DialogTitle"), Messages.getString("DialogMessage"));
+    @Override
+    public Object execute(ExecutionEvent event) throws ExecutionException {
+      MessageDialog.openInformation(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell(), 
+        Messages.getString("dialogTitle"), Messages.getString("dialogMessage"));
+      return null;
     }
   }
   ```
 
-9. Create folder "tutorials/MyPlugin/src/main/resources/myplugin", create file "Messages.properties" in it, insert content:
+9. Create folder "tutorials/MyIdePlugin/src/main/resources/myideplugin", create file "Messages.properties" in it, insert content:
 
   ```
   DialogTitle=Message
