@@ -4,25 +4,17 @@ We already [added perspective and view to IDE app](Add-perspective-and-view-to-I
 
 2. Create folder "tutorials/MyIdeApp/src/main/resources", copy splash file into it.
 
-3. Invoke on command line in "tutorials" folder:
+3. Invoke on command line in "tutorials/MyIdeApp" folder:
 
   ```shell
   gradle build
   ```
 
-  Note that you don't have to configure splash screen in configuration files - wuff does this for you automatically.
+  Note that we don't have to configure splash screen in configuration files - wuff does this for us automatically.
   
 4. Run the compiled product from command line. The program shows splash screen while starting:
 
-  ![IdeApp-5-run-1](images/IdeApp-5-run-1.png "IdeApp-5-run-1")
-   
-  The program, when run for the first time, shows workspace selection dialog:
-
-  ![IdeApp-5-run-2](images/IdeApp-5-run-2.png "IdeApp-5-run-2")
-
-  As soon as main window is shown, splash screen disappears and default perspective is shown:
-
-  ![IdeApp-5-run-3](images/IdeApp-5-run-3.png "IdeApp-5-run-3")
+  ![IdeApp-6-run-1](images/IdeApp-6-run-1.png "IdeApp-6-run-1")
 
 The example code for this page: [tutorialExamples/IdeApp-5](../tree/master/tutorialExamples/IdeApp-5).
 
