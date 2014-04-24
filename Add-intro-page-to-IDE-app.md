@@ -37,15 +37,15 @@ We already [added splash to IDE app](Add-splash-to-IDE-app). Now we add intro pa
   gradle build
   ```
   
-  Note that you don't have to configure intro page in configuration files - wuff does this for you automatically.
+  Note that we don't have to configure intro page in configuration files - wuff does this for us automatically. Concretely, when Wuff sees that file "src/main/resources/intro/welcome.html" exists, it decides to generate corresponding "introContent.xml" and extension-point in "plugin.xml".
 
 4. Run the compiled product from command line. When the program is started for the first time, it displays intro page:
 
   ![IdeApp-7-run-1](images/IdeApp-7-run-1.png)
   
-  Note that intro page is filtered with groovy.text.SimpleTemplateEngine, so you can render arbitrary content on intro page with the help of java and groovy functions.
+  Note that intro page is filtered with groovy.text.SimpleTemplateEngine, so we can render arbitrary content on intro page with the help of java and groovy functions.
 
-  As soon as you close intro page, you see the default perspective:
+  As soon as we close intro page, we see the default perspective:
 
   ![IdeApp-7-run-2](images/IdeApp-7-run-2.png)
 
