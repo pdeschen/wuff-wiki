@@ -27,7 +27,7 @@ We already [created first RCP app](Create-first-RCP-app). Now we configure RCP p
   **CHECK:** Each generated product is runnable on corresponding OS and architecture.
 
   **Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
-  If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
+  Linux product won't start on Windows. 64-bit product won't start on 32-bit JRE.
 
 The example code for this page: [tutorialExamples/RcpApp-2](../tree/master/tutorialExamples/RcpApp-2).
 
