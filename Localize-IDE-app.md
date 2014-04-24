@@ -151,7 +151,7 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
 
   ```
   mnuMyMenu.title=Mein Menü
-  cmdHelloWorld.title=Begrüßung
+  cmdHelloWorld.title=begrüßen
   ```
 
 12. Edit file "tutorials/MyIdePlugin/src/main/resources/plugin.xml", replace literal strings with percent-preceded variables, so that file looks like this:
