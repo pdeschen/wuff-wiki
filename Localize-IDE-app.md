@@ -79,7 +79,7 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   dialogMessage=There is no spoon
   ```
 
-6. Create file "Messages_de.properties" in the same folder, insert content:
+5. Create file "Messages_de.properties" in the same folder, insert content:
 
   ```
   btnShowDialog_Label=Dialogfenster anzeigen
@@ -87,7 +87,7 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   dialogMessage=Es gibt kein Löffel
   ```
 
-7. Create file "tutorials/MyIdePlugin/src/main/java/myideplugin/Messages.java", insert code:
+6. Create file "tutorials/MyIdePlugin/src/main/java/myideplugin/Messages.java", insert code:
 
   ```java
   package myideplugin;
@@ -105,7 +105,7 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   }
   ```
 
-8. Edit file "tutorials/MyIdePlugin/src/main/java/myideplugin/MenuHandler.java", replace literal strings with `Messages.getString` calls, so that the file looks like this:
+7. Edit file "tutorials/MyIdePlugin/src/main/java/myideplugin/MenuHandler.java", replace literal strings with `Messages.getString` calls, so that the file looks like this:
 
   ```java
   package myideplugin;
@@ -127,18 +127,22 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   }
   ```
 
-9. Create folder "tutorials/MyIdePlugin/src/main/resources/myideplugin", create file "Messages.properties" in it, insert content:
+8. Create folder "tutorials/MyIdePlugin/src/main/resources/myideplugin", create file "Messages.properties" in it, insert content:
 
   ```
   dialogTitle=Message
   dialogMessage=Hello, world!
   ```
 
-10. Create file "Messages_de.properties" in the same folder, insert content:
+9. Create file "Messages_de.properties" in the same folder, insert content:
 
   ```
   dialogTitle=Meldung
   dialogMessage=Hallo, Welt!
+  ```
+10. Create folder "tutorials/MyIdePlugin/src/main/resources/OSGI-INF/l10n", create file "bundle.properties" in it, insert text:
+
+  ```
   ```
 
 11. Create folder "tutorials/MyIdeApp/src/main/resources/nl/de/intro", then copy all files from "tutorials/MyIdeApp/src/main/resources/intro" into it.
