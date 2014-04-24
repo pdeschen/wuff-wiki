@@ -130,15 +130,15 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
 9. Create folder "tutorials/MyIdePlugin/src/main/resources/myideplugin", create file "Messages.properties" in it, insert content:
 
   ```
-  DialogTitle=Message
-  DialogMessage=Hello, world!
+  dialogTitle=Message
+  dialogMessage=Hello, world!
   ```
 
 10. Create file "Messages_de.properties" in the same folder, insert content:
 
   ```
-  DialogTitle=Meldung
-  DialogMessage=Hallo, Welt!
+  dialogTitle=Meldung
+  dialogMessage=Hallo, Welt!
   ```
 
 11. Create folder "tutorials/MyIdeApp/src/main/resources/nl/de/intro", then copy all files from "tutorials/MyIdeApp/src/main/resources/intro" into it.
