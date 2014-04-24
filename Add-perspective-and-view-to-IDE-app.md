@@ -80,3 +80,7 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
     </extension>
   </plugin>
   ```
+
+  then do "gradle clean build" and start product:
+
+  ![IdeApp-5-run-3](images/IdeApp-5-run-3.png "IdeApp-5-run-3")
