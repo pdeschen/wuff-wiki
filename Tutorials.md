@@ -28,3 +28,4 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 - [Add perspective and view to IDE app](Add-perspective-and-view-to-IDE-app)
 - [Add splash to IDE app](Add-splash-to-IDE-app)
 - [Add intro page to IDE app](Add-intro-page-to-IDE-app)
+- [Localize IDE app](Localize-IDE-app)
