@@ -27,4 +27,25 @@ Lets inspect how default manifest looks like.
   }
   ```
 
+2. Invoke on command line:
+
+  ```shell
+  gradle build
+  ```
+
+3. Open file "tutorials/MyOsgiPlugin/build/libs/MyOsgiPlugin-1.0.0.0.jar", open "META-INF/MANIFEST.MF", it should contain something like this:
+
+  ```
+  Manifest-Version: 1.0
+  Bundle-SymbolicName: MyOsgiPlugin
+  Bundle-Version: 1.0.0.0
+  Bundle-Name: MyOsgiPlugin
+  Require-Bundle: org.eclipse.osgi
+  Bundle-ManifestVersion: 2
+  Bnd-LastModified: 1398375756000
+  Created-By: 1.8.0_05 (Oracle Corporation)
+  Tool: Bnd-2.1.0.20130426-122213
+  Bundle-Classpath: .
+  ```
+
 [1]: In Wuff context OSGi-bundle is a gradle project with one of the plugins applied: "eclipse-bundle", "eclipse-equinox-app", "eclipse-ide-app", "eclipse-ide-bundle", "eclipse-rcp-app", "osgi-bundle".
