@@ -69,4 +69,14 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
 
   ![IdeApp-5-run-2](images/IdeApp-5-run-2.png "IdeApp-5-run-2")
 
-5. You see on the perspective button: "MyIdeApp Perspective". Wuff generated this label for you automatically. Let's rename the perspective to something else, for example, to "la vista".
+5. You see on the perspective button: "MyIdeApp Perspective". Wuff generated this label for you automatically. Let's rename the perspective to something else, for example, to "la vista". Create file "tutorials/MyIdeApp/src/main/resources/plugin.xml", insert code:
+
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <?eclipse version="3.4"?>
+  <plugin>
+    <extension point="org.eclipse.ui.perspectives">
+      <perspective id="MyIdeApp.VistaPerspective" name="la vista" class="myideapp.Perspective"/>
+    </extension>
+  </plugin>
+  ```
