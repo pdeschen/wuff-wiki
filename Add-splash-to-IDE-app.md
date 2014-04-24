@@ -14,8 +14,8 @@ We already [added perspective and view to IDE app](Add-perspective-and-view-to-I
   
 4. Run the compiled product from command line. The program shows splash screen while starting:
 
-  ![IdeApp-6-run-1](images/IdeApp-6-run-1.png "IdeApp-6-run-1")
+  ![IdeApp-6-run-1](images/IdeApp-6-run-1.png)
 
-The example code for this page: [tutorialExamples/IdeApp-5](../tree/master/tutorialExamples/IdeApp-5).
+The example code for this page: [tutorialExamples/IdeApp-6](../tree/master/tutorialExamples/IdeApp-6).
 
 Next page: [Add intro page to IDE app](Add-intro-page-to-IDE-app).
