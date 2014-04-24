@@ -57,9 +57,9 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
   gradle clean build
   ```
 
-  **Hint:** "clean" is needed only once, as soon as you introduced view or perspective. This way you remove cached information on IDE layout, that is stored in "configuration" subfolder of compiled product. Consequent builds can be done without "clean".
+  **Hint:** "clean" is needed only once, as soon as we introduced view or perspective. This way we remove cached information on IDE layout, that is stored in "configuration" subfolder of compiled product. Consequent builds can be done without "clean".
 
-  Note that you don't have to configure view and perspective in "plugin.xml": Wuff does this for you automatically.
+  Note that we don't have to configure view and perspective in "plugin.xml": Wuff does this automatically. More concretely: when Wuff recognizes that an application contains only one perspective and one view, it decides, that the perspective should open on startup and contain exactly this one view.
 
 4. Run the compiled product from command line. As soon as program is fully started, you see new perspective and view with button:
 
@@ -81,6 +81,8 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
   </plugin>
   ```
 
-  then do "gradle clean build" and start product:
+  then do "gradle clean build" and start product. Now perspective has proper label:
 
   ![IdeApp-5-run-3](images/IdeApp-5-run-3.png "IdeApp-5-run-3")
+
+  When Wuff recognizes, that we provided one perspective and that application contains only one view, it decides to link perspective to this view. If you need more complex perspective, containing more views, you'll have to program it via "org.eclipse.ui.perspectiveExtensions" extension point.
