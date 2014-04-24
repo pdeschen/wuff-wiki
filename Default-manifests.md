@@ -47,5 +47,11 @@ Lets inspect how default manifest looks like.
   Tool: Bnd-2.1.0.20130426-122213
   Bundle-Classpath: .
   ```
+  
+  This is how it is generated:
+
+  - Bundle-SymbolicName and Bundle-Name are assigned to project name
+  - Bundle-Version is assigned to default value "1.0.0.0" (because we did not specify project version in "build.gradle").
+  - Require-Bundle is assigned to "org.eclipse.osgi" becau
 
 [1]: In Wuff context OSGi-bundle is a gradle project with one of the plugins applied: "eclipse-bundle", "eclipse-equinox-app", "eclipse-ide-app", "eclipse-ide-bundle", "eclipse-rcp-app", "osgi-bundle".
