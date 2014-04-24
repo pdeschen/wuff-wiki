@@ -1,0 +1,1 @@
+We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we will localize IDE app.
