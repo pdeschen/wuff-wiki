@@ -86,3 +86,7 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
   ![IdeApp-5-run-3](images/IdeApp-5-run-3.png "IdeApp-5-run-3")
 
   When Wuff recognizes, that we provided one perspective and that application contains only one view, it decides to link perspective to this view. If you need more complex perspective, containing more views, you'll have to program it via "org.eclipse.ui.perspectiveExtensions" extension point.
+
+The example code for this page: [tutorialExamples/IdeApp-5](../tree/master/tutorialExamples/IdeApp-5).
+
+Next page: [Add splash to IDE app](Add-splash-to-IDE-app).
