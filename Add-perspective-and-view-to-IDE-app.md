@@ -68,3 +68,5 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
   When you click the button, the program shows message dialog:
 
   ![IdeApp-5-run-2](images/IdeApp-5-run-2.png "IdeApp-5-run-2")
+
+5. You see on the perspective button: "MyIdeApp Perspective". Wuff generated this label for you automatically. Let's rename the perspective to something else, for example, to "la vista".
