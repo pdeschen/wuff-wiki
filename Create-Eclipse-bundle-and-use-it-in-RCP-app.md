@@ -85,7 +85,7 @@ We already [prepared RCP app for multiproject build](Prepare-RCP-app-for-multipr
    
   ![RcpApp-4-run-1](images/RcpApp-4-run-1.png "RcpApp-4-run-1")
 
-  When you click on "Show dialog" button, the program shows message dialog:
+  When we click on "Show dialog" button, the program shows message dialog:
 
   ![RcpApp-4-run-2](images/RcpApp-4-run-2.png "RcpApp-4-run-2")
 
