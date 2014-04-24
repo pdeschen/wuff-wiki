@@ -70,49 +70,21 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
     }
   }
   ```
-4. Edit file "tutorials/MyIdeApp/src/main/java/myideapp/ApplicationWorkbenchWindowAdvisor.java", replace line `configurer.setTitle("Hello IDE");` with `configurer.setTitle(Messages.getString("WindowTitle"));`, so that the file looks like this:
 
-  ```java
-  package myideapp;
-
-  import org.eclipse.swt.graphics.Point;
-  import org.eclipse.ui.application.ActionBarAdvisor;
-  import org.eclipse.ui.application.IActionBarConfigurer;
-  import org.eclipse.ui.application.IWorkbenchWindowConfigurer;
-  import org.eclipse.ui.application.WorkbenchWindowAdvisor;
-
-  public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
-
-    public ApplicationWorkbenchWindowAdvisor(IWorkbenchWindowConfigurer configurer) {
-      super(configurer);
-    }
-
-    public ActionBarAdvisor createActionBarAdvisor(IActionBarConfigurer configurer) {
-      return new ApplicationActionBarAdvisor(configurer);
-    }
-    
-    public void preWindowOpen() {
-      IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
-      configurer.setInitialSize(new Point(400, 300));
-      configurer.setShowCoolBar(false);
-      configurer.setShowStatusLine(false);
-      configurer.setTitle(Messages.getString("WindowTitle"));
-    }
-  }
-  ```
-
-5. Create folder "tutorials/MyIdeApp/src/main/resources/myideapp", create file "Messages.properties" in it, insert content:
+4. Create folder "tutorials/MyIdeApp/src/main/resources/myideapp", create file "Messages.properties" in it, insert content:
 
   ```
-  WindowTitle=IDE application
   btnShowDialog_Label=Show dialog
+  dialogTitle=Message
+  dialogMessage=There is no spoon
   ```
 
 6. Create file "Messages_de.properties" in the same folder, insert content:
 
   ```
-  WindowTitle=IDE Anwendung
   btnShowDialog_Label=Dialogfenster anzeigen
+  dialogTitle=Meldung
+  dialogMessage=Es gibt kein L\u00f6ffel
   ```
 
 7. Create file "tutorials/MyPlugin/src/main/java/myplugin/Messages.java", insert code:
