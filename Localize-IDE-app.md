@@ -36,11 +36,12 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   }
   ```
 
-3. Edit file "tutorials/MyIdeApp/src/main/java/myideapp/View.java", replace line `btnShowDialog.setText("Show dialog");` with `btnShowDialog.setText(Messages.getString("btnShowDialog_Label"));`, so that the file looks like this:
+3. Edit file "tutorials/MyIdeApp/src/main/java/myideapp/View.java", replace literal strings with `Messages.getString` calls, so that the file looks like this:
 
   ```java
   package myideapp;
 
+  import org.eclipse.jface.dialogs.MessageDialog;
   import org.eclipse.swt.SWT;
   import org.eclipse.swt.widgets.Composite;
   import org.eclipse.swt.events.SelectionAdapter;
@@ -59,7 +60,7 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
       btnShowDialog.addSelectionListener(new SelectionAdapter() {
         @Override
         public void widgetSelected(SelectionEvent event) {
-          myplugin.HelloWorld.showMessageDialog(parent.getShell());
+          MessageDialog.openInformation(parent.getShell(), Messages.getString("dialogTitle"), Messages.getString("dialogMessage"));
         }
       });
     }
