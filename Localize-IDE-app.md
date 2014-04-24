@@ -140,14 +140,43 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   dialogTitle=Meldung
   dialogMessage=Hallo, Welt!
   ```
+
 10. Create folder "tutorials/MyIdePlugin/src/main/resources/OSGI-INF/l10n", create file "bundle.properties" in it, insert text:
 
   ```
+  mnuMyMenu.title=My Menu
+  cmdHelloWorld.title=Show greeting
+  ```
+11. Create file "bundle_de.properties" in the same folder, insert text:
+
+  ```
+  mnuMyMenu.title=Mein Menü
+  cmdHelloWorld.title=begrüßen
   ```
 
-11. Create folder "tutorials/MyIdeApp/src/main/resources/nl/de/intro", then copy all files from "tutorials/MyIdeApp/src/main/resources/intro" into it.
+12. Edit file "tutorials/MyIdePlugin/src/main/resources/plugin.xml", replace literal strings with percent-preceded variables, so that file looks like this:
 
-12. Edit file "tutorials/MyIdeApp/src/main/resources/nl/de/intro/welcome.html", replace content with:
+  ```xml
+  <?xml version="1.0" encoding="UTF-8"?>
+  <?eclipse version="3.4"?>
+  <plugin>
+    <extension point="org.eclipse.ui.commands">
+      <command id="cmdHelloWorld" name="%cmdHelloWorld.title" defaultHandler="myideplugin.MenuHandler">
+      </command>
+    </extension>
+    <extension point="org.eclipse.ui.menus">
+      <menuContribution allPopups="true" locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+        <menu id="MyMenu" label="%mnuMyMenu.title">
+          <command commandId="cmdHelloWorld" style="push"/>
+        </menu>
+      </menuContribution>
+    </extension>
+  </plugin>
+  ```
+
+13. Create folder "tutorials/MyIdeApp/src/main/resources/nl/de/intro", then copy all files from "tutorials/MyIdeApp/src/main/resources/intro" into it.
+
+14. Edit file "tutorials/MyIdeApp/src/main/resources/nl/de/intro/welcome.html", replace content with:
 
   ```html
   <html>
@@ -164,15 +193,15 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   </html>
   ```
 
-13. Invoke on command line in "tutorials" folder:
+15. Invoke on command line in "tutorials" folder:
 
   ```shell
   gradle build
   ```
 
-14. Run the German-language product from command line. When the program is started for the first time, it displays intro page:
+16. Run the German-language product from command line. When the program is started for the first time, it displays intro page:
 
-  ![IdeApp-7-run-1](images/IdeApp-7-run-1.png "IdeApp-7-run-1")
+  ![IdeApp-8-run-1](images/IdeApp-8-run-1.png)
 
   Note that localized intro page is also filtered with groovy.text.SimpleTemplateEngine, so we can render arbitrary content on intro page with the help of java and groovy functions.
 
