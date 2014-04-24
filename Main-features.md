@@ -10,3 +10,5 @@ Wuff does the following for you:
 - wraps non-OSGi dependencies into OSGi-bundles.
 
 Every wuff feature is highly automated yet configurable.
+
+Ready for [tutorials](Tutorials)?
