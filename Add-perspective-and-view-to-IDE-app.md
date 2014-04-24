@@ -60,3 +60,9 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
   **Hint:** "clean" is needed only once, as soon as you introduced view or perspective. This way you remove cached information on IDE layout, that is stored in "configuration" subfolder of compiled product. Consequent builds can be done without "clean".
 
 4. Run the compiled product from command line. As soon as program is fully started, you see new perspective and view with button:
+
+  ![IdeApp-7-run-1](images/IdeApp-7-run-1.png "IdeApp-7-run-1")
+
+  When you click the button, the program shows message dialog:
+
+  ![IdeApp-7-run-2](images/IdeApp-7-run-2.png "IdeApp-7-run-2")
