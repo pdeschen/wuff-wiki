@@ -10,19 +10,11 @@ We already [created Eclipse bundle and used it in RCP app](Create-Eclipse-bundle
   gradle build
   ```
 
-  Note that you don't have to configure splash screen in configuration files - wuff does this for you automatically.
+  Note that we don't have to configure splash screen in configuration files - wuff does this for us automatically.
   
 4. Run the compiled product from command line. The program shows splash screen while starting:
 
   ![RcpApp-5-run-1](images/RcpApp-5-run-1.png "RcpApp-5-run-1")
-   
-  As soon as main window is shown, splash screen disappears and default perspective is shown:
-
-  ![RcpApp-5-run-2](images/RcpApp-5-run-2.png "RcpApp-5-run-2")
-
-  When you click on "Show dialog" button, the program shows message dialog:
-
-  ![RcpApp-5-run-3](images/RcpApp-5-run-3.png "RcpApp-5-run-3")
 
 The example code for this page: [tutorialExamples/RcpApp-5](../tree/master/tutorialExamples/RcpApp-5).
 
