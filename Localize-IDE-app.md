@@ -199,20 +199,24 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   gradle build
   ```
 
-16. Run the German-language product from command line. When the program is started for the first time, it displays intro page:
+16. Run the German-language product from command line. First of all, we see that workspace selection dialog is now localized:
 
   ![IdeApp-8-run-1](images/IdeApp-8-run-1.png)
 
+  When program is started for the first time, it shows localized intro page:
+  
+  ![IdeApp-8-run-2](images/IdeApp-8-run-2.png)
+
   Note that localized intro page is also filtered with groovy.text.SimpleTemplateEngine, so we can render arbitrary content on intro page with the help of java and groovy functions.
 
-  As soon as we close intro page, we see the default perspective with button. The button has localized text:
+  As soon as we close intro page, we see the default perspective with button and menu. All labels are localized:
 
-  ![IdeApp-7-run-2](images/IdeApp-7-run-2.png "IdeApp-7-run-2")
+  ![IdeApp-8-run-3](images/IdeApp-8-run-3.png)
 
-  When we click the button, the program displays localized message:
+  When we click the button or invoke our menu, the program displays localized message:
 
-  ![IdeApp-7-run-3](images/IdeApp-7-run-3.png "IdeApp-7-run-3")
+  ![IdeApp-8-run-4](images/IdeApp-8-run-4.png)
 
-The example code for this page: [tutorialExamples/IdeApp-7](../tree/master/tutorialExamples/IdeApp-7).
+The example code for this page: [tutorialExamples/IdeApp-8](../tree/master/tutorialExamples/IdeApp-8).
 
 Now we are done with IDE tutorial. Other tutorials are available [here](Tutorials).
