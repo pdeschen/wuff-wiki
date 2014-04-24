@@ -86,4 +86,4 @@ We already [prepared IDE app for multiproject build](Prepare-IDE-app-for-multipr
 
 The example code for this page: [tutorialExamples/IdeApp-4](../tree/master/tutorialExamples/IdeApp-4).
 
-Next page: [add splash to IDE app](Add-splash-to-IDE-app).
+Next page: [add perspective and view to IDE app](Add-perspective-and-view-to-IDE-app).
