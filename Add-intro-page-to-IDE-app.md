@@ -41,14 +41,14 @@ We already [added splash to IDE app](Add-splash-to-IDE-app). Now we add intro pa
 
 4. Run the compiled product from command line. When the program is started for the first time, it displays intro page:
 
-  ![IdeApp-6-run-1](images/IdeApp-6-run-1.png "IdeApp-6-run-1")
+  ![IdeApp-7-run-1](images/IdeApp-7-run-1.png)
   
   Note that intro page is filtered with groovy.text.SimpleTemplateEngine, so you can render arbitrary content on intro page with the help of java and groovy functions.
 
   As soon as you close intro page, you see the default perspective:
 
-  ![IdeApp-6-run-2](images/IdeApp-6-run-2.png "IdeApp-6-run-2")
+  ![IdeApp-7-run-2](images/IdeApp-7-run-2.png)
 
-The example code for this page: [tutorialExamples/IdeApp-6](../tree/master/tutorialExamples/IdeApp-6).
+The example code for this page: [tutorialExamples/IdeApp-7](../tree/master/tutorialExamples/IdeApp-7).
 
 Next page: [Localize IDE app](Localize-IDE-app).
