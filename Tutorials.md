@@ -29,3 +29,7 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 - [Add splash to IDE app](Add-splash-to-IDE-app)
 - [Add intro page to IDE app](Add-intro-page-to-IDE-app)
 - [Localize IDE app](Localize-IDE-app)
+
+### Programming manifests
+
+- [Default manifests](Default-manifests)
