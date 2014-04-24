@@ -25,5 +25,6 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 - [Configure IDE products](Configure-IDE-products)
 - [Prepare IDE app for multiproject build](Prepare-IDE-app-for-multiproject-build)
 - [Create IDE bundle and use it in IDE app](Create-IDE-bundle-and-use-it-in-IDE-app)
+- [Add perspective and view to IDE app](Add-perspective-and-view-to-IDE-app)
 - [Add splash to IDE app](Add-splash-to-IDE-app)
 - [Add intro page to IDE app](Add-intro-page-to-IDE-app)
