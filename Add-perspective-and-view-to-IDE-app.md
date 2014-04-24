@@ -35,7 +35,7 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
   }
   ```
 
-  2. Create file "Perspective.java" in the same folder, insert code:
+2. Create file "Perspective.java" in the same folder, insert code:
 
   ```java
   package myideapp;
@@ -51,7 +51,8 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
   }
   ```
 
-  3. Invoke on command line in "tutorials/MyIdeApp" folder:
+3. Invoke on command line in "tutorials/MyIdeApp" folder:
+
   ```shell
   gradle clean build
   ```
