@@ -1,6 +1,6 @@
-### Welcome to wiki! Wuff! ![Wuff logo](images/robo-dog_60x64.png "Wuff logo")
+![Wuff logo](wiki/images/robo-dog_60x64.png "Wuff logo")
 
-Wuff is a gradle plugin for automating assembly of OSGi/Eclipse bundles and applications.
+Welcome to wiki! Wuff! 
 
 [Main features](Main-features)
 
