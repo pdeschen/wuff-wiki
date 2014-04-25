@@ -42,4 +42,10 @@ We already programmed [manifest attributes in build.gradle](Manifest-attributes-
 
   There are three attributes that Wuff merges rather than overwrites: "Require-Bundle", "Import-Package" and "Export-Package". In the example above, "Require-Bundle" contains three values: "org.eclipse.osgi" comes from generated manifest, "ch.qos.logback.classic" comes from "build.gradle" and "org.eclipse.jface.text" comes from MANIFEST.MF.
 
-  Note that "My-Attribute" was specified in two places: in "build.gradle" and "MANIFEST.MF". The values of "MANIFEST.MF" overwrite the values of "build.gradle".
+  Note that "My-Attribute" was specified in two places: in "build.gradle" and "MANIFEST.MF". The value in "MANIFEST.MF" overwrites the value in "build.gradle".
+
+In general, Wuff creates the resulting manifest of OSGi bundle by merging manifest attributes in the following sequence:
+
+build.gradle << MANIFEST.MF << default-manifest
+
+Any attributes specified in "build.gradle" are overwritten by attributes in "MANIFEST.MF", which, in turn, overwritten by attributes of default manifest.
