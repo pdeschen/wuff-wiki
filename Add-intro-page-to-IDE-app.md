@@ -31,12 +31,8 @@ We already [added splash to IDE app](Add-splash-to-IDE-app). Now we add intro pa
   }
   ```
 
-3. Invoke on command line in "tutorials" folder:
+3. Invoke on command line in "tutorials" folder: `gradle build`
 
-  ```shell
-  gradle build
-  ```
-  
   Note that we don't have to configure intro page in configuration files - wuff does this for us automatically. Concretely, when Wuff sees that file "src/main/resources/intro/welcome.html" exists, it decides to generate corresponding "introContent.xml" and extension-point in "plugin.xml".
 
 4. Run the compiled product from command line. When the program is started for the first time, it displays intro page:
