@@ -61,10 +61,7 @@ We already [prepared Equinox app for multiproject build](Prepare-Equinox-app-for
   }
   ```
 
-6. Invoke on command line in "tutorials" folder:
-  ```shell
-  gradle build
-  ```
+6. Invoke on command line in "tutorials" folder: `gradle build`
 
   **CHECK:** folder "tutorials/MyBundle/build/libs" contains file "MyBundle-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
 
