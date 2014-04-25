@@ -30,7 +30,7 @@ We already programmed [manifest attributes in build.gradle](Manifest-attributes-
   Bundle-Version: 1.0.0.0
   Bundle-Classpath: .
   Require-Bundle: org.eclipse.jface.text,org.eclipse.osgi,ch.qos.logback
-   .classic
+    .classic
   Bundle-ManifestVersion: 2
   Bnd-LastModified: 1398419098000
   My-Attribute: test2
