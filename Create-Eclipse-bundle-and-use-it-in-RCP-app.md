@@ -72,10 +72,7 @@ We already [prepared RCP app for multiproject build](Prepare-RCP-app-for-multipr
   }
   ```
 
-6. Invoke on command line in "tutorials" folder:
-  ```shell
-  gradle build
-  ```
+6. Invoke on command line in "tutorials" folder: `gradle build`
 
   **CHECK:** folder "tutorials/MyPlugin/build/libs" contains file "MyPlugin-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
 
