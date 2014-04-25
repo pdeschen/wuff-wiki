@@ -41,3 +41,4 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 
 - [Default plugin.xml](Default-plugin.xml)
 - [plugin.xml for eclipse-bundle](plugin.xml-for-eclipse-bundle)
+- [plugin.xml for eclipse-equinox-app](Plugin.xml-for-eclipse-equinox-app)
