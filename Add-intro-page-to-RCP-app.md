@@ -31,11 +31,7 @@ We already [added splash to RCP app](Add-splash-to-RCP-app). Now we add intro pa
   }
   ```
 
-3. Invoke on command line in "tutorials" folder:
-
-  ```shell
-  gradle build
-  ```
+3. Invoke on command line in "tutorials" folder: `gradle build`
   
   Note that we don't have to configure intro page in configuration files - wuff does this for us automatically. Concretely, when Wuff sees that file "src/main/resources/intro/welcome.html" exists, it decides to generate corresponding "introContent.xml" and extension-point in "plugin.xml".
 
