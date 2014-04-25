@@ -2,9 +2,9 @@ Wuff generates default OSGi manifest for all applied Wuff plugins. It uses vario
 
 If no additional configuration specified, the default manifest is used as the resulting "MANIFEST.MF" in the JAR-file.
 
-If we provide our own MANIFEST.MF (either in "src/main/resources/META-INF" or in "META-INF"), Wuff merges our manifest and default manifest to produce the resulting "MANIFEST.MF" in the JAR-file.
+If we program jar/manifest properties in "build.gradle", they are merged with the default manifest to produce the resulting "MANIFEST.MF" in the JAR-file.
 
-If we program jar/manifest properties in "build.gradle", they are also merged into the resulting "MANIFEST.MF" in the JAR-file.
+If we provide our own MANIFEST.MF (either in "src/main/resources/META-INF" or in "META-INF"), it is merged with the default manifest to produce the resulting "MANIFEST.MF" in the JAR-file.
 
 OSGI manifest merge is performed in the following order:
 
