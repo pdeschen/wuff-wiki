@@ -4,11 +4,7 @@ We already [added perspective and view to IDE app](Add-perspective-and-view-to-I
 
 2. Create folder "tutorials/MyIdeApp/src/main/resources", copy splash file into it.
 
-3. Invoke on command line in "tutorials/MyIdeApp" folder:
-
-  ```shell
-  gradle build
-  ```
+3. Invoke on command line in "tutorials/MyIdeApp" folder: `gradle build`
 
   Note that we don't have to configure splash screen in configuration files - wuff does this for us automatically.
   
