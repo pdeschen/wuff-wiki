@@ -67,10 +67,7 @@ We already [prepared IDE app for multiproject build](Prepare-IDE-app-for-multipr
   }
   ```
 
-6. Invoke on command line in "tutorials" folder:
-  ```shell
-  gradle build
-  ```
+6. Invoke on command line in "tutorials" folder: `gradle build`
 
   **CHECK:** folder "tutorials/MyIdePlugin/build/libs" contains file "MyIdePlugin-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
 
