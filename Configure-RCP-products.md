@@ -16,11 +16,7 @@ We already [created first RCP app](Create-first-RCP-app). Now we configure RCP p
   Optional archiveProducts flag instructs wuff to archive the generated products. Linux versions will be 
   archived as .tar.gz, Windows versions - as .zip. The default value of archiveProducts is false.
 
-2. Invoke on command line:
-
-  ```shell
-  gradle build
-  ```
+2. Invoke on command line: `gradle build`
 
   **CHECK:** There are 4 products in "tutorials/MyRcpApp/build/output" folder. Each product contains "MyRcpApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
