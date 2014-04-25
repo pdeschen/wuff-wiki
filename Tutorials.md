@@ -33,3 +33,4 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 ### Programming manifests
 
 - [Default manifest](Default-manifest)
+- [Manifest properties in build.gradle](Manifest-properties-in-build.gradle)
