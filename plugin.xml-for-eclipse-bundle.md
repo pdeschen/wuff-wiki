@@ -92,3 +92,21 @@ Let's create eclipse bundle and program "plugin.xml" for it.
     }
   }
   ```
+
+9. Invoke on command line: `build gradle`, then open JAR/plugin.xml, it contains:
+
+  ```xml
+  <plugin>
+    <extension point="org.eclipse.ui.views">
+      <view id="myviewid" name="Very nice view" class="myeclipseplugin.MyView"/>
+    </extension>
+    <extension point="org.eclipse.ui.perspectives">
+      <perspective id="MyEclipsePlugin.MyPerspective" name="MyEclipsePlugin MyPerspective" class="myeclipseplugin.MyPerspective"/>
+    </extension>
+    <extension point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension targetID="MyEclipsePlugin.MyPerspective">
+        <view id="myviewid" standalone="true" minimized="false" relative="org.eclipse.ui.editorss" relationship="left"/>
+      </perspectiveExtension>
+    </extension>
+  </plugin>
+  ```
