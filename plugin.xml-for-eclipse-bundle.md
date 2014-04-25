@@ -1,3 +1,5 @@
+We already learned what [default plugin.xml](Default-plugin.xml) is. Now we will program "plugin.xml" for eclipse-bundle.
+
 Let's create eclipse bundle and program "plugin.xml" for it.
 
 1. Create folder "tutorials/MyEclipseplugin", create file "build.gradle" in it, insert code:
