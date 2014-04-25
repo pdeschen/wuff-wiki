@@ -1,0 +1,1 @@
+We already inspected how [default manifest](Default-manifest) looks like. Now we will program manifest attributes in build.gradle.
