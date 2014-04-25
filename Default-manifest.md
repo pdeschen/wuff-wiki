@@ -1,6 +1,16 @@
-Each time Wuff processes an OSGi-bundle[1], it generates an OSGi manifest. It uses various project properties - version, name, dependencies, classpath etc. - as input for manifest generation. The generated manifest does not pollute program sources: it is generated as a temporary file in buildDir. Wuff instructs gradle Jar task to include the generated OSGi manifest into the resulting JAR-file.
+Wuff generates default OSGi manifest for all applied Wuff plugins. It uses various project properties - version, name, dependencies, classpath etc. - as input for manifest generation. The default manifest does not pollute program sources: it is generated as a temporary file in buildDir.
 
-When the programmer gives no additional instructions on OSGi-manifest generation, the generated OSGi manifest is called **default manifest**.
+If we provide our own MANIFEST.MF (either in "src/main/resources/META-INF" or in "META-INF"), Wuff merges our manifest and default manifest to produce the resulting "MANIFEST.MF" in the JAR-file.
+
+If we program jar/manifest properties in "build.gradle", they are also merged into the resulting "MANIFEST.MF" in the JAR-file.
+
+OSGI manifest merge is performed in the following order:
+
+- resulting manifest << build.gradle jar/manifest
+- resulting manifest << user-provided MANIFEST.MF
+- resulting manifest << default manifest
+
+Any attributes specified in "build.gradle" are overwritten by attributes in user-provided "MANIFEST.MF", which, in turn, are overwritten by attributes of default manifest.
 
 Lets inspect how default manifest looks like.
 
