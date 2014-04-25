@@ -44,7 +44,7 @@ We already inspected how [default manifest](Default-manifest) looks like. Now we
   Tool: Bnd-2.1.0.20130426-122213
   ```
 
-  Note that Wuff ignores our values for attributes "Bundle-SymbolicName", "Bundle-Name", "Bundle-Version", "Bundle-ManifestVersion", "Bnd-LastModified", "Created-By", "Tool", "Bundle-Classpath". This is intentional: the generated values always overwrite the user-supplied values.
+  Note that Wuff ignores our values for attributes "Bundle-SymbolicName", "Bundle-Name", "Bundle-Version", "Bundle-ManifestVersion", "Bnd-LastModified", "Created-By", "Tool", "Bundle-Classpath". This is intentional: Wuff overwrites the user-supplied attributes with the generated attributes having the same name.
 
   There are three attributes that Wuff merges rather than overwrites: "Require-Bundle", "Import-Package" and "Export-Package". In the example above, our value "ch.qos.logback.classic" was added to generated value "org.eclipse.osgi".
 
