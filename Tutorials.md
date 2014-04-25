@@ -40,4 +40,4 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 ### Programming plugin.xml
 
 - [Default plugin.xml](Default-plugin.xml)
-- [Default plugin.xml for eclipse-bundle](Default-plugin.xml-for-eclipse-bundle)
+- [plugin.xml for eclipse-bundle](plugin.xml-for-eclipse-bundle)
