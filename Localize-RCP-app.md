@@ -181,11 +181,7 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
   </html>
   ```
 
-13. Invoke on command line in "tutorials" folder:
-
-  ```shell
-  gradle build
-  ```
+13. Invoke on command line in "tutorials" folder: `gradle build`
 
 14. Run the German-language product from command line. When the program is started for the first time, it displays intro page:
 
