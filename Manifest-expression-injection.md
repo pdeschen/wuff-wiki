@@ -44,6 +44,7 @@ We already programmed [manifest attributes in MANIFEST.MF](Manifest-attributes-i
   ```
   Project-Description: this is example project
   ```
+Note that expressions in MANIFEST.MF are **not** expanded by default. We must set wuff.filterManifest=true to enable this feature.
 
 The example code for this page: [tutorialExamples/Manifest-4](../tree/master/tutorialExamples/Manifest-4).
 
