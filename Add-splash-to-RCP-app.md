@@ -4,11 +4,7 @@ We already [created Eclipse bundle and used it in RCP app](Create-Eclipse-bundle
 
 2. Create folder "tutorials/MyRcpApp/src/main/resources", copy splash file into it.
 
-3. Invoke on command line in "tutorials" folder:
-
-  ```shell
-  gradle build
-  ```
+3. Invoke on command line in "tutorials" folder: `gradle build`
 
   Note that we don't have to configure splash screen in configuration files - wuff does this for us automatically.
   
