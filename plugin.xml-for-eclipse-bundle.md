@@ -62,9 +62,9 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   We see that Wuff recognized our file as view and that it automatically inserted extension-point for it. In general, Wuff recognizes any files matching to patterns `'**/*View.groovy', '**/*View.java', '**/View*.groovy', '**/View*.java'` as view files.
 
   Explanation of attributes:
-  - id="MyEclipsePlugin.MyView": id was synthesized from project name and view class name
-  - name="MyEclipsePlugin MyView": name was synthesized from project name and view class name
-  - class="myeclipseplugin.MyView": class points to qualified class name of the found view file.
+  - id="MyEclipsePlugin.MyView": synthesized from project name and view class name
+  - name="MyEclipsePlugin MyView": synthesized from project name and view class name
+  - class="myeclipseplugin.MyView": points to qualified class name of the view file.
 
 7. What should we do to change the view name or view id? Very simple: give our own view definition. Create folder "tutorials/MyEclipsePlugin/src/main/resources", create file "plugin.xml" in it, insert code:
 
@@ -110,3 +110,10 @@ Let's create eclipse bundle and program "plugin.xml" for it.
     </extension>
   </plugin>
   ```
+
+  We see that Wuff recognized "MyPerspective.java" file as perspective and that it automatically inserted extension-points for it. In general, Wuff recognizes any files matching to patterns `'**/*Perspective.groovy', '**/*Perspective.java', '**/Perspective*.groovy', '**/Perspective*.java'` as perspective files.
+
+  Explanation of attributes in "org.eclipse.ui.perspectives":
+  - id="MyEclipsePlugin.MyPerspective": synthesized from project name and perspective class name
+  - name="MyEclipsePlugin MyPerspective": synthesized from project name and perspective class name
+  - class="myeclipseplugin.MyPerspective": points to qualified class name of the perspective file.
