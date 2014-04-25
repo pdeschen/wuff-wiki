@@ -45,11 +45,7 @@ We already [configured RCP products](Configure-RCP-products). Now we prepare RCP
   include 'MyRcpApp'
   ```
 
-4. Invoke on command line in "tutorials" folder:
-
-  ```shell
-  gradle build
-  ```
+4. Invoke on command line in "tutorials" folder: `gradle build`
 
   **CHECK**: Build task generates products in "tutorials/MyRcpApp/build/output" folder.
 
