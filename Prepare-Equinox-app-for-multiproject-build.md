@@ -45,11 +45,7 @@ We already [configured Equinox products](Configure-Equinox-products). Now we pre
   include 'MyRcpApp'
   ```
 
-4. Invoke on command line in "tutorials" folder:
-
-  ```shell
-  gradle build
-  ```
+4. Invoke on command line in "tutorials" folder: `gradle build`
 
   **CHECK**: Build task generates products in "tutorials/MyEquinoxApp/build/output" folder.
 
