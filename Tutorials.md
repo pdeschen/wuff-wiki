@@ -36,3 +36,7 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 - [Manifest attributes in build.gradle](Manifest-attributes-in-build.gradle)
 - [Manifest attributes in MANIFEST.MF](Manifest-attributes-in-MANIFEST.MF)
 - [Manifest expression injection](Manifest-expression-injection)
+
+### Programming plugin.xml
+
+- [Default plugin.xml](Default-plugin.xml)
