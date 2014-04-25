@@ -26,19 +26,11 @@ In this tutorial we start from scratch and build Equinox app. Other tutorials ar
   The script describes that we are using wuff gradle-plugin
   and that we apply "eclipse-equinox-app" plugin to this project.
 
-2. Invoke on command line:
-
-  ```shell
-  gradle scaffold
-  ```
+2. Invoke on command line: `gradle scaffold`
 
   Scaffold task creates Application class required by equinox library.
 
-3. Invoke on command line:
-
-  ```shell
-  gradle build
-  ```
+3. Invoke on command line: `gradle build`
 
   **CHECK:** folder "tutorials/MyEquinoxApp/build/libs" contains file "MyEquinoxApp-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest and "plugin.xml".
 
