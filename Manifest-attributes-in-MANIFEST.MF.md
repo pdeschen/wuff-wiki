@@ -44,12 +44,6 @@ We already programmed [manifest attributes in build.gradle](Manifest-attributes-
 
   Note that "My-Attribute" was specified in two places: in "build.gradle" and "MANIFEST.MF". The value in "MANIFEST.MF" overwrites the value in "build.gradle".
 
-In general, Wuff creates the resulting manifest of OSGi bundle by merging manifest attributes in the following sequence:
-
-build.gradle << MANIFEST.MF << default-manifest
-
-Any attributes specified in "build.gradle" are overwritten by attributes in "MANIFEST.MF", which, in turn, overwritten by attributes of default manifest.
-
 The example code for this page: [tutorialExamples/Manifest-3](../tree/master/tutorialExamples/Manifest-3).
 
 Next page: [Manifest expression injection](Manifest-expression-injection).
