@@ -25,19 +25,11 @@ In this tutorial we start from scratch and build RCP app. Other tutorials are av
 
   The script describes that we are using wuff gradle-plugin and that we apply "eclipse-rcp-app" plugin to this project.
 
-2. Invoke on command line:
-
-  ```shell
-  gradle scaffold
-  ```
+2. Invoke on command line: `gradle scaffold`
 
   Scaffold task creates classes required by Eclipse RCP.
 
-3. Invoke on command line:
-
-  ```shell
-  gradle build
-  ```
+3. Invoke on command line: `gradle build`
 
   **CHECK:** folder "tutorials/MyRcpApp/build/libs" contains file "MyRcpApp-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest and "plugin.xml".
 
