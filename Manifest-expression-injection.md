@@ -29,11 +29,7 @@ We already programmed [manifest attributes in MANIFEST.MF](Manifest-attributes-i
   }
   ```
 
-6. Invoke on command line:
-
-  ```
-  gradle build
-  ```
+6. Invoke on command line: `gradle build`
 
 7. Open file "tutorials/MyOsgiPlugin/build/libs/MyOsgiPlugin-1.0.0.0.jar", open "META-INF/MANIFEST.MF", it should contain:
 
