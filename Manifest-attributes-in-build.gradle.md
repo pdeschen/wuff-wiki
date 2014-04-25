@@ -45,7 +45,7 @@ We already inspected how [default manifest](Default-manifest) looks like. Now we
 
   Note that Wuff ignores our values for attributes "Bundle-SymbolicName", "Bundle-Name", "Bundle-Version", "Bundle-ManifestVersion", "Bnd-LastModified", "Created-By", "Tool", "Bundle-Classpath". This is intentional: Wuff overwrites the user-supplied attributes with the generated attributes having the same name.
 
-  There are three attributes that Wuff merges rather than overwrites: "Require-Bundle", "Import-Package" and "Export-Package". In the example above, our value "ch.qos.logback.classic" was added to generated value "org.eclipse.osgi".
+  There are three attributes that Wuff merges rather than overwrites: "Require-Bundle", "Import-Package" and "Export-Package". In the example above, "Require-Bundle" contains two values: "org.eclipse.osgi" comes from generated manifest, "ch.qos.logback.classic" comes from "build.gradle".
 
 The example code for this page: [tutorialExamples/Manifest-2](../tree/master/tutorialExamples/Manifest-2).
 
