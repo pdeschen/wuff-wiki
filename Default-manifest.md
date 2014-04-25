@@ -39,11 +39,7 @@ Lets inspect how default manifest looks like.
   }
   ```
 
-2. Invoke on command line:
-
-  ```shell
-  gradle build
-  ```
+2. Invoke on command line: `gradle build`
 
 3. Open file "tutorials/MyOsgiPlugin/build/libs/MyOsgiPlugin-1.0.0.0.jar", open "META-INF/MANIFEST.MF", it should contain something like this:
 
