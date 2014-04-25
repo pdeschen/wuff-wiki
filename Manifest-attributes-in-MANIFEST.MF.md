@@ -52,4 +52,4 @@ Any attributes specified in "build.gradle" are overwritten by attributes in "MAN
 
 The example code for this page: [tutorialExamples/Manifest-3](../tree/master/tutorialExamples/Manifest-3).
 
-Next page: [Expression injection in MANIFEST.MF](Expression-injection-in-MANIFEST.MF).
+Next page: [Manifest expression injection](Manifest-expression-injection).
