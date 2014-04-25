@@ -2,7 +2,7 @@ Wuff generates default OSGi manifest for all applied Wuff plugins. It uses vario
 
 If no additional configuration specified, the default manifest is used as the resulting "MANIFEST.MF" in the JAR-file.
 
-If we program jar/manifest properties in "build.gradle", they are merged with the default manifest to produce the resulting "MANIFEST.MF" in the JAR-file.
+If we specify jar/manifest attributes in "build.gradle", they are merged with the default manifest to produce the resulting "MANIFEST.MF" in the JAR-file.
 
 If we provide our own MANIFEST.MF (either in "src/main/resources/META-INF" or in "META-INF"), it is merged with the default manifest to produce the resulting "MANIFEST.MF" in the JAR-file.
 
@@ -67,8 +67,6 @@ Lets inspect how default manifest looks like.
   - Require-Bundle is assigned to "org.eclipse.osgi" because of `apply plugin: 'osgi-bundle'` in "build.gradle".
   - Bundle-Classpath is assigned to "root folder" in the context of JAR-file.
   - All other fields are specific to BND-tool, which is invoked via chain Wuff -> gradle 'osgi' plugin -> BND-tool.
-
-[1]: In Wuff context OSGi-bundle is a gradle project with one of the plugins applied: "eclipse-bundle", "eclipse-equinox-app", "eclipse-ide-app", "eclipse-ide-bundle", "eclipse-rcp-app", "osgi-bundle".
 
 The example code for this page: [tutorialExamples/Manifest-1](../tree/master/tutorialExamples/Manifest-1).
 
