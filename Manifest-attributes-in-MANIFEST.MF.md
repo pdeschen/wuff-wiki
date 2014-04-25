@@ -1,0 +1,1 @@
+We already programmed [manifest attributes in build.gradle](Manifest-attributes-in-build.gradle). Now we will program manifest attributes in MANIFEST.MF.
