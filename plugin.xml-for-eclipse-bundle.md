@@ -51,7 +51,7 @@ Let's create eclipse bundle and program "plugin.xml" for it.
 
 5. Invoke on command line: `build gradle`
 
-6. Open file "tutorials/MyEclipsePlugin/build/libs/MyEclipsePlugin-1.0.0.0.jar" - it contains "plugin.xml" with the following code:
+6. Open file "tutorials/MyEclipsePlugin/build/libs/MyEclipsePlugin-1.0.0.0.jar" - it contains "plugin.xml" with the following content:
 
   ```xml
   <plugin>
@@ -61,14 +61,14 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   </plugin>
   ```
 
-  We see that Wuff recognized our file as view and that it automatically inserted extension-point for it. In general, Wuff recognizes any files matching to patterns `'**/*View.groovy', '**/*View.java', '**/View*.groovy', '**/View*.java'` as view files.
+  We see that Wuff recognized our file as a view and that it automatically inserted extension-point for it. In general, Wuff recognizes any files matching to patterns `'**/*View.groovy', '**/*View.java', '**/View*.groovy', '**/View*.java'` as view files and inserts extension-point "org.eclipse.ui.views" for each of them.
 
   Explanation of attributes:
   - id="MyEclipsePlugin.MyView": synthesized from project name and view class name
   - name="MyEclipsePlugin MyView": synthesized from project name and view class name
   - class="myeclipseplugin.MyView": points to qualified class name of the view file.
 
-7. What should we do to change the view name or view id? Very simple: give our own view definition. Create folder "tutorials/MyEclipsePlugin/src/main/resources", create file "plugin.xml" in it, insert code:
+7. What should we do to change the view name or view id? Very simple: give our own view definition. Create folder "tutorials/MyEclipsePlugin/src/main/resources", create file "plugin.xml" in it, insert content:
 
   ```xml
   <plugin>
@@ -113,7 +113,7 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   </plugin>
   ```
 
-  We see that Wuff recognized "MyPerspective.java" file as perspective and that it automatically inserted extension-points for it. In general, Wuff recognizes any files matching to patterns `'**/*Perspective.groovy', '**/*Perspective.java', '**/Perspective*.groovy', '**/Perspective*.java'` as perspective files.
+  We see that Wuff recognized "MyPerspective.java" file as a perspective and that it automatically inserted extension-points for it. In general, Wuff recognizes any files matching to patterns `'**/*Perspective.groovy', '**/*Perspective.java', '**/Perspective*.groovy', '**/Perspective*.java'` as perspective files and inserts extension point "org.eclipse.ui.perspectives" for each of them.
 
   Explanation of attributes in "org.eclipse.ui.perspectives":
   - id="MyEclipsePlugin.MyPerspective": synthesized from project name and perspective class name.
@@ -122,7 +122,7 @@ Let's create eclipse bundle and program "plugin.xml" for it.
 
   As we see, extension-point "org.eclipse.ui.perspectiveExtensions" links perspective and view. This is special case: our plugin contains exactly one perspective and one view, so Wuff decides that they must be linked to each other.
 
-10. Let's customize our perspective as well. Edit the file "tutorials/MyEclipsePlugin/src/main/resources/plugin.xml", insert code:
+10. Let's customize our perspective as well. Edit the file "tutorials/MyEclipsePlugin/src/main/resources/plugin.xml", insert content:
 
   ```xml
   <plugin>
