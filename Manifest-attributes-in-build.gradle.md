@@ -48,3 +48,6 @@ We already inspected how [default manifest](Default-manifest) looks like. Now we
 
   There are three attributes that Wuff merges rather than overwrites: "Require-Bundle", "Import-Package" and "Export-Package". In the example above, our value "ch.qos.logback.classic" was added to generated value "org.eclipse.osgi".
 
+The example code for this page: [tutorialExamples/Manifest-2](../tree/master/tutorialExamples/Manifest-2).
+
+Next page: [Manifest attributes in MANIFEST.MF](Manifest-attributes-in-MANIFEST.MF).
