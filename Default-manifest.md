@@ -1,4 +1,4 @@
-Each time Wuff processes an OSGi-bundle[1], it generates an OSGi manifest. As input for manifest generation, it uses various project properties: version, name, dependencies, classpath etc. The generated manifest does not pollute program sources: it is generated as a temporary file in "build" folder. Wuff instructs gradle Jar task to include the generated OSGi manifest into JAR-file.
+Each time Wuff processes an OSGi-bundle[1], it generates an OSGi manifest. It uses various project properties - version, name, dependencies, classpath etc. - as input for manifest generation. The generated manifest does not pollute program sources: it is generated as a temporary file in buildDir. Wuff instructs gradle Jar task to include the generated OSGi manifest into the resulting JAR-file.
 
 When the programmer gives no additional instructions on OSGi-manifest generation, the generated OSGi manifest is called **default manifest**.
 
