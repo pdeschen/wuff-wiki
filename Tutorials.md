@@ -32,4 +32,4 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 
 ### Programming manifests
 
-- [Default manifests](Default-manifests)
+- [Default manifest](Default-manifest)
