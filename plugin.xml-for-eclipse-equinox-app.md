@@ -6,7 +6,7 @@ Take [equinox application](../tree/master/tutorialExamples/EquinoxApp-1) that we
 
   ```xml
   <plugin>
-    <extension id="application" point="org.eclipse.core.runtime.applications">
+    <extension id="Application" point="org.eclipse.core.runtime.applications">
       <application>
         <run class="myequinoxapp.Application"/>
       </application>
@@ -17,7 +17,5 @@ Take [equinox application](../tree/master/tutorialExamples/EquinoxApp-1) that we
   We see that Wuff recognized file "tutorials/MyEquinoxApp/src/main/java/myequinoxapp/Application.java" as an application and that it automatically inserted extension-point for it. In general, Wuff recognizes any files matching to patterns `'**/Application.groovy', '**/Application.java'` as application files and inserts extension-point "org.eclipse.core.runtime.applications" for each of them (although normally there's only one application per eclipse-equinox-app).
 
   Explanation of attributes:
-  - class="myequinoxapp.Application": points to qualified class name of the application file.
-
-
-  
+  - id="Application": assigned to class name.
+  - class="myequinoxapp.Application": assigned to qualified class name.
