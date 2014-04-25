@@ -35,3 +35,4 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 - [Default manifest](Default-manifest)
 - [Manifest attributes in build.gradle](Manifest-attributes-in-build.gradle)
 - [Manifest attributes in MANIFEST.MF](Manifest-attributes-in-MANIFEST.MF)
+- [Expression injection in MANIFEST.MF](Expression-injection-in-MANIFEST.MF)
