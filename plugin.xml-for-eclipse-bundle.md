@@ -152,3 +152,7 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   ```
 
   As we see, now Wuff recognizes that "plugin.xml" already contains extension-point for perspective and does not generate the default one. We also see that Wuff still links perspective and view, because it is a special case: one perspective and one view.
+
+The example code for this page: [tutorialExamples/PluginXml-1](../tree/master/tutorialExamples/PluginXml-1) and [tutorialExamples/PluginXml-2](../tree/master/tutorialExamples/PluginXml-2).
+
+Next page: [plugin.xml for eclipse-equinox-app](Plugin.xml-for-eclipse-equinox-app).
