@@ -120,3 +120,36 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   - class="myeclipseplugin.MyPerspective": points to qualified class name of the perspective file.
 
   As we see, extension-point "org.eclipse.ui.perspectiveExtensions" links perspective and view. This is special case: our plugin contains exactly one perspective and one view, so Wuff decides that they must be linked to each other.
+
+10. Let's customize our perspective as well. Edit the file "tutorials/MyEclipsePlugin/src/main/resources/plugin.xml", insert code:
+
+  ```xml
+  <plugin>
+    <extension point="org.eclipse.ui.views">
+      <view id="myviewid" name="Very nice view" class="myeclipseplugin.MyView"/>
+    </extension>
+    <extension point="org.eclipse.ui.perspectives">
+      <perspective id="myperspectiveid" name="Very nice perspective" class="myeclipseplugin.MyPerspective"/>
+    </extension>
+  </plugin>
+  ```
+
+11. Invoke on command line: `build gradle`, then open JAR/plugin.xml, it contains:
+
+  ```xml
+  <plugin>
+    <extension point="org.eclipse.ui.views">
+      <view id="myviewid" name="Very nice view" class="myeclipseplugin.MyView"/>
+    </extension>
+    <extension point="org.eclipse.ui.perspectives">
+      <perspective id="myperspectiveid" name="Very nice perspective" class="myeclipseplugin.MyPerspective"/>
+    </extension>
+    <extension point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension targetID="myperspectiveid">
+        <view id="myviewid" standalone="true" minimized="false" relative="org.eclipse.ui.editorss" relationship="left"/>
+      </perspectiveExtension>
+    </extension>
+  </plugin>
+  ```
+
+  As we see, now Wuff recognizes that "plugin.xml" already contains extension-point for perspective and does not generate the default one. We also see that Wuff still links perspective and view, because it is a special case: one perspective and one view.
