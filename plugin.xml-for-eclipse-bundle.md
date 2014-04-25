@@ -25,7 +25,7 @@ Let's create eclipse bundle and program "plugin.xml" for it.
 
 2. Invoke on command line: `build gradle`
 
-3. Open file "tutorials/MyEclipsePlugin/build/libs/MyEclipsePlugin-1.0.0.0.jar" - it does not contain "plugin.xml". Explanation: Wuff skips default "plugin.xml" generation, because it does not have information on what to write.
+3. Open file "tutorials/MyEclipsePlugin/build/libs/MyEclipsePlugin-1.0.0.0.jar" - it does not contain "plugin.xml". Explanation: Wuff skips default "plugin.xml" generation, because it does not "know" what to write there.
 
 4. Create folder "tutorials/MyEclipsePlugin/src/main/java/myeclipseplugin", create file "MyView.java" in it, insert code:
 
@@ -46,3 +46,22 @@ Let's create eclipse bundle and program "plugin.xml" for it.
     }
   }
   ```
+
+5. Invoke on command line: `build gradle`
+
+6. Open file "tutorials/MyEclipsePlugin/build/libs/MyEclipsePlugin-1.0.0.0.jar" - it contains "plugin.xml" with the following code:
+
+  ```xml
+  <plugin>
+    <extension point="org.eclipse.ui.views">
+      <view id="MyEclipsePlugin.MyView" name="MyEclipsePlugin MyView" class="myeclipseplugin.MyView"/>
+    </extension>
+  </plugin>
+  ```
+
+  We see that Wuff recognized our file as view and that it automatically inserted extension-point for it. In general, Wuff recognizes any files match patterns '**/*View.groovy', '**/*View.java', '**/View*.groovy', '**/View*.java' as view files.
+
+  Explanation of attributes:
+  - id="MyEclipsePlugin.MyView": id was synthesized from project name and view class name
+  - name="MyEclipsePlugin MyView": name was synthesized from project name and view class name
+  - class="myeclipseplugin.MyView": class points to qualified class name of the found view file.
