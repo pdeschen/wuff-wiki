@@ -23,4 +23,4 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   }
   ```
 
-2. Invoke on command line: ```build gradle```
+2. Invoke on command line: `build gradle`
