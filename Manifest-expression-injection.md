@@ -45,4 +45,6 @@ We already programmed [manifest attributes in MANIFEST.MF](Manifest-attributes-i
   Project-Description: this is example project
   ```
 
+The example code for this page: [tutorialExamples/Manifest-4](../tree/master/tutorialExamples/Manifest-4).
+
 Now we are done with programming manifests. Other tutorials are available [here](Tutorials).
