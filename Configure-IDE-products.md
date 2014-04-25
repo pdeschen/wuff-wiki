@@ -16,11 +16,7 @@ We already [created first IDE app](Create-first-IDE-app). Now we configure IDE p
   Optional archiveProducts flag instructs wuff to archive the generated products. Linux versions will be 
   archived as .tar.gz, Windows versions - as .zip. The default value of archiveProducts is false.
 
-2. Invoke on command line:
-
-  ```shell
-  gradle build
-  ```
+2. Invoke on command line: `gradle build`
 
   **CHECK:** There are 4 products in "tutorials/MyIdeApp/build/output" folder. Each product contains "MyIdeApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
