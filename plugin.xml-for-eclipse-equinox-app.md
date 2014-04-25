@@ -31,3 +31,4 @@ Take [equinox application](../tree/master/tutorialExamples/EquinoxApp-1) that we
     </extension>
   </plugin>
   ```
+3. Invoke on command line: `gradle build`, then open file "tutorials/MyEquinoxApp/build/libs/MyEquinoxApp-1.0.0.0.jar", open "plugin.xml" - now it contains our definition of extension-point, not the generated one.
