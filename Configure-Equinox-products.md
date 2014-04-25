@@ -16,11 +16,7 @@ We already [created first Equinox app](Create-first-Equinox-app). Now we configu
   Optional archiveProducts flag instructs wuff to archive the generated products. Linux versions will be 
   archived as .tar.gz, Windows versions - as .zip. The default value of archiveProducts is false.
 
-2. Invoke on command line:
-
-  ```shell
-  gradle build
-  ```
+2. Invoke on command line: `gradle build`
 
   **CHECK:** There are 4 products in "tutorials/MyEquinoxApp/build/output" folder. Each product contains "MyEquinoxApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
