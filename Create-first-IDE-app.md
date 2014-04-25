@@ -23,11 +23,7 @@ In this tutorial we start from scratch and build Eclipse IDE app. Other tutorial
   }
   ```
 
-2. Invoke on command line:
-
-  ```shell
-  gradle build
-  ```
+2. Invoke on command line: `gradle build`
 
   **CHECK:** folder "tutorials/MyIdeApp/build/libs" contains file "MyIdeApp-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest and "plugin.xml".
 
