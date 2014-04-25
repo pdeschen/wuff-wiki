@@ -65,3 +65,5 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   - id="MyEclipsePlugin.MyView": id was synthesized from project name and view class name
   - name="MyEclipsePlugin MyView": name was synthesized from project name and view class name
   - class="myeclipseplugin.MyView": class points to qualified class name of the found view file.
+
+7. What should we do to change the view name? Very simple: give our own view definition. Create folder "tutorials/MyEclipsePlugin/src/main/resources", create file "plugin.xml" in it, insert code:
