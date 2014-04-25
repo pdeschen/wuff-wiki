@@ -19,3 +19,15 @@ Take [equinox application](../tree/master/tutorialExamples/EquinoxApp-1) that we
   Explanation of attributes:
   - id="Application": assigned to class name.
   - class="myequinoxapp.Application": assigned to qualified class name.
+
+2. We can provide our own version of "org.eclipse.core.runtime.applications" extension-point. Driving reason could be that we want different application id. Create folder "tutorials/MyEquinoxApp/src/main/resources", create file "plugin.xml" in it, insert content:
+
+  ```xml
+  <plugin>
+    <extension id="myappid" point="org.eclipse.core.runtime.applications">
+      <application>
+        <run class="myequinoxapp.Application"/>
+      </application>
+    </extension>
+  </plugin>
+  ```
