@@ -114,6 +114,9 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   We see that Wuff recognized "MyPerspective.java" file as perspective and that it automatically inserted extension-points for it. In general, Wuff recognizes any files matching to patterns `'**/*Perspective.groovy', '**/*Perspective.java', '**/Perspective*.groovy', '**/Perspective*.java'` as perspective files.
 
   Explanation of attributes in "org.eclipse.ui.perspectives":
+
   - id="MyEclipsePlugin.MyPerspective": synthesized from project name and perspective class name
   - name="MyEclipsePlugin MyPerspective": synthesized from project name and perspective class name
   - class="myeclipseplugin.MyPerspective": points to qualified class name of the perspective file.
+
+  As we see, extension-point "org.eclipse.ui.perspectiveExtensions" links perspective and view. This is special case: our plugin contains exactly one perspective and one view, so Wuff decides that they must be linked to each other.
