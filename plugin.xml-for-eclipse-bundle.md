@@ -22,3 +22,5 @@ Let's create eclipse bundle and program "plugin.xml" for it.
     jcenter()
   }
   ```
+
+2. Invoke on command line: ```build gradle```
