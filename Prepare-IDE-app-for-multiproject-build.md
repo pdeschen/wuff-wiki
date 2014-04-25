@@ -45,11 +45,7 @@ We already [configured IDE products](Configure-IDE-products). Now we prepare IDE
   include 'MyIdeApp'
   ```
 
-4. Invoke on command line in "tutorials" folder:
-
-  ```shell
-  gradle build
-  ```
+4. Invoke on command line in "tutorials" folder: `gradle build`
 
   **CHECK**: Build task generates products in "tutorials/MyIdeApp/build/output" folder.
 
