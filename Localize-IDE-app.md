@@ -193,11 +193,7 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
   </html>
   ```
 
-15. Invoke on command line in "tutorials" folder:
-
-  ```shell
-  gradle build
-  ```
+15. Invoke on command line in "tutorials" folder: `gradle build`
 
 16. Run the German-language product from command line. First of all, we see that workspace selection dialog is now localized:
 
