@@ -75,3 +75,20 @@ Let's create eclipse bundle and program "plugin.xml" for it.
     </extension>
   </plugin>
   ```
+
+  Invoke `build gradle` again and look into JAR/plugin.xml: it contains our view definition, not the generated one.
+
+8. Create file "tutorials/MyEclipsePlugin/src/main/java/myeclipseplugin/MyPerspective.java", insert code:
+
+  ```java
+  package myeclipseplugin;
+
+  import org.eclipse.ui.IPageLayout;
+  import org.eclipse.ui.IPerspectiveFactory;
+
+  public class MyPerspective implements IPerspectiveFactory {
+
+    public void createInitialLayout(IPageLayout layout) {
+    }
+  }
+  ```
