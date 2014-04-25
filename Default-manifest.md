@@ -58,4 +58,6 @@ Lets inspect how default manifest looks like.
 
 [1]: In Wuff context OSGi-bundle is a gradle project with one of the plugins applied: "eclipse-bundle", "eclipse-equinox-app", "eclipse-ide-app", "eclipse-ide-bundle", "eclipse-rcp-app", "osgi-bundle".
 
+The example code for this page: [tutorialExamples/Manifest-1](../tree/master/tutorialExamples/Manifest-1).
+
 Next page: [Manifest attributes in build.gradle](Manifest-attributes-in-build.gradle).
