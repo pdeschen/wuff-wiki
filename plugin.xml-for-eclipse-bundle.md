@@ -59,7 +59,7 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   </plugin>
   ```
 
-  We see that Wuff recognized our file as view and that it automatically inserted extension-point for it. In general, Wuff recognizes any files match patterns '**/*View.groovy', '**/*View.java', '**/View*.groovy', '**/View*.java' as view files.
+  We see that Wuff recognized our file as view and that it automatically inserted extension-point for it. In general, Wuff recognizes any files matching to patterns `'**/*View.groovy', '**/*View.java', '**/View*.groovy', '**/View*.java'` as view files.
 
   Explanation of attributes:
   - id="MyEclipsePlugin.MyView": id was synthesized from project name and view class name
