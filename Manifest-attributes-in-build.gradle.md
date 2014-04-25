@@ -31,14 +31,13 @@ We already inspected how [default manifest](Default-manifest) looks like. Now we
 
   ```
   Manifest-Version: 1.0
-  Export-Package: 999
   Bundle-SymbolicName: MyOsgiPlugin
   Bundle-Name: MyOsgiPlugin
   Bundle-Version: 1.0.0.0
   Bundle-Classpath: .
   Require-Bundle: org.eclipse.osgi,ch.qos.logback.classic
   Bundle-ManifestVersion: 2
-  Bnd-LastModified: 1398410836000
+  Bnd-LastModified: 1398418011000
   My-Attribute: test
   Created-By: 1.8.0_05 (Oracle Corporation)
   Tool: Bnd-2.1.0.20130426-122213
