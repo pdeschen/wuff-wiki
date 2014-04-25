@@ -32,3 +32,7 @@ Take [equinox application](../tree/master/tutorialExamples/EquinoxApp-1) that we
   </plugin>
   ```
 3. Invoke on command line: `gradle build`, then open file "tutorials/MyEquinoxApp/build/libs/MyEquinoxApp-1.0.0.0.jar", open "plugin.xml" - now it contains our definition of extension-point, not the generated one.
+
+The example code for this page: [tutorialExamples/PluginXml-3](../tree/master/tutorialExamples/PluginXml-3).
+
+Next page: [plugin.xml for eclipse-rcp-app](Plugin.xml-for-eclipse-rcp-app).
