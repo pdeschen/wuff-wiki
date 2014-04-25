@@ -21,11 +21,7 @@ We already inspected how [default manifest](Default-manifest) looks like. Now we
 
   Here we configure "manifest" property of the Jar task. Note that manifest supports interface [OsgiManifest](http://www.gradle.org/docs/current/javadoc/org/gradle/api/plugins/osgi/OsgiManifest.html). This is because Wuff implicitly applies gradle 'osgi' plugin to the project.
 
-2. Invoke on command line:
-
-  ```
-  gradle build
-  ```
+2. Invoke on command line: `gradle build`
 
 3. Open file "tutorials/MyOsgiPlugin/build/libs/MyOsgiPlugin-1.0.0.0.jar", open "META-INF/MANIFEST.MF", it should look like:
 
