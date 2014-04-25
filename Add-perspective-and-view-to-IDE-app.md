@@ -51,11 +51,7 @@ We already [created IDE bundle and used it in IDE app](Create-IDE-bundle-and-use
   }
   ```
 
-3. Invoke on command line in "tutorials/MyIdeApp" folder:
-
-  ```shell
-  gradle clean build
-  ```
+3. Invoke on command line in "tutorials/MyIdeApp" folder: `gradle clean build`
 
   **Hint:** "clean" is needed only once, as soon as we introduced view or perspective. This way we remove cached information on IDE layout, that is stored in "configuration" subfolder of compiled product. Consequent builds can be done without "clean".
 
