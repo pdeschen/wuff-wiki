@@ -1,53 +1,61 @@
 We already [configured RCP products](Configure-RCP-products). Now we prepare RCP app for multiproject build.
 
-1. Create "build.gradle" in "tutorials" folder (parent of "MyRcpApp" folder) 
+### Create root "build.gradle"
 
-2. Move "buildscript" and "repositories" from "tutorials/MyRcpApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
+Create "build.gradle" in "tutorials" folder (parent of "MyRcpApp" folder).
 
-  "tutorials/build.gradle":
-  ```groovy
-  buildscript {
-    repositories {
-      mavenLocal()
-      jcenter()
-    }
-    
-    dependencies {
-      classpath 'org.akhikhl.wuff:wuff-plugin:0.0.1'
-    }
+Move "buildscript" and "repositories" from "tutorials/MyRcpApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
+
+"tutorials/build.gradle":
+```groovy
+buildscript {
+  repositories {
+    mavenLocal()
+    jcenter()
   }
-
-  subprojects {
-    repositories {
-      mavenLocal()
-      jcenter()
-    }
+  
+  dependencies {
+    classpath 'org.akhikhl.wuff:wuff-plugin:0.0.1'
   }
-  ```
+}
 
-  "tutorials/MyRcpApp/build.gradle":
-  ```groovy
-  apply plugin: 'java'
-  apply plugin: 'eclipse-rcp-app'
-    
-  products {
-    product platform: 'linux', arch: 'x86_32'
-    product platform: 'linux', arch: 'x86_64'
-    product platform: 'windows', arch: 'x86_32'
-    product platform: 'windows', arch: 'x86_64'
-    archiveProducts = true
+subprojects {
+  repositories {
+    mavenLocal()
+    jcenter()
   }
-  ```
+}
+```
 
-3. Create "settings.gradle" in "tutorials" folder (parent of "MyRcpApp" folder), insert code:
+"tutorials/MyRcpApp/build.gradle":
+```groovy
+apply plugin: 'java'
+apply plugin: 'eclipse-rcp-app'
+  
+products {
+  product platform: 'linux', arch: 'x86_32'
+  product platform: 'linux', arch: 'x86_64'
+  product platform: 'windows', arch: 'x86_32'
+  product platform: 'windows', arch: 'x86_64'
+  archiveProducts = true
+}
+```
 
-  ```groovy
-  include 'MyRcpApp'
-  ```
+### Create "settings.gradle"
 
-4. Invoke on command line in "tutorials" folder: `gradle build`
+Create "settings.gradle" in "tutorials" folder (parent of "MyRcpApp" folder), insert code:
 
-  **CHECK**: Build task generates products in "tutorials/MyRcpApp/build/output" folder.
+```groovy
+include 'MyRcpApp'
+```
+
+### Compile
+
+Invoke on command line in "tutorials" folder: `gradle build`.
+
+Check: build task must generate products in "tutorials/MyRcpApp/build/output" folder.
+
+---
 
 The example code for this page: [tutorialExamples/RcpApp-3](../tree/master/tutorialExamples/RcpApp-3).
 
