@@ -1,47 +1,55 @@
 We already inspected how [default manifest](Default-manifest) looks like. Now we will program manifest attributes in build.gradle.
 
-1. Edit the file "tutorials/MyOsgiBundle/build.gradle", insert the code:
+### Add manifest attributes to "build.gradle"
 
-  ```groovy
-  jar {
-    manifest {
-      instruction 'Bundle-SymbolicName', 'blabla'
-      instruction 'Bundle-Name', 'hurray! hurray!'
-      instruction 'Bundle-Version', '999'
-      instruction 'Bundle-ManifestVersion', '22'
-      instruction 'Bnd-LastModified', '9999999999999'                                    
-      instruction 'Created-By', 'Dr. Who'
-      instruction 'Tool', 'kekek'
-      instruction 'Bundle-Classpath', 'somefolder', 'anotherfolder'
-      instruction 'Require-Bundle', 'ch.qos.logback.classic'
-      instruction 'My-Attribute', 'test'
-    }
+Edit the file "tutorials/MyOsgiBundle/build.gradle", insert the code:
+
+```groovy
+jar {
+  manifest {
+    instruction 'Bundle-SymbolicName', 'blabla'
+    instruction 'Bundle-Name', 'hurray! hurray!'
+    instruction 'Bundle-Version', '999'
+    instruction 'Bundle-ManifestVersion', '22'
+    instruction 'Bnd-LastModified', '9999999999999'                                    
+    instruction 'Created-By', 'Dr. Who'
+    instruction 'Tool', 'kekek'
+    instruction 'Bundle-Classpath', 'somefolder', 'anotherfolder'
+    instruction 'Require-Bundle', 'ch.qos.logback.classic'
+    instruction 'My-Attribute', 'test'
   }
-  ```
+}
+```
 
-  Here we configure "manifest" property of the Jar task. Note that manifest supports interface [OsgiManifest](http://www.gradle.org/docs/current/javadoc/org/gradle/api/plugins/osgi/OsgiManifest.html). This is because Wuff implicitly applies gradle 'osgi' plugin to the project.
+Here we configure "manifest" property of the Jar task. Note that manifest supports interface [OsgiManifest](http://www.gradle.org/docs/current/javadoc/org/gradle/api/plugins/osgi/OsgiManifest.html). This is because Wuff implicitly applies gradle 'osgi' plugin to the project.
 
-2. Invoke on command line: `gradle build`
+### Compile
 
-3. Open file "tutorials/MyOsgiPlugin/build/libs/MyOsgiPlugin-1.0.0.0.jar", open "META-INF/MANIFEST.MF", it should look like:
+Invoke on command line: `gradle build`.
 
-  ```
-  Manifest-Version: 1.0
-  Bundle-SymbolicName: MyOsgiPlugin
-  Bundle-Name: MyOsgiPlugin
-  Bundle-Version: 1.0.0.0
-  Bundle-Classpath: .
-  Require-Bundle: org.eclipse.osgi,ch.qos.logback.classic
-  Bundle-ManifestVersion: 2
-  Bnd-LastModified: 1398418011000
-  My-Attribute: test
-  Created-By: 1.8.0_05 (Oracle Corporation)
-  Tool: Bnd-2.1.0.20130426-122213
-  ```
+### Inspect resulting manifest
 
-  Wuff ignores our values for attributes "Bundle-SymbolicName", "Bundle-Name", "Bundle-Version", "Bundle-ManifestVersion", "Bnd-LastModified", "Created-By", "Tool", "Bundle-Classpath". This is intentional: Wuff overwrites the user-supplied attributes with the generated attributes having the same name.
+Open file "tutorials/MyOsgiPlugin/build/libs/MyOsgiPlugin-1.0.0.0.jar", open "META-INF/MANIFEST.MF", it should look like:
 
-  There are three attributes that Wuff merges rather than overwrites: "Require-Bundle", "Import-Package" and "Export-Package". In the example above, "Require-Bundle" contains two values: "org.eclipse.osgi" comes from generated manifest, "ch.qos.logback.classic" comes from "build.gradle".
+```
+Manifest-Version: 1.0
+Bundle-SymbolicName: MyOsgiPlugin
+Bundle-Name: MyOsgiPlugin
+Bundle-Version: 1.0.0.0
+Bundle-Classpath: .
+Require-Bundle: org.eclipse.osgi,ch.qos.logback.classic
+Bundle-ManifestVersion: 2
+Bnd-LastModified: 1398418011000
+My-Attribute: test
+Created-By: 1.8.0_05 (Oracle Corporation)
+Tool: Bnd-2.1.0.20130426-122213
+```
+
+Wuff ignores our values for attributes "Bundle-SymbolicName", "Bundle-Name", "Bundle-Version", "Bundle-ManifestVersion", "Bnd-LastModified", "Created-By", "Tool", "Bundle-Classpath". This is intentional: Wuff overwrites the user-supplied attributes with the generated attributes having the same name.
+
+There are three attributes that Wuff merges rather than overwrites: "Require-Bundle", "Import-Package" and "Export-Package". In the example above, "Require-Bundle" contains two values: "org.eclipse.osgi" comes from generated manifest, "ch.qos.logback.classic" comes from "build.gradle".
+
+---
 
 The example code for this page: [tutorialExamples/Manifest-2](../tree/master/tutorialExamples/Manifest-2).
 
