@@ -34,7 +34,7 @@ Take [rcp application](../tree/master/tutorialExamples/RcpApp-1) that we created
 
   There is new generated extension-point: "org.eclipse.core.runtime.products". As we see, it was automatically linked to extension-point "org.eclipse.core.runtime.applications" via "product/@application" attribute.
 
-2.Let's customize extension-point "org.eclipse.core.runtime.applications" and see how it affects extension-point "org.eclipse.core.runtime.products". Create folder "tutorials/MyRcpApp/src/main/resources", create file "plugin.xml" in it, insert content:
+2. Let's customize extension-point "org.eclipse.core.runtime.applications" and see how it affects extension-point "org.eclipse.core.runtime.products". Create folder "tutorials/MyRcpApp/src/main/resources", create file "plugin.xml" in it, insert content:
 
   ```xml
   <plugin>
@@ -45,3 +45,5 @@ Take [rcp application](../tree/master/tutorialExamples/RcpApp-1) that we created
     </extension>
   </plugin>
   ```
+
+3. Invoke on command line: `gradle build`, then open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", open "plugin.xml". 
