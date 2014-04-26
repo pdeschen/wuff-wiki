@@ -1,43 +1,50 @@
 We already programmed [manifest attributes in MANIFEST.MF](Manifest-attributes-in-MANIFEST.MF). Now we will learn how to do manifest expression injection.
 
-1. The easiest way to do manifest expression injection is to use gradle/groovy capabilities. Edit file "tutorials/MyOsgiPlugin/build.gradle", insert code to jar/manifest:
+### Manifest expression injection in "build.gradle"
 
-  ```groovy
-  instruction 'Project-Info', "${project.name} compiled on ${new Date()}"
-  ```
+The easiest way to do manifest expression injection is to use gradle/groovy capabilities. Edit file "tutorials/MyOsgiPlugin/build.gradle", insert code to jar/manifest:
 
-2. Invoke on command line: `gradle build`
+```groovy
+instruction 'Project-Info', "${project.name} compiled on ${new Date()}"
+```
 
-3. Open file "tutorials/MyOsgiPlugin/build/libs/MyOsgiPlugin-1.0.0.0.jar", open "META-INF/MANIFEST.MF", it should contain:
+Invoke on command line: `gradle build`.
 
-  ```
-  Project-Info: MyOsgiPlugin compiled on Fri Apr 25 12:46:22 CEST 2014
-  ```
+Open file "tutorials/MyOsgiPlugin/build/libs/MyOsgiPlugin-1.0.0.0.jar", open "META-INF/MANIFEST.MF", it should contain:
 
-4. We can also program expression injection in MANIFEST.MF. Edit the file "tutorials/MyOsgiPlugin/src/main/resources/META-INF/MANIFEST.MF", insert code:
+```
+Project-Info: MyOsgiPlugin compiled on Fri Apr 25 12:46:22 CEST 2014
+```
 
-  ```
-  Project-Description: ${project.description}
-  ```
+### Manifest expression injection in MANIFEST.MF
 
-5. Edit file "tutorials/MyOsgiPlugin/build.gradle", insert code:
+We can also program expression injection in MANIFEST.MF. Edit the file "tutorials/MyOsgiPlugin/src/main/resources/META-INF/MANIFEST.MF", insert code:
 
-  ```groovy
-  description = 'this is example project'
-  wuff {
-    filterManifest = true
-  }
-  ```
+```
+Project-Description: ${project.description}
+```
 
-6. Invoke on command line: `gradle build`
+Edit file "tutorials/MyOsgiPlugin/build.gradle", insert code:
 
-7. Open file "tutorials/MyOsgiPlugin/build/libs/MyOsgiPlugin-1.0.0.0.jar", open "META-INF/MANIFEST.MF", it should contain:
+```groovy
+description = 'this is example project'
 
-  ```
-  Project-Description: this is example project
-  ```
+wuff {
+  filterManifest = true
+}
+```
 
-Note that expressions in MANIFEST.MF are **not** expanded by default. We must set wuff.filterManifest=true to enable this feature.
+Invoke on command line: `gradle build`
+
+Open file "tutorials/MyOsgiPlugin/build/libs/MyOsgiPlugin-1.0.0.0.jar", open "META-INF/MANIFEST.MF", it should contain:
+
+```
+Project-Description: this is example project
+```
+
+Note that expressions in MANIFEST.MF are **not** expanded by default. We must set `wuff.filterManifest=true` to enable this feature.
+
+---
 
 The example code for this page: [tutorialExamples/Manifest-4](../tree/master/tutorialExamples/Manifest-4).
 
