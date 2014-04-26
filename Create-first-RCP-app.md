@@ -1,47 +1,57 @@
 In this tutorial we start from scratch and build RCP app. Other tutorials are available [here](Tutorials).
 
-1. Create folder "tutorials/MyRcpApp", create file "build.gradle" in it, insert code:
+### Create "build.gradle"
 
-  ```groovy
-  buildscript {
-    repositories {
-      mavenLocal()
-      jcenter()
-    }
+Create folder "tutorials/MyRcpApp", create file "build.gradle" in it, insert code:
 
-    dependencies {
-      classpath 'org.akhikhl.wuff:wuff-plugin:0.0.1'
-    }
-  }
-
-  apply plugin: 'java'
-  apply plugin: 'eclipse-rcp-app'
-
+```groovy
+buildscript {
   repositories {
     mavenLocal()
     jcenter()
   }
-  ```
 
-  The script describes that we are using wuff gradle-plugin and that we apply "eclipse-rcp-app" plugin to this project.
+  dependencies {
+    classpath 'org.akhikhl.wuff:wuff-plugin:0.0.1'
+  }
+}
 
-2. Invoke on command line: `gradle scaffold`
+apply plugin: 'java'
+apply plugin: 'eclipse-rcp-app'
 
-  Scaffold task creates classes required by Eclipse RCP.
+repositories {
+  mavenLocal()
+  jcenter()
+}
+```
 
-3. Invoke on command line: `gradle build`
+The script describes that we are using wuff gradle-plugin and that we apply "eclipse-rcp-app" plugin to this project.
 
-  **CHECK:** folder "tutorials/MyRcpApp/build/libs" contains file "MyRcpApp-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest and "plugin.xml".
+### Generate default sources
 
-  **CHECK:** There's one product in "tutorials/MyEquinoxApp/build/output" folder. It contains "MyRcpApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
+Invoke on command line: `gradle scaffold`. Scaffold task creates classes required by Eclipse RCP.
 
-  **Attention:**  first wuff build might be slow, because wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
+### Compile
 
-  Note that we don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
-  
-4. Run the compiled product from command line. Expect to see:
-   
-   ![RcpApp-1-run-1](images/RcpApp-1-run-1.png "RcpApp-1-run-1")
+Invoke on command line: `gradle build`.
+
+Check: folder "tutorials/MyRcpApp/build/libs" must contain file "MyRcpApp-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest and "plugin.xml".
+
+Check: there must be one product in "tutorials/MyEquinoxApp/build/output" folder. 
+
+Check: the product must contain "MyRcpApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
+
+Attention: first build might be slow, because Wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
+
+Note that we don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - all these files are generated and inserted into bundle and product automatically.
+
+### Run
+
+Run the compiled product from command line. Expect to see:
+ 
+ ![RcpApp-1-run-1](images/RcpApp-1-run-1.png "RcpApp-1-run-1")
+
+---
 
 The example code for this page: [tutorialExamples/RcpApp-1](../tree/master/tutorialExamples/RcpApp-1).
 
