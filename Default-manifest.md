@@ -1,4 +1,4 @@
-### Default manifest and resulting manifest
+### Definitions
 
 Wuff generates default OSGi manifest for all applied Wuff plugins. It uses various project properties - version, name, dependencies, classpath etc. - as input for manifest generation. The default manifest does not pollute program sources: it is generated as a temporary file in buildDir.
 
