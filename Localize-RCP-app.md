@@ -171,7 +171,7 @@ DialogMessage=Hallo, Welt!
 
 Create folder "tutorials/MyRcpApp/src/main/resources/nl/de/intro", then copy all files from "tutorials/MyRcpApp/src/main/resources/intro" into it.
 
- Edit file "tutorials/MyRcpApp/src/main/resources/nl/de/intro/welcome.html", replace content with:
+Edit file "tutorials/MyRcpApp/src/main/resources/nl/de/intro/welcome.html", replace content with:
 
 ```html
 <html>
@@ -188,9 +188,13 @@ Create folder "tutorials/MyRcpApp/src/main/resources/nl/de/intro", then copy all
 </html>
 ```
 
-13. Invoke on command line in "tutorials" folder: `gradle build`
+### Compile
 
-14. Run the German-language product from command line. When the program is started for the first time, it displays intro page:
+Invoke on command line in "tutorials" folder: `gradle build`.
+
+### Run
+
+Run the German-language product from command line. When the program is started for the first time, it displays intro page:
 
 ![RcpApp-7-run-1](images/RcpApp-7-run-1.png "RcpApp-7-run-1")
 
@@ -203,6 +207,8 @@ As soon as we close intro page, we see the default perspective with button. The 
 When we click the button, the program displays localized message:
 
 ![RcpApp-7-run-3](images/RcpApp-7-run-3.png "RcpApp-7-run-3")
+
+---
 
 The example code for this page: [tutorialExamples/RcpApp-7](../tree/master/tutorialExamples/RcpApp-7).
 
