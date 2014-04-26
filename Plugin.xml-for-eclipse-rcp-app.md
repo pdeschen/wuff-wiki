@@ -33,3 +33,9 @@ Take [rcp application](../tree/master/tutorialExamples/RcpApp-1) that we created
   Extension-points "org.eclipse.ui.perspectives", "org.eclipse.ui.views" and "org.eclipse.ui.perspectiveExtensions" are the same as in [plugin.xml for eclipse bundle](plugin.xml-for-eclipse-bundle).
 
   There is new generated extension-point: "org.eclipse.core.runtime.products". As we see, it was automatically linked to extension-point "org.eclipse.core.runtime.applications" via "product/@application" attribute.
+
+2.Let's customize extension-point "org.eclipse.core.runtime.applications" and see how it affects extension-point "org.eclipse.core.runtime.products". Create folder "tutorials/MyRcpApp/src/main/resources", create file "plugin.xml" in it, insert content:
+
+  ```xml
+
+  ```
