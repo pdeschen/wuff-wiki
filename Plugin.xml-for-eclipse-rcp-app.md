@@ -100,3 +100,42 @@ Edit file "tutorials/MyRcpApp/src/main/resources/plugin.xml", insert content:
   </product>
 </extension>  
 ```
+
+### Compile and inspect custom product extension-point
+
+Invoke on command line: `gradle build`.
+
+Open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", open "plugin.xml", expect to see:
+
+```xml
+<plugin>
+  <extension id="myappid" point="org.eclipse.core.runtime.applications">
+    <application>
+      <run class="myrcpapp.Application"/>
+    </application>
+  </extension>
+  <extension id="myproductid" point="org.eclipse.core.runtime.products">
+    <product application="MyRcpApp.myappid" name="Very nice app">
+      <property name="windowImages" value="icons/icon_16x16.png,icons/icon_32x32.png,icons/icon_64x64.png,icons/icon_128x128.png"/>
+      <property name="aboutText" value="This program has big future!"/>
+      <property name="aboutImage" value="images/logo.png"/>
+      <property name="startupForegroundColor" value="FFFFFF"/>
+      <property name="startupMessageRect" value="28,218,421,20"/>
+      <property name="startupProgressRect" value="28,243,421,15"/>
+    </product>
+  </extension>
+  <extension point="org.eclipse.ui.perspectives">
+    <perspective id="MyRcpApp.Perspective" name="MyRcpApp Perspective" class="myrcpapp.Perspective"/>
+  </extension>
+  <extension point="org.eclipse.ui.views">
+    <view id="MyRcpApp.View" name="MyRcpApp View" class="myrcpapp.View"/>
+  </extension>
+  <extension point="org.eclipse.ui.perspectiveExtensions">
+    <perspectiveExtension targetID="MyRcpApp.Perspective">
+      <view id="MyRcpApp.View" standalone="true" minimized="false" relative="org.eclipse.ui.editorss" relationship="left"/>
+    </perspectiveExtension>
+  </extension>
+</plugin>
+```
+
+As we see, "plugin.xml" contains our application and product extension points, not the default ones.
