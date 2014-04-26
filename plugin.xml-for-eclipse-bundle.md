@@ -64,9 +64,9 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   We see that Wuff recognized our file as a view and that it automatically inserted extension-point for it. In general, Wuff recognizes any files matching to patterns `'**/*View.groovy', '**/*View.java', '**/View*.groovy', '**/View*.java'` as view files and inserts extension-point "org.eclipse.ui.views" for each of them.
 
   Explanation of attributes:
-  - id="MyEclipsePlugin.MyView": synthesized from project name and view class name
-  - name="MyEclipsePlugin MyView": synthesized from project name and view class name
-  - class="myeclipseplugin.MyView": points to qualified class name of the view file.
+  - id="MyEclipsePlugin.MyView": can be any string, was assigned to concatenation of project name and view class name.
+  - name="MyEclipsePlugin MyView": can be any string, was assigned to concatenation of project name and view class name.
+  - class="myeclipseplugin.MyView": must be a QCN of the view class.
 
 7. What should we do to change the view name or view id? Very simple: give our own view definition. Create folder "tutorials/MyEclipsePlugin/src/main/resources", create file "plugin.xml" in it, insert content:
 
@@ -116,9 +116,9 @@ Let's create eclipse bundle and program "plugin.xml" for it.
   We see that Wuff recognized "MyPerspective.java" file as a perspective and that it automatically inserted extension-points for it. In general, Wuff recognizes any files matching to patterns `'**/*Perspective.groovy', '**/*Perspective.java', '**/Perspective*.groovy', '**/Perspective*.java'` as perspective files and inserts extension point "org.eclipse.ui.perspectives" for each of them.
 
   Explanation of attributes in "org.eclipse.ui.perspectives":
-  - id="MyEclipsePlugin.MyPerspective": synthesized from project name and perspective class name.
-  - name="MyEclipsePlugin MyPerspective": synthesized from project name and perspective class name.
-  - class="myeclipseplugin.MyPerspective": points to qualified class name of the perspective file.
+  - id="MyEclipsePlugin.MyPerspective": can be any string, was assigned to concatenation of project name and perspective class name.
+  - name="MyEclipsePlugin MyPerspective": can be any string, was assigned to concatenation of project name and perspective class name.
+  - class="myeclipseplugin.MyPerspective": must be a QCN of the perspective class.
 
   As we see, extension-point "org.eclipse.ui.perspectiveExtensions" links perspective and view. This is special case: our plugin contains exactly one perspective and one view, so Wuff decides that they must be linked to each other.
 
