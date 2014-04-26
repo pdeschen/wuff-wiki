@@ -24,12 +24,16 @@ Invoke on command line: `gradle build`.
 
 Check: there must be 4 products in "tutorials/MyIdeApp/build/output" folder. 
 
-Check: each product must contain "MyIdeApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
+Check: each product must contain "MyIdeApp" bundle in "plugins" subfolder and in "configuration/config.ini".
 
-Check: each product is runnable on corresponding OS and architecture.
+### Run
 
-**Attention:** do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
+We can run each product on corresponding OS and architecture. On Windows platform we start application via .bat-file, on other platforms we start application via .sh-file.
+
+Attention: do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
 If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit product won't start.
+
+---
 
 The example code for this page: [tutorialExamples/IdeApp-2](../tree/master/tutorialExamples/IdeApp-2).
 
