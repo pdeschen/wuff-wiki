@@ -1,85 +1,96 @@
 We already [prepared IDE app for multiproject build](Prepare-IDE-app-for-multiproject-build). Now we create IDE plugin and use it in IDE app.
 
-1. Create folder "tutorials/MyIdePlugin", create file "build.gradle" in it, insert code:
+### Create IDE bundle
 
-  ```groovy
-  apply plugin: 'java'
-  apply plugin: 'eclipse-ide-bundle'
+Create folder "tutorials/MyIdePlugin", create file "build.gradle" in it, insert code:
 
-  dependencies {
-    compile "${eclipseMavenGroup}:org.eclipse.core.commands:+"
+```groovy
+apply plugin: 'java'
+apply plugin: 'eclipse-ide-bundle'
+
+dependencies {
+  compile "${eclipseMavenGroup}:org.eclipse.core.commands:+"
+}
+```
+We add dependency on org.eclipse.core.commands because we are going to implement menu handler.
+
+Create folder "tutorials/MyIdePlugin/src/main/java/myideplugin", create file "MenuHandler.java" in it, insert code:
+
+```java
+package myideplugin;
+
+import org.eclipse.core.commands.AbstractHandler;
+import org.eclipse.core.commands.ExecutionEvent;
+import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.ui.PlatformUI;
+
+public final class MenuHandler extends AbstractHandler {
+
+  @Override
+  public Object execute(ExecutionEvent event) throws ExecutionException {
+    MessageDialog.openInformation(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell(), "Information", "Hello, world!");
+    return null;
   }
-  ```
-  We add dependency on org.eclipse.core.commands because we are going to implement menu handler.
+}
+```
 
-2. Create folder "tutorials/MyIdePlugin/src/main/java/myideplugin", create file "MenuHandler.java" in it, insert code:
+Create folder "tutorials/MyIdePlugin/src/main/resources/myideplugin", create file "plugin.xml" in it, insert code:
 
-  ```java
-  package myideplugin;
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.ui.commands">
+    <command id="cmdHelloWorld" name="Show greeting" defaultHandler="myideplugin.MenuHandler">
+    </command>
+  </extension>
+  <extension point="org.eclipse.ui.menus">
+    <menuContribution allPopups="true" locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+      <menu id="MyMenu" label="My Menu">
+        <command commandId="cmdHelloWorld" style="push"/>
+      </menu>
+    </menuContribution>
+  </extension>
+</plugin>
+```
 
-  import org.eclipse.core.commands.AbstractHandler;
-  import org.eclipse.core.commands.ExecutionEvent;
-  import org.eclipse.core.commands.ExecutionException;
-  import org.eclipse.jface.dialogs.MessageDialog;
-  import org.eclipse.ui.PlatformUI;
+Edit file "tutorials/settings.gradle", insert code:
 
-  public final class MenuHandler extends AbstractHandler {
+```groovy
+include 'MyIdePlugin'
+```
+so that there are two includes - "MyIdeApp" and "MyIdePlugin".
 
-    @Override
-    public Object execute(ExecutionEvent event) throws ExecutionException {
-      MessageDialog.openInformation(PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell(), "Information", "Hello, world!");
-      return null;
-    }
-  }
-  ```
-3. Create folder "tutorials/MyIdePlugin/src/main/resources/myideplugin", create file "plugin.xml" in it, insert code:
+### Use IDE bundle in IDE app
 
-  ```xml
-  <?xml version="1.0" encoding="UTF-8"?>
-  <?eclipse version="3.4"?>
-  <plugin>
-    <extension point="org.eclipse.ui.commands">
-      <command id="cmdHelloWorld" name="Show greeting" defaultHandler="myideplugin.MenuHandler">
-      </command>
-    </extension>
-    <extension point="org.eclipse.ui.menus">
-      <menuContribution allPopups="true" locationURI="menu:org.eclipse.ui.main.menu?after=additions">
-        <menu id="MyMenu" label="My Menu">
-          <command commandId="cmdHelloWorld" style="push"/>
-        </menu>
-      </menuContribution>
-    </extension>
-  </plugin>
-  ```
+Edit file "tutorials/MyIdeApp/build.gradle", insert code:
 
-4. Edit file "tutorials/settings.gradle", insert code:
+```groovy
+dependencies {
+  compile project(':MyIdePlugin')
+}
+```
 
-  ```groovy
-  include 'MyIdePlugin'
-  ```
-  so that there are two includes - "MyIdeApp" and "MyIdePlugin".
+### Compile
 
-5. Edit file "tutorials/MyIdeApp/build.gradle", insert code:
+Invoke on command line in "tutorials" folder: `gradle build`.
 
-  ```groovy
-  dependencies {
-    compile project(':MyIdePlugin')
-  }
-  ```
+Check: folder "tutorials/MyIdePlugin/build/libs" must contain file "MyIdePlugin-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
 
-6. Invoke on command line in "tutorials" folder: `gradle build`
+Check: each product in "tutorials/MyIdeApp/build/output" must contain "MyIdePlugin" and "MyIdeApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
 
-  **CHECK:** folder "tutorials/MyIdePlugin/build/libs" contains file "MyIdePlugin-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest.
+### Run
 
-  **CHECK:** Each product in "tutorials/MyIdeApp/build/output" contains "MyIdePlugin" and "MyIdeApp" bundles in "plugins" subfolder and in "configuration/config.ini". 
+Run the compiled product from command line. Fully started program looks like Eclipse IDE with "Resource" perspective. Main menu contains new submenu "My Menu" with menu item "Show greeting":
 
-7. Run the compiled product from command line. Fully started program looks like Eclipse IDE with "Resource" perspective. Main menu contains new submenu "My Menu" with menu item "Show greeting":
+![IdeApp-4-run-1](images/IdeApp-4-run-1.png "IdeApp-4-run-1")
 
-  ![IdeApp-4-run-1](images/IdeApp-4-run-1.png "IdeApp-4-run-1")
+When you click "Show greeting", the program shows message dialog:
 
-  When you click "Show greeting", the program shows message dialog:
+![IdeApp-4-run-2](images/IdeApp-4-run-2.png "IdeApp-4-run-2")
 
-  ![IdeApp-4-run-2](images/IdeApp-4-run-2.png "IdeApp-4-run-2")
+---
 
 The example code for this page: [tutorialExamples/IdeApp-4](../tree/master/tutorialExamples/IdeApp-4).
 
