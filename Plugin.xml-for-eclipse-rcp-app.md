@@ -58,7 +58,7 @@ Invoke on command line: `gradle build`.
 
 Open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", open "plugin.xml". Now extension-points "org.eclipse.core.runtime.applications" and "org.eclipse.core.runtime.products" look a bit different:
 
-```groovy
+```xml
 <plugin>
   <extension id="myappid" point="org.eclipse.core.runtime.applications">
     <application>
@@ -67,6 +67,17 @@ Open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", open "plugin.xml
   </extension>
   <extension id="product" point="org.eclipse.core.runtime.products">
     <product application="MyRcpApp.myappid" name="MyRcpApp"/>
+  </extension>
+  <extension point="org.eclipse.ui.perspectives">
+    <perspective id="MyRcpApp.Perspective" name="MyRcpApp Perspective" class="myrcpapp.Perspective"/>
+  </extension>
+  <extension point="org.eclipse.ui.views">
+    <view id="MyRcpApp.View" name="MyRcpApp View" class="myrcpapp.View"/>
+  </extension>
+  <extension point="org.eclipse.ui.perspectiveExtensions">
+    <perspectiveExtension targetID="MyRcpApp.Perspective">
+      <view id="MyRcpApp.View" standalone="true" minimized="false" relative="org.eclipse.ui.editorss" relationship="left"/>
+    </perspectiveExtension>
   </extension>
 </plugin>
 ```
