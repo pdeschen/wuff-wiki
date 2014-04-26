@@ -40,10 +40,23 @@ Take [rcp application](../tree/master/tutorialExamples/RcpApp-1) that we created
   <plugin>
     <extension id="myappid" point="org.eclipse.core.runtime.applications">
       <application>
-        <run class="myequinoxapp.Application"/>
+        <run class="myrcpapp.Application"/>
       </application>
     </extension>
   </plugin>
   ```
 
-3. Invoke on command line: `gradle build`, then open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", open "plugin.xml". 
+3. Invoke on command line: `gradle build`, then open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", open "plugin.xml". Now extension-points "org.eclipse.core.runtime.applications" and "org.eclipse.core.runtime.products" look a bit different:
+
+  ```groovy
+  <extension id="myappid" point="org.eclipse.core.runtime.applications">
+    <application>
+      <run class="myrcpapp.Application"/>
+    </application>
+  </extension>
+  <extension id="product" point="org.eclipse.core.runtime.products">
+    <product application="MyRcpApp.myappid" name="MyRcpApp"/>
+  </extension>
+  ```
+
+  As we see, Wuff does not generate extension-point "org.eclipse.core.runtime.applications", it uses the one provided by us. Also it links the generated extension-point "org.eclipse.core.runtime.applications" to it.
