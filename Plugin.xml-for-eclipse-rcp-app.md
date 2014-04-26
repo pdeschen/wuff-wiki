@@ -37,5 +37,11 @@ Take [rcp application](../tree/master/tutorialExamples/RcpApp-1) that we created
 2.Let's customize extension-point "org.eclipse.core.runtime.applications" and see how it affects extension-point "org.eclipse.core.runtime.products". Create folder "tutorials/MyRcpApp/src/main/resources", create file "plugin.xml" in it, insert content:
 
   ```xml
-
+  <plugin>
+    <extension id="myappid" point="org.eclipse.core.runtime.applications">
+      <application>
+        <run class="myequinoxapp.Application"/>
+      </application>
+    </extension>
+  </plugin>
   ```
