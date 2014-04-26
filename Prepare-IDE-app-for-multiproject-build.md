@@ -1,53 +1,61 @@
 We already [configured IDE products](Configure-IDE-products). Now we prepare IDE app for multiproject build.
 
-1. Create "build.gradle" in "tutorials" folder (parent of "MyIdeApp" folder) 
+### Create root "build.gradle"
 
-2. Move "buildscript" and "repositories" from "tutorials/MyIdeApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
+Create "build.gradle" in "tutorials" folder (parent of "MyIdeApp" folder).
 
-  "tutorials/build.gradle":
-  ```groovy
-  buildscript {
-    repositories {
-      mavenLocal()
-      jcenter()
-    }
-    
-    dependencies {
-      classpath 'org.akhikhl.wuff:wuff-plugin:0.0.1'
-    }
+Move "buildscript" and "repositories" from "tutorials/MyIdeApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
+
+"tutorials/build.gradle":
+```groovy
+buildscript {
+  repositories {
+    mavenLocal()
+    jcenter()
   }
-
-  subprojects {
-    repositories {
-      mavenLocal()
-      jcenter()
-    }
+  
+  dependencies {
+    classpath 'org.akhikhl.wuff:wuff-plugin:0.0.1'
   }
-  ```
+}
 
-  "tutorials/MyIdeApp/build.gradle":
-  ```groovy
-  apply plugin: 'java'
-  apply plugin: 'eclipse-ide-app'
-    
-  products {
-    product platform: 'linux', arch: 'x86_32'
-    product platform: 'linux', arch: 'x86_64'
-    product platform: 'windows', arch: 'x86_32'
-    product platform: 'windows', arch: 'x86_64'
-    archiveProducts = true
+subprojects {
+  repositories {
+    mavenLocal()
+    jcenter()
   }
-  ```
+}
+```
 
-3. Create "settings.gradle" in "tutorials" folder (parent of "MyIdeApp" folder), insert code:
+"tutorials/MyIdeApp/build.gradle":
+```groovy
+apply plugin: 'java'
+apply plugin: 'eclipse-ide-app'
+  
+products {
+  product platform: 'linux', arch: 'x86_32'
+  product platform: 'linux', arch: 'x86_64'
+  product platform: 'windows', arch: 'x86_32'
+  product platform: 'windows', arch: 'x86_64'
+  archiveProducts = true
+}
+```
 
-  ```groovy
-  include 'MyIdeApp'
-  ```
+### Create "settings.gradle"
 
-4. Invoke on command line in "tutorials" folder: `gradle build`
+Create "settings.gradle" in "tutorials" folder (parent of "MyIdeApp" folder), insert code:
 
-  **CHECK**: Build task generates products in "tutorials/MyIdeApp/build/output" folder.
+```groovy
+include 'MyIdeApp'
+```
+
+### Compile
+
+Invoke on command line in "tutorials" folder: `gradle build`.
+
+Check: build task must generate products in "tutorials/MyIdeApp/build/output" folder.
+
+---
 
 The example code for this page: [tutorialExamples/IdeApp-3](../tree/master/tutorialExamples/IdeApp-3).
 
