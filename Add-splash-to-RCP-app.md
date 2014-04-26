@@ -4,7 +4,7 @@ We already [created Eclipse bundle and used it in RCP app](Create-Eclipse-bundle
 
 Download or create some bmp-file with bit depth 8 or 24 (not 32). Name it "splash.bmp".
 
-Create folder "tutorials/MyRcpApp/src/main/resources", copy splash file into it.
+Create folder "tutorials/MyRcpApp/src/main/resources", copy splash file into it. Alternatively, we can store splash screen in "tutorials/MyRcpApp".
 
 ### Compile
 
