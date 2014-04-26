@@ -1,49 +1,57 @@
 We already [added splash to IDE app](Add-splash-to-IDE-app). Now we add intro page to IDE app.
 
-1. Create folder "tutorials/MyIdeApp/src/main/resources/intro", create file "welcome.html" in it, insert code:
+### Create intro page
 
-  ```html
-  <html>
-    <head>
-      <meta charset="UTF-8">
-      <title>Welcome page</title>
-      <link rel="stylesheet" type="text/css" href="default.css">
-    </head>
-    <body>
-      <h1>Hello, world!</h1>
-      <p>This is welcome page which you can customize.</p>
-      <p>${project.name} Version ${project.version}</p>
-    </body>
-  </html>
-  ```
+Create folder "tutorials/MyIdeApp/src/main/resources/intro", create file "welcome.html" in it, insert code:
 
-2. Create file "default.css" in the same folder, insert code:
+```html
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome page</title>
+    <link rel="stylesheet" type="text/css" href="default.css">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <p>This is welcome page which you can customize.</p>
+    <p>${project.name} Version ${project.version}</p>
+  </body>
+</html>
+```
 
-  ```css
-  body {
-    font-family: Arial;
-    background-color: LightBlue;
-    color: DimGray;
-  }
+Create file "default.css" in the same folder, insert code:
 
-  h1 {
-    color: SteelBlue;
-  }
-  ```
+```css
+body {
+  font-family: Arial;
+  background-color: LightBlue;
+  color: DimGray;
+}
 
-3. Invoke on command line in "tutorials" folder: `gradle build`
+h1 {
+  color: SteelBlue;
+}
+```
 
-  Note that we don't have to configure intro page in configuration files - wuff does this for us automatically. Concretely, when Wuff sees that file "src/main/resources/intro/welcome.html" exists, it decides to generate corresponding "introContent.xml" and extension-point in "plugin.xml".
+### Compile
 
-4. Run the compiled product from command line. When the program is started for the first time, it displays intro page:
+Invoke on command line in "tutorials" folder: `gradle build`.
 
-  ![IdeApp-7-run-1](images/IdeApp-7-run-1.png)
-  
-  Note that intro page is filtered with groovy.text.SimpleTemplateEngine, so we can render arbitrary content on intro page with the help of java and groovy functions.
+Note that we don't have to configure intro page in configuration files - Wuff does this for us automatically. Concretely, when Wuff sees that file "src/main/resources/intro/welcome.html" exists, it decides to generate corresponding "introContent.xml" and extension-point in "plugin.xml".
 
-  As soon as we close intro page, we see the default perspective:
+### Run
 
-  ![IdeApp-7-run-2](images/IdeApp-7-run-2.png)
+Run the compiled product from command line. When the program is started for the first time, it displays intro page:
+
+![IdeApp-7-run-1](images/IdeApp-7-run-1.png)
+
+Note that intro page is filtered with groovy.text.SimpleTemplateEngine, so we can render arbitrary content on intro page with the help of java and groovy functions.
+
+As soon as we close intro page, we see the default perspective:
+
+![IdeApp-7-run-2](images/IdeApp-7-run-2.png)
+
+---
 
 The example code for this page: [tutorialExamples/IdeApp-7](../tree/master/tutorialExamples/IdeApp-7).
 
