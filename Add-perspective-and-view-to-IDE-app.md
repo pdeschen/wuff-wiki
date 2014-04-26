@@ -91,7 +91,7 @@ then do "gradle clean build" and start the product. Now perspective has proper l
 
 ![IdeApp-5-run-3](images/IdeApp-5-run-3.png "IdeApp-5-run-3")
 
-When Wuff recognizes, that we provided one perspective and that application contains only one view, it decides to link perspective to this view. If you need more complex perspective, containing more views, you'll have to program it via "org.eclipse.ui.perspectiveExtensions" extension point.
+The chapter [plugin.xml for eclipse-bundle](plugin.xml-for-eclipse-bundle) contains more information on customizing views and perspectives.
 
 ---
 
