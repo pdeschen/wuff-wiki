@@ -28,7 +28,7 @@ Check: Each product must contain "MyEquinoxApp" bundle in "plugins" subfolder an
 
 ### Run
 
-Each product must be runnable on corresponding OS and architecture. Windows products 
+We can run each product on corresponding OS and architecture. On Windows platform we start application via .bat-file, on other platforms we start application via .sh-file.
 
 Attention: do not try to run the generated product on a "wrong" OS or "wrong" architecture. 
 Linux product won't start on windows. 64-bit product won't start on 32-bit JRE.
