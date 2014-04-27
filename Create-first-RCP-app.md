@@ -37,7 +37,7 @@ Invoke on command line: `gradle build`.
 
 Check: folder "tutorials/MyRcpApp/build/libs" must contain file "MyRcpApp-1.0.0.0.jar", which is proper OSGi bundle with automatically generated manifest and "plugin.xml".
 
-Check: there must be one product in "tutorials/MyEquinoxApp/build/output" folder. 
+Check: there must be one product in "tutorials/MyRcpApp/build/output" folder. 
 
 Check: the product must contain "MyRcpApp" bundle in "plugins" subfolder and in "configuration/config.ini". 
 
