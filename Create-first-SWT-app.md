@@ -97,3 +97,13 @@ Note that we don't have to add platform-specific SWT/JFace dependencies - Wuff d
 Run the compiled product from command line. Expect to see:
 
 ![SwtApp-1-run-1](images/SwtApp-1-run-1.png)
+
+When we click on the button, the program shows message dialog:
+
+![SwtApp-1-run-2](images/SwtApp-1-run-2.png)
+
+---
+
+The example code for this page: [tutorialExamples/SwtApp-1](../tree/master/tutorialExamples/SwtApp-1).
+
+Next page: [Configure SWT products](Configure-SWT-products).
