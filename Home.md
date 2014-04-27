@@ -2,29 +2,21 @@
 
 Wuff is a gradle plugin for developing and assembling Eclipse applications and plugins **independently** of Eclipse-IDE. 
 
-[Main features](Main-features)
+### Basics
 
-### Prerequisites and usage
+- [Main features](Main-features)
+- [Prerequisites](Prerequisites)
+- [Usage](Usage)
+- [Gradle plugins](Gradle-plugins)
 
-The following is required to start using Wuff:
-- JDK version 7 or 8
-- gradle version 1.11 or newer
-- http-access to jcenter
-
-Eclipse is not required - wuff will download and configure it automatically.
-
-Wuff is available as maven artifact 'org.akhikhl.wuff:wuff-plugin:+' at jcenter and maven central.
-
-The following chapters show how to use Wuff in "build.gradle".
-
-### Equinox
+### Equinox app
 
 - [Create first Equinox app](Create-first-Equinox-app)
 - [Configure Equinox products](Configure-Equinox-products)
 - [Prepare Equinox app for multi-project build](Prepare-Equinox-app-for-multiproject-build)
 - [Create OSGi-bundle and use it in Equinox app](Create-OSGi-bundle-and-use-it-in-Equinox-app)
 
-### Eclipe RCP
+### RCP app
 
 - [Create first RCP app](Create-first-RCP-app)
 - [Configure RCP products](Configure-RCP-products)
@@ -34,7 +26,7 @@ The following chapters show how to use Wuff in "build.gradle".
 - [Add intro page to RCP app](Add-intro-page-to-RCP-app)
 - [Localize RCP app](Localize-RCP-app)
 
-### Eclipse IDE
+### IDE app
 
 - [Create first IDE app](Create-first-IDE-app)
 - [Configure IDE products](Configure-IDE-products)
