@@ -25,7 +25,7 @@ Wuff provides the following gradle plugins:
   - generates and merges plugin.xml
   - generates and merges plugin_customization.ini
   - wraps non-OSGi dependencies into OSGi-bundles
-  - generates runnable Equinox products for multiple platforms and locales.
+  - generates runnable Eclipse Equinox products for multiple platforms and locales.
 
   Usage: `apply plugin: 'eclipse-equinox-app'`.
 
@@ -39,6 +39,20 @@ Wuff provides the following gradle plugins:
   - integrates splash.bmp
   - integrates intro pages
   - wraps non-OSGi dependencies into OSGi-bundles
-  - generates runnable Equinox products for multiple platforms and locales.
+  - generates runnable Eclipse RCP products for multiple platforms and locales.
 
   Usage: `apply plugin: 'eclipse-rcp-app'`.
+
+- eclipse-ide-app
+
+  Configures current project as Eclipse IDE app, so that gradle build:
+  - injects trivial Eclipse dependencies
+  - generates and merges OSGi manifest
+  - generates and merges plugin.xml
+  - generates and merges plugin_customization.ini
+  - integrates splash.bmp
+  - integrates intro pages
+  - wraps non-OSGi dependencies into OSGi-bundles
+  - generates runnable Eclipse IDE products for multiple platforms and locales.
+
+  Usage: `apply plugin: 'eclipse-ide-app'`.
