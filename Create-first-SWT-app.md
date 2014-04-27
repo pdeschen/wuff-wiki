@@ -80,7 +80,7 @@ public final class Main {
 
 Invoke on command line: `gradle build`.
 
-Check: folder "tutorials/MySwtApp/build/libs" must contain file "MySwtApp-1.0.0.0.jar", which is usual JAR (not OSGi).
+Check: folder "tutorials/MySwtApp/build/libs" must contain file "MySwtApp-1.0.jar", which is usual JAR (not OSGi).
 
 Check: there must be one product in "tutorials/MySwtApp/build/output" folder.
 
