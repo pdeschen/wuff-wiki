@@ -71,14 +71,14 @@ Wuff provides the following gradle plugins:
 
 - swt-lib
 
-  Configures current project as non-OSGi SWT library, so that gradle build:
+  Configures current project as non-OSGi SWT/JFace library, so that gradle build:
   - injects SWT and JFace dependencies
 
   Usage: `apply plugin: 'swt-lib'`.
 
 - swt-app
 
-  Configures current project as non-OSGi SWT app, so that gradle build:
+  Configures current project as non-OSGi SWT/JFace app, so that gradle build:
   - injects SWT and JFace dependencies
   - generates runnable non-OSGi SWT/JFace products for multiple platforms and locales
 
