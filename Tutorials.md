@@ -37,11 +37,11 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 - [Manifest attributes in MANIFEST.MF](Manifest-attributes-in-MANIFEST.MF)
 - [Manifest expression injection](Manifest-expression-injection)
 
-### Programming plugin.xml
+### Programming "plugin.xml"
 
-- [Default plugin.xml](Default-plugin.xml)
-- [plugin.xml for Eclipse bundle](plugin.xml-for-eclipse-bundle)
-- [plugin.xml for Equinox app](Plugin.xml-for-eclipse-equinox-app)
-- [plugin.xml for RCP app](Plugin.xml-for-eclipse-rcp-app)
-- [plugin.xml for IDE app](Plugin.xml-for-eclipse-ide-app)
-- [plugin.xml expression injection](plugin.xml-expression-injection)
+- [Default "plugin.xml"](Default-plugin.xml)
+- ["plugin.xml" for Eclipse bundle](plugin.xml-for-eclipse-bundle)
+- ["plugin.xml" for Equinox app](Plugin.xml-for-eclipse-equinox-app)
+- ["plugin.xml" for RCP app](Plugin.xml-for-eclipse-rcp-app)
+- ["plugin.xml" for IDE app](Plugin.xml-for-eclipse-ide-app)
+- ["plugin.xml" expression injection](plugin.xml-expression-injection)
