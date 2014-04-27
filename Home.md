@@ -1,4 +1,4 @@
-![Wuff logo](wiki/images/robo-dog_60x64.png "Wuff logo")
+![Wuff logo](images/robo-dog_60x64.png "Wuff logo")
 
 Welcome to wiki! Wuff! 
 
