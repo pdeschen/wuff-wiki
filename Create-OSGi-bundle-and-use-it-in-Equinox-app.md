@@ -83,4 +83,4 @@ Run the compiled product from command line. The expected output:
 
 The example code for this page: [tutorialExamples/EquinoxApp-4](../tree/master/tutorialExamples/EquinoxApp-4).
 
-Now we are done with Equinox tutorial. Other tutorials are available [here](Tutorials).
+Now we are done with building Equinox app. Now we can go back to [wiki pages home](Home) and learn something else.
