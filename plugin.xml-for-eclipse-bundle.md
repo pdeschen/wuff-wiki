@@ -1,4 +1,4 @@
-We already learned what [default plugin.xml](Default-plugin.xml) is. Now we will program "plugin.xml" for eclipse-bundle.
+We already learned what [default plugin.xml](Default-plugin.xml) is. Now we will program "plugin.xml" for Eclipse bundle.
 
 ### Create "build.gradle"
 
