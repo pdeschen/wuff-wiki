@@ -5,8 +5,7 @@ Wuff is a gradle plugin for developing and assembling Eclipse applications and p
 ### Basics
 
 - [Main features](Main-features)
-- [Prerequisites](Prerequisites)
-- [Usage](Usage)
+- [Prerequisites and usage](Prerequisites-and-usage)
 - [Gradle plugins](Gradle-plugins)
 
 ### Equinox app
