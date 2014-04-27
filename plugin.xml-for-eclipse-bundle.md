@@ -1,4 +1,4 @@
-We already learned what [default plugin.xml](Default-plugin.xml) is. Now we will program "plugin.xml" for Eclipse bundle.
+We already learned what [default "plugin.xml"](Default-plugin.xml) is. Now we will program "plugin.xml" for Eclipse bundle.
 
 ### Create "build.gradle"
 
@@ -182,4 +182,4 @@ As we see, now Wuff recognizes that "plugin.xml" already contains extension-poin
 
 The example code for this page: [tutorialExamples/PluginXml-1](../tree/master/tutorialExamples/PluginXml-1) and [tutorialExamples/PluginXml-2](../tree/master/tutorialExamples/PluginXml-2).
 
-Next page: [plugin.xml for Equinox app](Plugin.xml-for-eclipse-equinox-app).
+Next page: ["plugin.xml" for Equinox app](Plugin.xml-for-eclipse-equinox-app).
