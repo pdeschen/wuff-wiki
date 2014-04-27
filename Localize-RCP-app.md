@@ -212,4 +212,4 @@ When we click the button, the program displays localized message:
 
 The example code for this page: [tutorialExamples/RcpApp-7](../tree/master/tutorialExamples/RcpApp-7).
 
-Now we are done with RCP tutorial. Other tutorials are available [here](Tutorials).
+We are done with building RCP app. Now we can go back to [wiki home page](Home) and learn something else.
