@@ -2,7 +2,7 @@ We already know how to [program plugin.xml for eclipse-equinox-app](plugin.xml-f
 
 ### Compile and inspect default "plugin.xml"
 
-Take [rcp application](../tree/master/tutorialExamples/RcpApp-1) that we created in [RCP tutorial](Create-first-RCP-app) as a starting point.
+Let's take an [example of RCP app](../tree/master/tutorialExamples/RcpApp-5) that we built in [RCP tutorial](Add-splash-to-RCP-app).
 
 Invoke on command line: `gradle build`.
 
@@ -139,3 +139,58 @@ Open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", open "plugin.xml
 ```
 
 As we see, "plugin.xml" contains our application and product extension points, not the default ones.
+
+# Add intro, compile and inspect intro extension points
+
+Let's take an [example of RCP app with intro page](../tree/master/tutorialExamples/RcpApp-6) that we built in [RCP tutorial](Add-intro-page-to-RCP-app).
+
+Invoke on command line: `gradle build`.
+
+Open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", it contains "intro/introContent.xml" with the following content:
+
+```xml
+<introContent>
+  <page id="homePageId" url="welcome.html"/>
+</introContent>
+```
+
+Wuff generated this file for us, because it have seen, then there is "intro/welcome.html" page, but no "intro/introContent.xml". If we would provide our own version of "intro/introContent.xml" (either in "src/main/resources" or in project's root), Wuff would use just that.
+
+Open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", it contains "plugin.xml" with the following content:
+
+```xml
+<plugin>
+  <extension id="Application" point="org.eclipse.core.runtime.applications">
+    <application>
+      <run class="myrcpapp.Application"/>
+    </application>
+  </extension>
+  <extension id="product" point="org.eclipse.core.runtime.products">
+    <product application="MyRcpApp.Application" name="MyRcpApp"/>
+  </extension>
+  <extension point="org.eclipse.ui.perspectives">
+    <perspective id="MyRcpApp.Perspective" name="MyRcpApp Perspective" class="myrcpapp.Perspective"/>
+  </extension>
+  <extension point="org.eclipse.ui.views">
+    <view id="MyRcpApp.View" name="MyRcpApp View" class="myrcpapp.View"/>
+  </extension>
+  <extension point="org.eclipse.ui.perspectiveExtensions">
+    <perspectiveExtension targetID="MyRcpApp.Perspective">
+      <view id="MyRcpApp.View" standalone="true" minimized="false" relative="org.eclipse.ui.editorss" relationship="left"/>
+    </perspectiveExtension>
+  </extension>
+  <extension point="org.eclipse.ui.intro">
+    <intro id="MyRcpApp.intro" class="org.eclipse.ui.intro.config.CustomizableIntroPart"/>
+    <introProductBinding introId="MyRcpApp.intro" productId="MyRcpApp.product"/>
+  </extension>
+  <extension point="org.eclipse.ui.intro.config">
+    <config id="MyRcpApp.introConfigId" introId="MyRcpApp.intro" content="intro/introContent.xml">
+      <presentation home-page-id="homePageId" standby-page-id="homePageId">
+        <implementation kind="html"/>
+      </presentation>
+    </config>
+  </extension>
+</plugin>
+```
+
+Wuff generated two new extension points: "org.eclipse.ui.intro" and "org.eclipse.ui.intro.config", which are linking product and "introContent.xml". Similarly to application and product extension points - as soon as we provide our own versions of "org.eclipse.ui.intro" and "org.eclipse.ui.intro.config", Wuff would use these versions, not the automatically generated ones.
