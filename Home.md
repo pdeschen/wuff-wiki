@@ -8,6 +8,7 @@ Wuff is a gradle plugin for developing and assembling Eclipse applications and p
 - [Prerequisites and usage](Prerequisites-and-usage)
 - [Gradle plugins](Gradle-plugins)
 - [Examples](Examples)
+- [FAQ](Faq)
 
 ### Equinox app
 
@@ -58,5 +59,3 @@ Wuff is a gradle plugin for developing and assembling Eclipse applications and p
 - [OSGi vs. non-OSGi dependencies](OSGi-vs.-non-OSGi-dependencies)
 - [Wrapping non-OSGi libraries](Wrapping-non-OSGi-libraries)
 - [PrivateLib configuration](PrivateLib-configuration)
-
-[FAQ](Faq)
