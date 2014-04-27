@@ -49,7 +49,7 @@ Note that we don't have to program "plugin.xml", "MANIFEST.MF", "config.ini" - a
 
 Run the compiled product from command line. Expect to see:
  
- ![RcpApp-1-run-1](images/RcpApp-1-run-1.png "RcpApp-1-run-1")
+![RcpApp-1-run-1](images/RcpApp-1-run-1.png "RcpApp-1-run-1")
 
 ---
 
