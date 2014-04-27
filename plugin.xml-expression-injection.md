@@ -61,3 +61,9 @@ Expression injection would produce errors with such Eclipse-specific expressions
   </config>
 </extension>
 ```
+
+---
+
+The example code for this page: [tutorialExamples/PluginXml-4](../tree/master/tutorialExamples/PluginXml-4).
+
+Now we are done with programming "plugin.xml". Other tutorials are available [here](Tutorials).
