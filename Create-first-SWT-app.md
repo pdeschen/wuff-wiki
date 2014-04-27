@@ -91,3 +91,9 @@ Check: the product must contain platform specific launch script: .bat-file for W
 Attention: first build might be slow, because Wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
 
 Note that we don't have to add platform-specific SWT/JFace dependencies - Wuff does this for us automatically.
+
+### Run
+
+Run the compiled product from command line. Expect to see:
+
+![SwtApp-1-run-1](images/SwtApp-1-run-1.png)
