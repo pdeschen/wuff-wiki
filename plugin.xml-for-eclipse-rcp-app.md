@@ -1,4 +1,4 @@
-We already know how to [program plugin.xml for eclipse-equinox-app](plugin.xml-for-eclipse-equinox-app). Now we will program "plugin.xml" for eclipse-rcp-app.
+We already know how to [program "plugin.xml" for Equinox app](plugin.xml-for-eclipse-equinox-app). Now we will program "plugin.xml" for RCP app.
 
 ### Compile and inspect default "plugin.xml"
 
@@ -197,4 +197,4 @@ Wuff generated two new extension points: "org.eclipse.ui.intro" and "org.eclipse
 
 ---
 
-Next page: [plugin.xml for eclipse-ide-app](Plugin.xml-for-eclipse-ide-app)
+Next page: ["plugin.xml" for IDE app](Plugin.xml-for-eclipse-ide-app)
