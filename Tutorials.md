@@ -45,3 +45,9 @@ Prerequisites for all tutorials: JDK, gradle and http-access to jcenter. Eclipse
 - ["plugin.xml" for RCP app](Plugin.xml-for-eclipse-rcp-app)
 - ["plugin.xml" for IDE app](Plugin.xml-for-eclipse-ide-app)
 - ["plugin.xml" expression injection](plugin.xml-expression-injection)
+
+### Wrapping non-OSGi libraries
+
+- [OSGi vs. non-OSGi dependencies](OSGi-vs.-non-OSGi-dependencies)
+- [Default wrapping strategy](Default-wrapping-strategy)
+- [PrivateLib configuration](PrivateLib-configuration)
