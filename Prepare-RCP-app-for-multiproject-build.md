@@ -1,10 +1,10 @@
-We already [configured RCP products](Configure-RCP-products). Now we prepare RCP app for multiproject build.
+We already [configured SWT products](Configure-SWT-products). Now we prepare SWT app for multiproject build.
 
 ### Create root "build.gradle"
 
-Create "build.gradle" in "tutorials" folder (parent of "MyRcpApp" folder).
+Create "build.gradle" in "tutorials" folder (parent of "MySwtApp" folder).
 
-Move "buildscript" and "repositories" from "tutorials/MyRcpApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
+Move "buildscript" and "repositories" from "tutorials/MySwtApp/build.gradle" to "tutorials/build.gradle", so that two scripts look like this:
 
 "tutorials/build.gradle":
 ```groovy
@@ -27,10 +27,10 @@ subprojects {
 }
 ```
 
-"tutorials/MyRcpApp/build.gradle":
+"tutorials/MySwtApp/build.gradle":
 ```groovy
 apply plugin: 'java'
-apply plugin: 'eclipse-rcp-app'
+apply plugin: 'swt-app'
   
 products {
   product platform: 'linux', arch: 'x86_32'
@@ -43,20 +43,20 @@ products {
 
 ### Create "settings.gradle"
 
-Create "settings.gradle" in "tutorials" folder (parent of "MyRcpApp" folder), insert code:
+Create "settings.gradle" in "tutorials" folder (parent of "MySwtApp" folder), insert code:
 
 ```groovy
-include 'MyRcpApp'
+include 'MySwtApp'
 ```
 
 ### Compile
 
 Invoke on command line in "tutorials" folder: `gradle build`.
 
-Check: build task must generate products in "tutorials/MyRcpApp/build/output" folder.
+Check: build task must generate products in "tutorials/MySwtApp/build/output" folder.
 
 ---
 
-The example code for this page: [tutorialExamples/RcpApp-3](../tree/master/tutorialExamples/RcpApp-3).
+The example code for this page: [tutorialExamples/SwtApp-3](../tree/master/tutorialExamples/SwtApp-3).
 
-Next page: [Create Eclipse bundle and use it in RCP app](Create-Eclipse-bundle-and-use-it-in-RCP-app).
+Next page: [Create SWT library and use it in SWT app](Create-SWT-library-and-use-it-in-SWT-app).
