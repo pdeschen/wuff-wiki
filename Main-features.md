@@ -11,4 +11,4 @@ Wuff does the following for you:
 
 Every Wuff feature is highly automated yet fully configurable.
 
-If you feel interested, it is time to learn about [prerequisites](Prerequisites) and [usage](Usage).
+If you feel interested, it is time to learn about [prerequisites and usage](Prerequisites-and-usage).
