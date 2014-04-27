@@ -9,4 +9,6 @@ Wuff does the following for you:
 - injects trivial dependencies into Eclipse plugins and applications
 - wraps non-OSGi dependencies into OSGi-bundles.
 
-Every wuff feature is highly automated yet fully configurable.
+Every Wuff feature is highly automated yet fully configurable.
+
+If you feel interested, it is time to learn about [prerequisites](Prerequisites) and [usage](Usage).
