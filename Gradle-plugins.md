@@ -8,6 +8,8 @@ Wuff provides the following gradle plugins:
 
   Usage: `apply plugin: 'osgi-bundle'`.
 
+  There is concrete example of using osgi-bundle plugin on page [Create OSGi bundle and use it in Equinox app](Create-OSGi-bundle-and-use-it-in-Equinox-app).
+
 - eclipse-bundle
 
   Configures current project as Eclipse plugin, so that gradle build:
@@ -16,6 +18,8 @@ Wuff provides the following gradle plugins:
   - generates and merges plugin.xml
 
   Usage: `apply plugin: 'eclipse-bundle'`.
+
+  There is concrete example of using eclipse-bundle plugin on page [Create Eclipse bundle and use it in RCP app](Create-Eclipse-bundle-and-use-it-in-RCP-app).
 
 - eclipse-equinox-app
 
@@ -28,6 +32,9 @@ Wuff provides the following gradle plugins:
   - generates runnable Eclipse Equinox products for multiple platforms and locales
 
   Usage: `apply plugin: 'eclipse-equinox-app'`.
+
+  There is concrete example of using eclipse-equinox-app plugin on page [
+Create first Equinox app](Create-first-Equinox-app).
 
 - eclipse-rcp-app
 
@@ -43,6 +50,9 @@ Wuff provides the following gradle plugins:
 
   Usage: `apply plugin: 'eclipse-rcp-app'`.
 
+  There is concrete example of using eclipse-rcp-app plugin on page [
+Create first RCP app](Create-first-RCP-app).
+
 - eclipse-ide-app
 
   Configures current project as Eclipse IDE app, so that gradle build:
@@ -57,11 +67,16 @@ Wuff provides the following gradle plugins:
 
   Usage: `apply plugin: 'eclipse-ide-app'`.
 
+  There is concrete example of using eclipse-ide-app plugin on page [
+Create first IDE app](Create-first-IDE-app).
+
 - eclipse-ide-bundle
 
   Very similar to eclipse-bundle, only adds "org.eclipse.ui.ide" as dependency
 
   Usage: `apply plugin: 'eclipse-ide-bundle'`.
+
+  There is concrete example of using eclipse-ide-bundle plugin on page [Create IDE bundle and use it in IDE app](Create-IDE-bundle-and-use-it-in-IDE-app).
 
 - eclipse-config
 
