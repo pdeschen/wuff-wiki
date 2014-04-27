@@ -1,4 +1,4 @@
-In this tutorial we start from scratch and build RCP app. Other tutorials are available [here](Tutorials).
+In this tutorial we start from scratch and build RCP app.
 
 ### Create "build.gradle"
 
