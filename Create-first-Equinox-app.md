@@ -1,4 +1,4 @@
-In this tutorial we start from scratch and build Equinox app. Other tutorials are available [here](Tutorials).
+In this chapter we start from scratch and build Equinox app.
 
 ### Create "build.gradle"
 
