@@ -38,7 +38,7 @@ Wuff is a gradle plugin for developing and assembling Eclipse applications and p
 - [Add intro page to IDE app](Add-intro-page-to-IDE-app)
 - [Localize IDE app](Localize-IDE-app)
 
-## SWT app
+### SWT app
 
 - [Create first SWT app](Create-first-SWT-app)
 - [Configure SWT products](Configure-SWT-products)
