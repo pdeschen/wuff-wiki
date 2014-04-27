@@ -1,3 +1,7 @@
 We already know how to [program plugin.xml for eclipse-rcp-app](plugin.xml-for-eclipse-rcp-app). 
 
 Programming "plugin.xml" for eclipse-ide-app is not much different. There is only one difference: Wuff does not generate extension-point "org.eclipse.core.runtime.applications". Instead, it uses the extension-point "org.eclipse.ui.ide.workbench" provided by Eclipse libraries.
+
+---
+
+Next page: [plugin.xml expression injection](plugin.xml-expression-injection)
