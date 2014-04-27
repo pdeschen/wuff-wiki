@@ -1,4 +1,4 @@
-In this tutorial we start from scratch and build Eclipse IDE app. Other tutorials are available [here](Tutorials).
+In this tutorial we start from scratch and build Eclipse IDE app.
 
 ### Create "build.gradle"
 
