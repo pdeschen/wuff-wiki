@@ -20,7 +20,7 @@ import org.eclipse.swt.widgets.Shell;
 public class HelloWorld {
 
   public static void showMessageDialog(Shell shell) {
-    MessageDialog.openQuestion(shell, "Information", "I am Eclipse plugin!");
+    MessageDialog.openInformation(shell, "Information", "I am Eclipse plugin!");
   }
 }
 ```
