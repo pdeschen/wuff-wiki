@@ -140,7 +140,7 @@ Open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", open "plugin.xml
 
 As we see, "plugin.xml" contains our application and product extension points, not the default ones.
 
-# Add intro, compile and inspect intro extension points
+### Default intro extension points
 
 Let's take an [example of RCP app with intro page](../tree/master/tutorialExamples/RcpApp-6) that we built in [RCP tutorial](Add-intro-page-to-RCP-app).
 
@@ -194,3 +194,7 @@ Open file "tutorials/MyRcpApp/build/libs/MyRcpApp-1.0.0.0.jar", it contains "plu
 ```
 
 Wuff generated two new extension points: "org.eclipse.ui.intro" and "org.eclipse.ui.intro.config", which are linking product and "introContent.xml". Similarly to application and product extension points - as soon as we provide our own versions of "org.eclipse.ui.intro" and "org.eclipse.ui.intro.config", Wuff would use these versions, not the automatically generated ones.
+
+---
+
+Next page: [plugin.xml for eclipse-ide-app](Plugin.xml-for-eclipse-ide-app)
