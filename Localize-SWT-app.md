@@ -1,4 +1,4 @@
-We already [added intro page to SWT app](Add-intro-page-to-SWT-app). Now we localize SWT app.
+We already [created SWT library and used it in SWT app](Create-SWT-library-and-use-it-in-SWT-app). Now we localize SWT app.
 
 ### Create language-specific product definitions
 
