@@ -1,4 +1,4 @@
-![Wuff logo](images/robo-dog_60x64.png)
+![Wuff logo](wiki/images/robo-dog_60x64.png)
 
 Wuff is a gradle plugin for developing and assembling Eclipse applications and plugins **independently** of Eclipse-IDE. 
 
