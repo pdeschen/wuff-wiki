@@ -4,4 +4,4 @@ If we provide our own "plugin.xml" (either in "src/main/resources" or project ro
 
 The purpose of default "plugin.xml" is to eliminate/minimize manual coding of extension points for views, perspectives, applications and products. For example, if eclipse plugin contains java class XyzView.java, Wuff generates extension-point "org.eclipse.ui.views" with corresponding link to the class.
 
-Let's move on to concrete example of [plugin.xml for eclipse-bundle](plugin.xml-for-eclipse-bundle).
+Let's move on to concrete example of ["plugin.xml" for Eclipse bundle](plugin.xml-for-eclipse-bundle).
