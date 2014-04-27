@@ -1,4 +1,4 @@
-We already know how to [program plugin.xml for Eclipse bundle](plugin.xml-for-eclipse-bundle). Now we will program "plugin.xml" for Equinox app.
+We already know how to [program "plugin.xml" for Eclipse bundle](plugin.xml-for-eclipse-bundle). Now we will program "plugin.xml" for Equinox app.
 
 ### Compile and inspect default "plugin.xml"
 
@@ -48,4 +48,4 @@ Open file "tutorials/MyEquinoxApp/build/libs/MyEquinoxApp-1.0.0.0.jar", open "pl
 
 The example code for this page: [tutorialExamples/PluginXml-3](../tree/master/tutorialExamples/PluginXml-3).
 
-Next page: [plugin.xml for RCP app](Plugin.xml-for-eclipse-rcp-app).
+Next page: ["plugin.xml" for RCP app](Plugin.xml-for-eclipse-rcp-app).
