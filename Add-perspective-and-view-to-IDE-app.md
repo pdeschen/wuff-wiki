@@ -95,6 +95,6 @@ The chapter [plugin.xml for eclipse-bundle](plugin.xml-for-eclipse-bundle) conta
 
 ---
 
-The example code for this page: [tutorialExamples/IdeApp-5](../tree/master/tutorialExamples/IdeApp-5).
+The example code for this page: [examples/IdeApp-5](../tree/master/examples/IdeApp-5).
 
 Next page: [Add splash to IDE app](Add-splash-to-IDE-app).

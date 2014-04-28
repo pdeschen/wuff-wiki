@@ -180,6 +180,6 @@ As we see, now Wuff recognizes that "plugin.xml" already contains extension-poin
 
 ---
 
-The example code for this page: [tutorialExamples/PluginXml-1](../tree/master/tutorialExamples/PluginXml-1) and [tutorialExamples/PluginXml-2](../tree/master/tutorialExamples/PluginXml-2).
+The example code for this page: [examples/PluginXml-1](../tree/master/examples/PluginXml-1) and [examples/PluginXml-2](../tree/master/examples/PluginXml-2).
 
 Next page: ["plugin.xml" for Equinox app](Plugin.xml-for-eclipse-equinox-app).

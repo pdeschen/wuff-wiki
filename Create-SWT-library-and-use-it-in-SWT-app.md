@@ -109,6 +109,6 @@ When we click on "Show dialog" button, the program shows message dialog:
 
 ---
 
-The example code for this page: [tutorialExamples/SwtApp-4](../tree/master/tutorialExamples/SwtApp-4).
+The example code for this page: [examples/SwtApp-4](../tree/master/examples/SwtApp-4).
 
 Next page: [localize SWT app](Localize-SWT-app).

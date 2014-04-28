@@ -2,7 +2,7 @@ We already know how to [program "plugin.xml" for Equinox app](plugin.xml-for-ecl
 
 ### Compile and inspect default "plugin.xml"
 
-Let's take an [example of RCP app](../tree/master/tutorialExamples/RcpApp-5) that we built in [RCP tutorial](Add-splash-to-RCP-app).
+Let's take an [example of RCP app](../tree/master/examples/RcpApp-5) that we built in [RCP tutorial](Add-splash-to-RCP-app).
 
 Invoke on command line: `gradle build`.
 
@@ -142,7 +142,7 @@ As we see, "plugin.xml" contains our application and product extension points, n
 
 ### Default intro extension points
 
-Let's take an [example of RCP app with intro page](../tree/master/tutorialExamples/RcpApp-6) that we built in [RCP tutorial](Add-intro-page-to-RCP-app).
+Let's take an [example of RCP app with intro page](../tree/master/examples/RcpApp-6) that we built in [RCP tutorial](Add-intro-page-to-RCP-app).
 
 Invoke on command line: `gradle build`.
 

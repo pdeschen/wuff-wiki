@@ -53,6 +53,6 @@ Run the compiled product from command line. Expect to see:
 
 ---
 
-The example code for this page: [tutorialExamples/RcpApp-1](../tree/master/tutorialExamples/RcpApp-1).
+The example code for this page: [examples/RcpApp-1](../tree/master/examples/RcpApp-1).
 
 Next page: [Configure RCP products](Configure-RCP-products).

@@ -104,6 +104,6 @@ When we click on the button, the program shows message dialog:
 
 ---
 
-The example code for this page: [tutorialExamples/SwtApp-1](../tree/master/tutorialExamples/SwtApp-1).
+The example code for this page: [examples/SwtApp-1](../tree/master/examples/SwtApp-1).
 
 Next page: [Configure SWT products](Configure-SWT-products).

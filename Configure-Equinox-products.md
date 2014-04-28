@@ -35,6 +35,6 @@ Linux product won't start on windows. 64-bit product won't start on 32-bit JRE.
 
 ---
 
-The example code for this page: [tutorialExamples/EquinoxApp-2](../tree/master/tutorialExamples/EquinoxApp-2).
+The example code for this page: [examples/EquinoxApp-2](../tree/master/examples/EquinoxApp-2).
 
 Next page: [Prepare Equinox app for multiproject build](Prepare-Equinox-app-for-multiproject-build).

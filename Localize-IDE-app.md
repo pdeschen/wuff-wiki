@@ -226,6 +226,6 @@ When we click the button or invoke our menu, the program displays localized mess
 
 ---
 
-The example code for this page: [tutorialExamples/IdeApp-8](../tree/master/tutorialExamples/IdeApp-8).
+The example code for this page: [examples/IdeApp-8](../tree/master/examples/IdeApp-8).
 
 We are done with building IDE app. Now we can go back to [wiki home page](Home) and learn something else.

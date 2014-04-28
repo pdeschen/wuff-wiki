@@ -48,6 +48,6 @@ Note that "My-Attribute" was specified in two places: in "build.gradle" and "MAN
 
 ---
 
-The example code for this page: [tutorialExamples/Manifest-3](../tree/master/tutorialExamples/Manifest-3).
+The example code for this page: [examples/Manifest-3](../tree/master/examples/Manifest-3).
 
 Next page: [Manifest expression injection](Manifest-expression-injection).

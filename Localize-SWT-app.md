@@ -163,6 +163,6 @@ When we click the button, the program displays localized message:
 
 ---
 
-The example code for this page: [tutorialExamples/SwtApp-7](../tree/master/tutorialExamples/SwtApp-7).
+The example code for this page: [examples/SwtApp-7](../tree/master/examples/SwtApp-7).
 
 We are done with building SWT app. Now we can go back to [wiki home page](Home) and learn something else.

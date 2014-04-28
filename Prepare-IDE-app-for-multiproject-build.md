@@ -57,6 +57,6 @@ Check: build task must generate products in "tutorials/MyIdeApp/build/output" fo
 
 ---
 
-The example code for this page: [tutorialExamples/IdeApp-3](../tree/master/tutorialExamples/IdeApp-3).
+The example code for this page: [examples/IdeApp-3](../tree/master/examples/IdeApp-3).
 
 Next page: [Create IDE bundle and use it in IDE app](Create-IDE-bundle-and-use-it-in-IDE-app).

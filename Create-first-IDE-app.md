@@ -51,6 +51,6 @@ Fully started program looks like Eclipse IDE with "Resource" perspective:
 
 ---
 
-The example code for this page: [tutorialExamples/IdeApp-1](../tree/master/tutorialExamples/IdeApp-1).
+The example code for this page: [examples/IdeApp-1](../tree/master/examples/IdeApp-1).
 
 Next page: [Configure IDE products](Configure-IDE-products).

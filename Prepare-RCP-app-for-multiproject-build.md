@@ -57,6 +57,6 @@ Check: build task must generate products in "tutorials/MyRcpApp/build/output" fo
 
 ---
 
-The example code for this page: [tutorialExamples/RcpApp-3](../tree/master/tutorialExamples/RcpApp-3).
+The example code for this page: [examples/RcpApp-3](../tree/master/examples/RcpApp-3).
 
 Next page: [Create Eclipse bundle and use it in RCP app](Create-Eclipse-bundle-and-use-it-in-RCP-app).

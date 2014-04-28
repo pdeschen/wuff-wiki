@@ -35,6 +35,6 @@ Linux product won't start on Windows. 64-bit product won't start on 32-bit JRE.
 
 ---
 
-The example code for this page: [tutorialExamples/RcpApp-2](../tree/master/tutorialExamples/RcpApp-2).
+The example code for this page: [examples/RcpApp-2](../tree/master/examples/RcpApp-2).
 
 Next page: [Prepare RCP app for multiproject build](Prepare-RCP-app-for-multiproject-build).

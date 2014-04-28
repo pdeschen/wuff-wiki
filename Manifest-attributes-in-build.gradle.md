@@ -51,6 +51,6 @@ There are three attributes that Wuff merges rather than overwrites: "Require-Bun
 
 ---
 
-The example code for this page: [tutorialExamples/Manifest-2](../tree/master/tutorialExamples/Manifest-2).
+The example code for this page: [examples/Manifest-2](../tree/master/examples/Manifest-2).
 
 Next page: [Manifest attributes in MANIFEST.MF](Manifest-attributes-in-MANIFEST.MF).

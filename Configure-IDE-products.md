@@ -35,6 +35,6 @@ If you are on Windows, Linux product won't start. If your JRE is 32-bit, 64-bit 
 
 ---
 
-The example code for this page: [tutorialExamples/IdeApp-2](../tree/master/tutorialExamples/IdeApp-2).
+The example code for this page: [examples/IdeApp-2](../tree/master/examples/IdeApp-2).
 
 Next page: [Prepare IDE app for multiproject build](Prepare-IDE-app-for-multiproject-build).

@@ -57,6 +57,6 @@ Check: build task must generate products in "tutorials/MySwtApp/build/output" fo
 
 ---
 
-The example code for this page: [tutorialExamples/SwtApp-3](../tree/master/tutorialExamples/SwtApp-3).
+The example code for this page: [examples/SwtApp-3](../tree/master/examples/SwtApp-3).
 
 Next page: [Create SWT library and use it in SWT app](Create-SWT-library-and-use-it-in-SWT-app).

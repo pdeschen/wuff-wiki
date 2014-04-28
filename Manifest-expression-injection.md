@@ -46,6 +46,6 @@ Note that expressions in MANIFEST.MF are **not** expanded by default. We must se
 
 ---
 
-The example code for this page: [tutorialExamples/Manifest-4](../tree/master/tutorialExamples/Manifest-4).
+The example code for this page: [examples/Manifest-4](../tree/master/examples/Manifest-4).
 
 We are done with programming manifests. Now we can go back to [wiki home page](Home) and learn something else.

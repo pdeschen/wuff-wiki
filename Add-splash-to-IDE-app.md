@@ -20,6 +20,6 @@ Run the compiled product from command line. The program shows splash screen whil
 
 ---
 
-The example code for this page: [tutorialExamples/IdeApp-6](../tree/master/tutorialExamples/IdeApp-6).
+The example code for this page: [examples/IdeApp-6](../tree/master/examples/IdeApp-6).
 
 Next page: [Add intro page to IDE app](Add-intro-page-to-IDE-app).

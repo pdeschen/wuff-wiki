@@ -210,6 +210,6 @@ When we click the button, the program displays localized message:
 
 ---
 
-The example code for this page: [tutorialExamples/RcpApp-7](../tree/master/tutorialExamples/RcpApp-7).
+The example code for this page: [examples/RcpApp-7](../tree/master/examples/RcpApp-7).
 
 We are done with building RCP app. Now we can go back to [wiki home page](Home) and learn something else.

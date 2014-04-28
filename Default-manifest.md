@@ -72,6 +72,6 @@ This is how the default manifest is generated:
 
 ---
 
-The example code for this page: [tutorialExamples/Manifest-1](../tree/master/tutorialExamples/Manifest-1).
+The example code for this page: [examples/Manifest-1](../tree/master/examples/Manifest-1).
 
 Next page: [Manifest attributes in build.gradle](Manifest-attributes-in-build.gradle).

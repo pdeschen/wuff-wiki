@@ -96,6 +96,6 @@ When we click on "Show dialog" button, the program shows message dialog:
 
 ---
 
-The example code for this page: [tutorialExamples/RcpApp-4](../tree/master/tutorialExamples/RcpApp-4).
+The example code for this page: [examples/RcpApp-4](../tree/master/examples/RcpApp-4).
 
 Next page: [add splash to RCP app](Add-splash-to-RCP-app).

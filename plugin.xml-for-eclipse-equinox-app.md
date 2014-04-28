@@ -2,7 +2,7 @@ We already know how to [program "plugin.xml" for Eclipse bundle](plugin.xml-for-
 
 ### Compile and inspect default "plugin.xml"
 
-Take [equinox application](../tree/master/tutorialExamples/EquinoxApp-1) that we created in [Equinox tutorial](Create-first-Equinox-app) as a starting point.
+Take [equinox application](../tree/master/examples/EquinoxApp-1) that we created in [Equinox tutorial](Create-first-Equinox-app) as a starting point.
 
 Invoke on command line: `gradle build`.
 
@@ -46,6 +46,6 @@ Open file "tutorials/MyEquinoxApp/build/libs/MyEquinoxApp-1.0.0.0.jar", open "pl
 
 ---
 
-The example code for this page: [tutorialExamples/PluginXml-3](../tree/master/tutorialExamples/PluginXml-3).
+The example code for this page: [examples/PluginXml-3](../tree/master/examples/PluginXml-3).
 
 Next page: ["plugin.xml" for RCP app](Plugin.xml-for-eclipse-rcp-app).

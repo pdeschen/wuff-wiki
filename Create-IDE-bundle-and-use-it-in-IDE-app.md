@@ -92,6 +92,6 @@ When you click "Show greeting", the program shows message dialog:
 
 ---
 
-The example code for this page: [tutorialExamples/IdeApp-4](../tree/master/tutorialExamples/IdeApp-4).
+The example code for this page: [examples/IdeApp-4](../tree/master/examples/IdeApp-4).
 
 Next page: [add perspective and view to IDE app](Add-perspective-and-view-to-IDE-app).

@@ -57,6 +57,6 @@ Check: build task generates products in "tutorials/MyEquinoxApp/build/output" fo
 
 ---
 
-The example code for this page: [tutorialExamples/EquinoxApp-3](../tree/master/tutorialExamples/EquinoxApp-3).
+The example code for this page: [examples/EquinoxApp-3](../tree/master/examples/EquinoxApp-3).
 
 Next page: [Create OSGi-bundle and use it in Equinox app](Create-OSGi-bundle-and-use-it-in-Equinox-app).

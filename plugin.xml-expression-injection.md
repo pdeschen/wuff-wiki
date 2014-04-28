@@ -1,6 +1,6 @@
 We already programmed ["plugin.xml" for IDE app](Plugin.xml-for-eclipse-ide-app). Now we can how to do "plugin.xml" expression injection.
 
-Let's take an [example Eclipse plugin](../tree/master/tutorialExamples/PluginXml-1) we created in ["plugin.xml" for Eclipse bundle](plugin.xml-for-eclipse-bundle).
+Let's take an [example Eclipse plugin](../tree/master/examples/PluginXml-1) we created in ["plugin.xml" for Eclipse bundle](plugin.xml-for-eclipse-bundle).
 
 Edit the file "tutorials/MyEclipsePlugin/src/main/resources/plugin.xml", change content to:
 
@@ -64,6 +64,6 @@ Expression injection would produce errors with such Eclipse-specific expressions
 
 ---
 
-The example code for this page: [tutorialExamples/PluginXml-4](../tree/master/tutorialExamples/PluginXml-4).
+The example code for this page: [examples/PluginXml-4](../tree/master/examples/PluginXml-4).
 
 We are done with programming "plugin.xml". Now we can go back to [wiki home page](Home) and learn something else.

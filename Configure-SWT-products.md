@@ -33,6 +33,6 @@ Linux product won't start on Windows. 64-bit product won't start on 32-bit JRE.
 
 ---
 
-The example code for this page: [tutorialExamples/SwtApp-2](../tree/master/tutorialExamples/SwtApp-2).
+The example code for this page: [examples/SwtApp-2](../tree/master/examples/SwtApp-2).
 
 Next page: [Prepare SWT app for multiproject build](Prepare-SWT-app-for-multiproject-build).
