@@ -155,8 +155,8 @@ cmdHelloWorld.title=Show greeting
 Create file "bundle_de.properties" in the same folder, insert text:
 
 ```
-mnuMyMenu.title=Mein Menü
-cmdHelloWorld.title=begrüßen
+mnuMyMenu.title=Mein Men\u00fc
+cmdHelloWorld.title=begr\u00fc\u00dfen
 ```
 
 Edit file "tutorials/MyIdePlugin/src/main/resources/plugin.xml", replace literal strings with percent-preceded variables, so that file looks like this:
