@@ -33,6 +33,18 @@ h1 {
 }
 ```
 
+### Enable HTML filtering
+
+Edit file "tutorials/MyRcpApp/build.gradle", insert code:
+
+```groovy
+wuff {
+  filterHtml = true
+}
+```
+
+Note that this step is optional. It instructs Wuff to expand variables in all resource HTML files (see ${project.name} and ${project.version} above).
+
 ### Compile
 
 Invoke on command line in "tutorials" folder: `gradle build`
