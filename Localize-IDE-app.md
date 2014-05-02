@@ -88,7 +88,7 @@ Create file "Messages_de.properties" in the same folder, insert content:
 ```
 btnShowDialog_Label=Dialogfenster anzeigen
 dialogTitle=Meldung
-dialogMessage=Es gibt kein Löffel
+dialogMessage=Es gibt kein L\u00f6ffel
 ```
 
 Create file "tutorials/MyIdePlugin/src/main/java/myideplugin/Messages.java", insert code:
