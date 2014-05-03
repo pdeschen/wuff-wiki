@@ -4,11 +4,13 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
 
 Edit "tutorials/build.gradle", insert code:
 
+```groovy
 apply plugin: 'eclipse-config'
 
 wuff {
   languagePack 'de'
 }
+```
 
 Hint: you could place wuff/languagePack instruction to "build.gradle" in RCP app or in any of it's ancestor projects. 'eclipse-config' is needed when neither 'eclipse-rcp-app' nor 'eclipse-ide-app' are already applied in the same project.
 
