@@ -12,7 +12,7 @@ wuff {
 }
 ```
 
-Hint: you could place wuff/languagePack instruction to "build.gradle" in RCP app or in any of it's ancestor projects. 'eclipse-config' is needed when neither 'eclipse-rcp-app' nor 'eclipse-ide-app' are already applied in the same project.
+Hint: you could place wuff/languagePack instruction to "build.gradle" in RCP app or in any of it's ancestor projects. 'eclipse-config' is needed for Wuff configuration when none of other Wuff plugins are already applied in the same project.
 
 ### Create language-specific product definitions
 
