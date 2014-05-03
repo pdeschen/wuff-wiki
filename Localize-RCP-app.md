@@ -1,5 +1,17 @@
 We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we localize RCP app.
 
+### Enable eclipse language pack
+
+Edit "tutorials/build.gradle", insert code:
+
+apply plugin: 'eclipse-config'
+
+wuff {
+  languagePack 'de'
+}
+
+Hint: you could place wuff/languagePack instruction to "build.gradle" in RCP app or in any of it's ancestor projects. 'eclipse-config' is needed when neither 'eclipse-rcp-app' nor 'eclipse-ide-app' are already applied in the same project.
+
 ### Create language-specific product definitions
 
 Edit "tutorials/MyRcpApp/build.gradle", insert code:
