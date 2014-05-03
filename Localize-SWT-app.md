@@ -1,5 +1,19 @@
 We already [created SWT library and used it in SWT app](Create-SWT-library-and-use-it-in-SWT-app). Now we localize SWT app.
 
+### Enable eclipse language pack
+
+Edit "tutorials/build.gradle", insert code:
+
+```groovy
+apply plugin: 'eclipse-config'
+
+wuff {
+  languagePack 'de'
+}
+```
+
+Hint: you could place wuff/languagePack instruction to "build.gradle" in SWT app or in any of it's ancestor projects. 'eclipse-config' is needed for Wuff configuration when none of other Wuff plugins are already applied in the same project.
+
 ### Create language-specific product definitions
 
 Edit "tutorials/MySwtApp/build.gradle", insert code:
