@@ -1,5 +1,19 @@
 We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we localize IDE app.
 
+### Enable eclipse language pack
+
+Edit "tutorials/build.gradle", insert code:
+
+```groovy
+apply plugin: 'eclipse-config'
+
+wuff {
+  languagePack 'de'
+}
+```
+
+Hint: you could place wuff/languagePack instruction to "build.gradle" in IDE app or in any of it's ancestor projects. 'eclipse-config' is needed when neither 'eclipse-rcp-app' nor 'eclipse-ide-app' are already applied in the same project.
+
 ### Create language-specific product definitions
 
 Edit "tutorials/MyIdeApp/build.gradle", change code:
