@@ -1,4 +1,4 @@
-Wuff sources contains self-sufficient, compilable examples. Each example corresponds to particular part of tutorial. 
+Wuff sources contain self-sufficient, compilable examples. Each example corresponds to particular part of tutorial. 
 
 You can compile and learn examples from [source code](https://github.com/akhikhl/wuff/tree/master/examples).
 
