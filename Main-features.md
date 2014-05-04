@@ -8,6 +8,8 @@ Wuff does the following for you:
 - integrates intro pages into RCP/IDE app
 - wraps non-OSGi dependencies into OSGi-bundles
 - generates runnable Equinox/RCP/IDE products for multiple platforms and locales
+- incorporates the desired language packs into RCP/IDE products
+- provides easy switch between Eclipse versions
 
 Every Wuff feature is highly automated yet fully configurable.
 
