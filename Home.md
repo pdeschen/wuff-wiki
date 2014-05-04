@@ -65,5 +65,6 @@ Wuff is a set of gradle plugins for developing and assembling Eclipse applicatio
 ### Dependency management
 
 - [OSGi vs. non-OSGi dependencies](OSGi-vs.-non-OSGi-dependencies)
+- [OSGi mavenization](OSGI-mavenization)
 - [Wrapping non-OSGi libraries](Wrapping-non-OSGi-libraries)
 - [PrivateLib configuration](PrivateLib-configuration)
