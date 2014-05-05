@@ -2,7 +2,7 @@ What "mavenizing" means? When Wuff mavenizes OSGi-bundles, it does the following
 
 1. Wuff uses configuration property [wuff/selectedEclipseVersion](Configuration-DSL#selectedEclipseVersion) to decide which version of Eclipse must be downloaded and mavenized.
 
-2. Wuff automatically downloads and unpacks Eclipse distribution packages specified in configuration part [wuff/eclipseVersion/sources](Configuration-DSL#sources). All downloaded and unpacked files are located in the directory "$HOME/.wuff". We can change this directory by configuration property [wuff/wuffDir](Configuration-DSL#wuffDir)
+2. Wuff automatically downloads and unpacks Eclipse distribution packages specified in configuration part [wuff/eclipseVersion/sources](Configuration-DSL#sources). All downloaded and unpacked files are located in the directory "$HOME/.wuff". We can change this directory by configuration property [wuff/wuffDir](Configuration-DSL#wuffDir).
 
 3. Wuff scans all JARs and subdirectories in unpacked distribution packages. Found OSGi bundles are processed furthermore.
 
