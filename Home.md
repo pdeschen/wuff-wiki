@@ -1,5 +1,7 @@
 ![Wuff logo](wiki/images/robo-dog_60x64.png)
 
+Welcome to Wuff wiki! We have plenty of topics here, but fear not, starting to be productive with Wuff does not require reading them all at first. Quite reverse, quick start with [first Equinox app](Create-first-Equinox-app), [first RCP app](Create-first-RCP-app) or [first RCP app](Create-first-RCP-app) takes just five minutes.
+
 ### Basics
 
 - [Main features](Main-features)
