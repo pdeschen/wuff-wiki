@@ -2,7 +2,7 @@ Wuff provides the following gradle plugins:
 
 - osgi-bundle
 
-  Configures current project as Eclipse plugin, so that gradle build:
+  Configures current project as OSGi plugin, so that gradle build:
   - injects trivial OSGi dependencies
   - generates and merges OSGi manifest
 
