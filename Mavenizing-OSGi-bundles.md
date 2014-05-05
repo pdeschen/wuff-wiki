@@ -6,7 +6,7 @@ What "mavenizing" means? When Wuff mavenizes OSGi-bundles, it does the following
 
 3. Wuff scans all JARs and subdirectories in unpacked distribution packages. Found OSGi bundles are processed furthermore.
 
-4. Wuff generates pom.xml for every OSGi-bundle. The generated pom.xml contains maven coordinates "group:artifact:version", where "group" is constant (specified as eclipseVersion/eclipseMavenGroup property), "artifact" corresponds to OSGi-bundle name, "version" corresponds to OSGi-bundle version.
+4. Wuff generates pom.xml for every OSGi-bundle. The generated pom.xml contains maven coordinates "group:artifact:version", where "group" is constant (specified as [eclipseVersion/eclipseMavenGroup](Configuration-DSL#eclipseMavenGroup) property), "artifact" corresponds to OSGi-bundle name, "version" corresponds to OSGi-bundle version.
 
 5. Wuff compares every required-bundle of the given OSGi-bundle against other mavenized OSGi-bundles and, when match found, converts it to maven dependency.
 
