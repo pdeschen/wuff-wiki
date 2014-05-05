@@ -18,3 +18,6 @@ wuff {
   }
 }
 ```
+
+<a name="localMavenRepositoryDir"></a>
+"localMavenRepositoryDir" - optional, java.io.File, default is "$HOME/.m2/repository". This property defines to which repository Wuff installs [mavenized OSGi bundles](Mavenizing-OSGi-bundles).
