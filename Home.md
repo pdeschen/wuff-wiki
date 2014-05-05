@@ -71,6 +71,6 @@ Wuff is a set of gradle plugins for developing and assembling Eclipse applicatio
 
 ### Configuration
 
-- [Configuration DSL](Configuration-dsl)
+- [Configuration DSL](Configuration-DSL)
 - [Hierarchical configurations](Hierarchical-configurations)
 - [Default configuration](Default-configuration)
