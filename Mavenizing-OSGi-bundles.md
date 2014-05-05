@@ -14,7 +14,7 @@ What "mavenizing" means? When Wuff mavenizes OSGi-bundles, it does the following
 
 7. When Wuff configuration specifies source-code OSGi-bundles (of eclipse-SDK, for example), Wuff automatically adds them as source-jars to their master mavenized OSGi-bundles.
 
-8. Wuff automatically installs mavenized OSGi-bundles to local maven repository, by default: $HOME/.m2/repository. Installation is performed as soon as we try to compile Wuff-enabled project. We can customize the location of local maven repository by setting [wuff/localMavenRepository](Configuration-properties#localmavenrepository) property.
+8. Wuff automatically installs mavenized OSGi-bundles to local maven repository, by default: $HOME/.m2/repository. Installation is performed as soon as we try to compile Wuff-enabled project. We can customize the location of local maven repository by setting [wuff/localMavenRepository](Configuration-DSL#localmavenrepository) property.
 
 9. Wuff implements the following gradle tasks for full control over mavenizing:
 
