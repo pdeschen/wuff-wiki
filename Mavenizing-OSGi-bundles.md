@@ -1,6 +1,6 @@
 What "mavenizing" means? When Wuff mavenizes OSGi-bundles, it does the following:
 
-1. Wuff uses configuration property [wuff/selectedEclipseVersion](Configuration-properties#selectedeclipseversion) to decide which version of Eclipse must be downloaded and mavenized.
+1. Wuff uses configuration property [wuff/selectedEclipseVersion](Configuration-DSL#selectedeclipseversion) to decide which version of Eclipse must be downloaded and mavenized.
 
 2. Wuff automatically downloads and unpacks Eclipse distribution packages specified in configuration part wuff/eclipseVersion/sources.
 
