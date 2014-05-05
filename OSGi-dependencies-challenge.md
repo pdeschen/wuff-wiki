@@ -4,7 +4,7 @@ OSGi has it's own dependency mechanisms, unrelated to gradle or maven. This is p
 - If we use non-OSGi libraries, should we wrap them as OSGi bundles? Or is it better to include them privately into each client OSGi bundle?
 - How to automate multiproject setup assembly with our favourite build tool (gradle), if many dependencies are OSGi?
 
-Eclipse IDE addresses some of these, but not all. For example, there are still no transitive dependencies, no build-tool support for OSGi bundles and no easy way to wrap non-OSGi libraries. The mechanism of features was probably an attempt to compensate for lack of transitive dependencies, but in fact it turned out to be another layer of complexity. 
+Eclipse IDE addresses some of these, but not all. For example, there are still no transitive OSGi dependencies, no build-tool support for OSGi bundles and no easy way to wrap non-OSGi libraries. The mechanism of features was probably an attempt to compensate for lack of transitive dependencies, but in fact it turned out to be another layer of complexity. 
 
 Eclipse Tycho is already an improvement, since it provides build-tool integration and dependency translation. Still, we think there should be a better way to manage and build our projects - with less knowledge of Eclipse intrinsic details, less configuration and more flexibility.
 
