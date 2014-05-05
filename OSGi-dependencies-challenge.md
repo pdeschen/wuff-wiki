@@ -8,4 +8,4 @@ Eclipse IDE addresses some of these, but not all. For example, there are still n
 
 Eclipse Tycho is already an improvement, since it provides build-tool integration and dependency translation. Still, we think there should be a better way to manage and build our projects - with less knowledge of Eclipse intrinsic details, less configuration and more flexibility.
 
-Next page: [OSGI mavenization](OSGI-mavenization).
+Next page: [Mavenizing OSGi bundles](Mavenizing-OSGi-bundles).
