@@ -10,7 +10,7 @@ We can fully configure Wuff via "wuff" project extension. This extension is auto
 wuff {
   localMavenRepositoryDir = new File(System.getProperty('user.home'), '.m2/repository')
 
-  wuffDir = new File(System.getProperty('user.home'), '.unpuzzle')
+  wuffDir = new File(System.getProperty('user.home'), '.wuff')
 
   selectedEclipseVersion = '4.3.2'
 
