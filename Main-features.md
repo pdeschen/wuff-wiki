@@ -7,7 +7,7 @@ Wuff does the following for you:
 - integrates splash.bmp into RCP/IDE app
 - integrates intro pages into RCP/IDE app
 - wraps non-OSGi dependencies into OSGi-bundles
-- generates runnable Equinox/RCP/IDE products for multiple platforms and locales
+- generates runnable Equinox/RCP/IDE products for multiple platforms
 - incorporates the desired language packs into RCP/IDE products
 - provides easy switch between Eclipse versions
 
