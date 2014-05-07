@@ -42,3 +42,52 @@ First three parts of this tutorial are done in Eclipse IDE, the last part - in f
   </extension>
   ```
 5. Save "plugin.xml" (Ctrl+S).
+
+### Convert to Gradle
+
+1. Open the directory containing both projects (MyPlugin and MyRcpApp) with a file explorer.
+2. Create file "settings.gradle" in that directory, insert code:
+
+  ```groovy
+  rootProject.projectDir.listFiles({ new File(it, 'build.properties').isFile() } as FileFilter).each { File subdir ->
+    include subdir.absolutePath.substring(rootProject.projectDir.absolutePath.length() + 1).replace(File.separator, ':')
+  }
+  ```
+  Explanation: we organize multi-project build (it could contain not only two, but hundreds of Eclipse projects). The projects are auto-discovered by Gradle: if subdirectory contains file "build.properties" (which is Eclipse-specific), it is considered to be a project.
+
+3. Create file "build.gradle" in the same directory, insert code:
+  ```groovy
+  buildscript {
+    repositories {
+      mavenLocal()
+      jcenter()
+    }
+    
+    dependencies {
+      classpath 'org.akhikhl.wuff:wuff-plugin:+'
+    }
+  }
+
+  subprojects {
+
+    repositories {
+      mavenLocal()
+      jcenter()
+    }
+
+    apply plugin: 'java'
+    if(name == 'MyRcpApp')
+      apply plugin: 'eclipse-rcp-app'
+    else
+      apply plugin: 'eclipse-bundle'
+  }
+  ```
+  Explanation: we configure maven repositories and include wuff-plugin. Then we iterate all subprojects and apply either 'eclipse-bundle' plugin or 'eclipse-rcp-app'.
+
+4. Open console in the directory containing "build.gradle" and "settings.gradle", enter:
+
+  ```bash
+  gradle build
+  ```
+
+  **Check**: upon successful build there is directory "MyRcpApp/build/output" containing RCP product, specific to our current platform. The product could be started via launch script (.bat or .sh, depending on current platform).
