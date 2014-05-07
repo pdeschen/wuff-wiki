@@ -1,6 +1,7 @@
 Wuff does the following for you:
 - [downloads and "mavenizes" Eclipse plugins](Mavenizing-OSGi-bundles)
 - injects trivial OSGi/Eclipse dependencies into bundles and applications
+- handles both manifest-first and gradle-first dependencies
 - generates and merges OSGi manifests
 - generates and merges plugin.xml
 - generates and merges plugin_customization.ini
