@@ -46,6 +46,10 @@ Welcome to Wuff wiki!
 - [Create SWT library and use it in SWT app](Create-SWT-library-and-use-it-in-SWT-app)
 - [Localize SWT app](Localize-SWT-app)
 
+### Convert existing Eclipse plugins and apps to Gradle
+
+- [Convert existing Eclipse plugins and apps to Gradle](Convert-existing-Eclipse-plugins-and-apps-to-Gradle)
+
 ### Programming manifests
 
 - [Default manifest](Default-manifest)
