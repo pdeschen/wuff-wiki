@@ -93,3 +93,5 @@ First three parts of this tutorial are done in Eclipse IDE, the last part - in f
   **Check**: upon successful build there is directory "MyRcpApp/build/output" containing RCP product, specific to our current platform. The product can be started via launch script (.bat or .sh, depending on current platform).
 
 **Explanation**: Wuff analysed manifests and plugin.xml of all projects, generated inter-project dependencies and eclipse-specific dependencies, generated products. This is a lot of work, which now we don't have to do manually.
+
+**Hint**: we can inspect dependencies by command `gradle dependencies`. The output is huge, so redirect it to the file and then inspect. For the example above you'll see a charming thing: Wuff automatically injects the dependency of project MyRcpApp on MyPlugin. This is because we added MyPlugin to the manifest of MyRcpApp and Wuff translated it to project dependency.
