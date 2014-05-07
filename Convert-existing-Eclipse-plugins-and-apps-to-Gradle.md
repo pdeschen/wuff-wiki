@@ -91,3 +91,5 @@ First three parts of this tutorial are done in Eclipse IDE, the last part - in f
   ```
 
   **Check**: upon successful build there is directory "MyRcpApp/build/output" containing RCP product, specific to our current platform. The product could be started via launch script (.bat or .sh, depending on current platform).
+
+**Explanation**: Wuff analysed manifests and plugin.xml of all projects, generated inter-project dependencies and eclipse-specific dependencies, generated products. This is a lot of work, which now we don't have to do manually.
