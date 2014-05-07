@@ -1,4 +1,4 @@
-Conversion of existing Eclipse plugins and apps to Gradle is very easy, when we apply Wuff. The Eclipse projects themselves do not need to be restructured or even facilitated with "build.gradle" - Wuff does all work for us.
+Conversion of existing Eclipse plugins and apps to Gradle is very easy, if we apply Wuff. The Eclipse projects themselves do not need to be restructured or even facilitated with "build.gradle" - Wuff does all work for us.
 
 Lets try the following simple scenario: we create two Eclipse projects: one is plugin with a view, another is RCP app using the plugin. Then we convert these two to Gradle, using Wuff.
 
