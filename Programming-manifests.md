@@ -12,6 +12,8 @@ Even if we specified OSGi manifest either in "META-INF/MANIFEST.MF" or in "build
 
 Any attributes specified in "build.gradle" are overwritten by attributes in default manifest, which, in turn, are overwritten by attributes of user-provided "MANIFEST.MF".
 
+There are four attributes that Wuff merges as lists rather than overwrites: "Require-Bundle", "Import-Package", "Export-Package" and "Bundle-ClassPath".
+
 In this tutorial we will inspect default manifest and learn how to augment it.
 
 - [Default manifest](Default-manifest)
