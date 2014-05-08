@@ -47,7 +47,7 @@ Tool: Bnd-2.1.0.20130426-122213
 
 As we see, Wuff overwritten our values for attributes "Bundle-SymbolicName", "Bundle-Name", "Bundle-Version", "Bundle-ManifestVersion", "Bnd-LastModified", "Created-By", "Tool". This is caused by the sequence of manifest merge: resulting-manifest << build.gradle << default-manifest.
 
-There are four attributes that Wuff merges rather than overwrites: "Require-Bundle", "Import-Package", "Export-Package" and "Bundle-ClassPath". In the example above, "Require-Bundle" contains two values: "ch.qos.logback.classic" comes from "build.gradle" and "org.eclipse.osgi" comes from default manifest. Also we see, that "Bundle-ClassPath" contains three values: "somefolder" and "anotherfolder" come from "build.gradle", "." comes from default manifest.
+The attributes "Require-Bundle" and "Bundle-ClassPath" were merged, not overwritten. In the result above, "Require-Bundle" contains two values: "ch.qos.logback.classic" comes from "build.gradle" and "org.eclipse.osgi" comes from default manifest. Also we see, that "Bundle-ClassPath" contains three values: "somefolder" and "anotherfolder" come from "build.gradle", "." comes from default manifest.
 
 ---
 
