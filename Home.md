@@ -16,14 +16,8 @@ Welcome to Wuff wiki!
 - [Programming RCP apps](Programming-RCP-apps)
 - [Programming IDE apps](Programming-IDE-apps)
 - [Programming SWT apps](Programming-SWT-apps)
+- [Programming manifests](Programming-manifests)
 - [Convert existing Eclipse plugins and apps to Gradle](Convert-existing-Eclipse-plugins-and-apps-to-Gradle)
-
-### Programming manifests
-
-- [Default manifest](Default-manifest)
-- [Manifest attributes in build.gradle](Manifest-attributes-in-build.gradle)
-- [Manifest attributes in MANIFEST.MF](Manifest-attributes-in-MANIFEST.MF)
-- [Manifest expression injection](Manifest-expression-injection)
 
 ### Programming "plugin.xml"
 
