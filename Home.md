@@ -10,12 +10,9 @@ Welcome to Wuff wiki!
 - [Examples](Examples)
 - [FAQ](Faq)
 
-### Equinox app
+### Tutorials
 
-- [Create first Equinox app](Create-first-Equinox-app)
-- [Configure Equinox products](Configure-Equinox-products)
-- [Prepare Equinox app for multi-project build](Prepare-Equinox-app-for-multiproject-build)
-- [Create OSGi-bundle and use it in Equinox app](Create-OSGi-bundle-and-use-it-in-Equinox-app)
+- [Programming Equinox apps](Programming-Equinox-apps)
 
 ### RCP app
 
