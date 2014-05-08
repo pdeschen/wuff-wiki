@@ -1,4 +1,4 @@
-Definition: Equinox application is an OSGi-based application, using [Equinox Launcher](http://wiki.eclipse.org/Equinox_Launcher) for bootstrap and configuration.
+Definition: Equinox application is an OSGi-based Java application, which uses [Equinox Launcher](http://wiki.eclipse.org/Equinox_Launcher) for bootstrap and configuration.
 
 Equinox application does not have to have GUI, although GUI can be started on top of it, like in Eclipse IDE.
 
