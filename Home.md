@@ -15,17 +15,7 @@ Welcome to Wuff wiki!
 - [Programming Equinox apps](Programming-Equinox-apps)
 - [Programming RCP apps](Programming-RCP-apps)
 - [Programming IDE apps](Programming-IDE-apps)
-
-### SWT app
-
-- [Create first SWT app](Create-first-SWT-app)
-- [Configure SWT products](Configure-SWT-products)
-- [Prepare SWT app for multiproject build](Prepare-SWT-app-for-multiproject-build)
-- [Create SWT library and use it in SWT app](Create-SWT-library-and-use-it-in-SWT-app)
-- [Localize SWT app](Localize-SWT-app)
-
-### Convert existing Eclipse plugins and apps to Gradle
-
+- [Programming SWT apps](Programming-SWT-apps)
 - [Convert existing Eclipse plugins and apps to Gradle](Convert-existing-Eclipse-plugins-and-apps-to-Gradle)
 
 ### Programming manifests
