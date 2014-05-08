@@ -1,6 +1,6 @@
-Definition: RCP application is an OSGi-based Java application, based on Equinox launcher and set of Eclipse RCP plugins.
+Definition: RCP application is an OSGi-based Java application, based on [Equinox launcher](http://wiki.eclipse.org/Equinox_Launcher) and set of Eclipse RCP plugins.
 
-RCP applications
+RCP application does have a GUI, although it is very minimalistic at the beginning. The programmer must fully define RCP application views, menus, toolbars etc.etc.
 
 - [Create first RCP app](Create-first-RCP-app)
 - [Configure RCP products](Configure-RCP-products)
