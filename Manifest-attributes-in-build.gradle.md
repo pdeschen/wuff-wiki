@@ -14,7 +14,7 @@ jar {
     instruction 'Bnd-LastModified', '9999999999999'                                    
     instruction 'Created-By', 'Dr. Who'
     instruction 'Tool', 'kekek'
-    instruction 'Bundle-Classpath', 'somefolder', 'anotherfolder'
+    instruction 'Bundle-ClassPath', 'somefolder', 'anotherfolder'
     instruction 'Require-Bundle', 'ch.qos.logback.classic'
     instruction 'My-Attribute', 'test'
   }
@@ -36,19 +36,18 @@ Manifest-Version: 1.0
 Bundle-SymbolicName: MyOsgiPlugin
 Bundle-Name: MyOsgiPlugin
 Bundle-Version: 1.0.0.0
-Bundle-Classpath: .
+Bundle-ClassPath: somefolder,.,anotherfolder
 Require-Bundle: org.eclipse.osgi,ch.qos.logback.classic
 Bundle-ManifestVersion: 2
-Bnd-LastModified: 1398418011000
+Bnd-LastModified: 1399560688000
 My-Attribute: test
 Created-By: 1.8.0_05 (Oracle Corporation)
 Tool: Bnd-2.1.0.20130426-122213
 ```
 
-Wuff ignores our values for attributes "Bundle-SymbolicName", "Bundle-Name", "Bundle-Version", "Bundle-ManifestVersion", "Bnd-LastModified", "Created-By", "Tool", "Bundle-Classpath". This is intentional: Wuff overwrites the user-supplied attributes with the generated attributes having the same name.
+As we see, Wuff overwritten our values for attributes "Bundle-SymbolicName", "Bundle-Name", "Bundle-Version", "Bundle-ManifestVersion", "Bnd-LastModified", "Created-By", "Tool". This is caused by the sequence of manifest merge: resulting-manifest << build.gradle << default-manifest.
 
-There are three attributes that Wuff merges rather than overwrites: "Require-Bundle", "Import-Package" and "Export-Package". In the example above, "Require-Bundle" contains two values: "org.eclipse.osgi" comes from generated manifest, "ch.qos.logback.classic" comes from "build.gradle".
-
+There are four attributes that Wuff merges rather than overwrites: "Require-Bundle", "Import-Package", "Export-Package" and "Bundle-ClassPath". In the example above, "Require-Bundle" contains two values: "ch.qos.logback.classic" comes from "build.gradle" and "org.eclipse.osgi" comes from default manifest. Also we see, that "Bundle-ClassPath" contains three values: "somefolder" and "anotherfolder" come from "build.gradle", "." comes from default manifest.
 ---
 
 The example code for this page: [examples/Manifest-2](../tree/master/examples/Manifest-2).
