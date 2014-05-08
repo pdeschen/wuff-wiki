@@ -2,7 +2,7 @@ What "mavenizing" means? When Wuff mavenizes OSGi-bundles, it does the following
 
 1. Wuff uses configuration property [wuff/selectedEclipseVersion](Configuration-DSL#selectedEclipseVersion) to decide which version of Eclipse must be downloaded and mavenized.
 
-2. Wuff automatically downloads and unpacks Eclipse distribution packages specified in configuration part [wuff/eclipseVersion/sources](Configuration-DSL#sources). All downloaded and unpacked files are located in the directory "$HOME/.wuff". We can change this directory by configuration property [wuff/wuffDir](Configuration-DSL#wuffDir).
+2. Wuff automatically downloads and unpacks Eclipse distribution packages specified in configuration part [wuff/eclipseVersion/sources](Configuration-DSL#sources). All downloaded and unpacked files are placed to wuff directory (default is "$HOME/.wuff"). We can change wuff directory by configuration property [wuff/wuffDir](Configuration-DSL#wuffDir).
 
 3. Wuff scans all JARs and subdirectories in unpacked distribution packages. Found OSGi bundles are processed furthermore.
 
@@ -18,9 +18,11 @@ What "mavenizing" means? When Wuff mavenizes OSGi-bundles, it does the following
 
 9. Wuff implements the following gradle tasks for full control over mavenizing:
 
-- downloadEclipse: downloads the selected eclipse distribution
-- installEclipse: installs the selected eclipse distribution to the local maven repository, by default $HOME/.m2/repository
-- uninstallEclipse: uninstalls the selected eclipse distribution from the local maven repository, by default $HOME/.m2/repository
+- downloadEclipse: downloads the selected eclipse distribution to wuff directory.
+- installEclipse: installs the selected eclipse distribution to the local maven repository.
+- uninstallEclipse: uninstalls the selected eclipse distribution from the local maven repository.
+- uninstallAllEclipseVersions: uninstalls all eclipse distributions from the local maven repository.
 - uploadEclipse: uploads mavenized artifacts to the remote maven repository specified in uploadEclipse configuration.
+- purgeEclipse: uninstalls all eclipse distributions from the local maven repository, then deletes wuff directory.
 
 As the result, we get complete and consistent representation of OSGi-bundles as a set of maven artifacts with dependencies.
