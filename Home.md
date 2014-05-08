@@ -14,17 +14,7 @@ Welcome to Wuff wiki!
 
 - [Programming Equinox apps](Programming-Equinox-apps)
 - [Programming RCP apps](Programming-RCP-apps)
-
-### IDE app
-
-- [Create first IDE app](Create-first-IDE-app)
-- [Configure IDE products](Configure-IDE-products)
-- [Prepare IDE app for multiproject build](Prepare-IDE-app-for-multiproject-build)
-- [Create IDE bundle and use it in IDE app](Create-IDE-bundle-and-use-it-in-IDE-app)
-- [Add perspective and view to IDE app](Add-perspective-and-view-to-IDE-app)
-- [Add splash to IDE app](Add-splash-to-IDE-app)
-- [Add intro page to IDE app](Add-intro-page-to-IDE-app)
-- [Localize IDE app](Localize-IDE-app)
+- [Programming IDE apps](Programming-IDE-apps)
 
 ### SWT app
 
