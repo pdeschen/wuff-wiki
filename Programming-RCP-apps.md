@@ -2,6 +2,8 @@ Definition: RCP application is an OSGi-based Java application, based on [Equinox
 
 RCP application does have a GUI, although it is very minimalistic at the beginning. The programmer must fully define RCP application views, menus, toolbars etc.etc.
 
+In this tutorial we will learn how to create RCP app from scratch, using Wuff. The resulting RCP app shows a window with visual elements.
+
 - [Create first RCP app](Create-first-RCP-app)
 - [Configure RCP products](Configure-RCP-products)
 - [Prepare RCP app for multiproject build](Prepare-RCP-app-for-multiproject-build)
