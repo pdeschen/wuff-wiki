@@ -13,16 +13,7 @@ Welcome to Wuff wiki!
 ### Tutorials
 
 - [Programming Equinox apps](Programming-Equinox-apps)
-
-### RCP app
-
-- [Create first RCP app](Create-first-RCP-app)
-- [Configure RCP products](Configure-RCP-products)
-- [Prepare RCP app for multiproject build](Prepare-RCP-app-for-multiproject-build)
-- [Create Eclipse bundle and use it in RCP app](Create-Eclipse-bundle-and-use-it-in-RCP-app)
-- [Add splash to RCP app](Add-splash-to-RCP-app)
-- [Add intro page to RCP app](Add-intro-page-to-RCP-app)
-- [Localize RCP app](Localize-RCP-app)
+- [Programming RCP apps](Programming-RCP-apps)
 
 ### IDE app
 
