@@ -1,3 +1,5 @@
+:construction:  This chapter is yet under construction!
+
 Wuff does the following for you:
 - [downloads and "mavenizes" Eclipse plugins](Mavenizing-OSGi-bundles)
 - injects trivial OSGi/Eclipse dependencies into bundles and applications
@@ -15,5 +17,3 @@ Wuff does the following for you:
 Every Wuff feature is highly automated yet fully configurable.
 
 If you feel interested, it is time to learn about [prerequisites and usage](Prerequisites-and-usage).
-
-:construction:  This part is yet under construction!
