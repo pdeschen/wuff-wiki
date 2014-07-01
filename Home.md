@@ -40,3 +40,18 @@ Welcome to Wuff wiki!
 - [Configuration DSL](Configuration-DSL)
 - [Hierarchical configurations](Hierarchical-configurations)
 - [Default configuration](Default-configuration)
+
+### Contributing
+
+#### Documentation
+
+You may fork the wiki, edit, push over your own, then open an issue to act as a pull request.
+
+    git clone git@github.com:akhikhl/wuff.wiki.git
+    # substitue origin with your own
+    cd wuff.wiki
+    git remote rm origin
+    git remote add origin git://github.com/<YOUR_USERNAME>/wuff.wiki.git
+
+
+
