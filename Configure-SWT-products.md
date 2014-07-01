@@ -10,12 +10,13 @@ products {
   product platform: 'linux', arch: 'x86_64'
   product platform: 'windows', arch: 'x86_32'
   product platform: 'windows', arch: 'x86_64'
+  product platform: 'macosx', arch: 'x86_64'
   archiveProducts = true
 }
 ```
 
-Here we define 4 products: 32-bit and 64-bit versions for Linux and 32-bit and 64-bit versions for Windows.
-Optional archiveProducts flag instructs wuff to archive the generated products. Linux versions will be 
+Here we define 5 products: 32-bit and 64-bit versions for Linux, 32-bit and 64-bit versions for Windows, and 64-bit version for Mac OS X.
+Optional archiveProducts flag instructs wuff to archive the generated products. Both Linux and Mac OS X versions will be
 archived as .tar.gz, Windows versions - as .zip. The default value of archiveProducts is false.
 
 ### Compile

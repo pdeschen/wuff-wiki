@@ -37,6 +37,7 @@ products {
   product platform: 'linux', arch: 'x86_64'
   product platform: 'windows', arch: 'x86_32'
   product platform: 'windows', arch: 'x86_64'
+  product platform: 'macosx', arch: 'x86_64'
   archiveProducts = true
 }
 ```
