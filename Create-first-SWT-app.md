@@ -84,7 +84,7 @@ Check: the product must contain monolithic JAR file, containing all dependent JA
 
 Check: the product must contain platform specific launch script: .bat-file for Windows, .sh-file for all other platforms.
 
-Attention: first build might be slow, because Wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.m2/repository). Consequent builds will be much faster.
+Attention: first build might be slow, because Wuff downloads Eclipse and installs it's bundles into local maven repository ($HOME/.wuff/m2_repository). Consequent builds will be much faster.
 
 Note that we don't have to add platform-specific SWT/JFace dependencies - Wuff does this for us automatically.
 

@@ -12,7 +12,7 @@ Wuff supports the following configuration DSL:
 
 ```groovy
 wuff {
-  localMavenRepositoryDir = new File(System.getProperty('user.home'), '.m2/repository')
+  localMavenRepositoryDir = new File(System.getProperty('user.home'), '.wuff/m2_repository')
 
   wuffDir = new File(System.getProperty('user.home'), '.wuff')
 
@@ -24,7 +24,7 @@ wuff {
 ```
 
 <a name="localMavenRepositoryDir"></a>
-- **localMavenRepositoryDir** - java.io.File, optional, default value is `new File(System.getProperty('user.home'), '.m2/repository')`.
+- **localMavenRepositoryDir** - java.io.File, optional, default value is `new File(System.getProperty('user.home'), '.wuff/m2_repository')`.
   Defines which local directory is used as local maven repository for installation of eclipse artifacts.
   
 <a name="wuffDir"></a>
