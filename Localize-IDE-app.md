@@ -5,7 +5,7 @@ We already [added intro page to IDE app](Add-intro-page-to-IDE-app). Now we loca
 Edit "tutorials/build.gradle", insert code:
 
 ```groovy
-apply plugin: 'eclipse-config'
+apply plugin: 'org.akhikhl.wuff.eclipse-config'
 
 wuff {
   languagePack 'de'

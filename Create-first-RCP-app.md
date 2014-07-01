@@ -17,7 +17,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse-rcp-app'
+apply plugin: 'org.akhikhl.wuff.eclipse-rcp-app'
 
 repositories {
   mavenLocal()

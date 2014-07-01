@@ -5,7 +5,7 @@ We already [added intro page to RCP app](Add-intro-page-to-RCP-app). Now we loca
 Edit "tutorials/build.gradle", insert code:
 
 ```groovy
-apply plugin: 'eclipse-config'
+apply plugin: 'org.akhikhl.wuff.eclipse-config'
 
 wuff {
   languagePack 'de'

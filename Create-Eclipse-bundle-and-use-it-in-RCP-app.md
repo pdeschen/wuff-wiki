@@ -6,7 +6,7 @@ Create folder "tutorials/MyPlugin", create file "build.gradle" in it, insert cod
 
 ```groovy
 apply plugin: 'java'
-apply plugin: 'eclipse-bundle'
+apply plugin: 'org.akhikhl.wuff.eclipse-bundle'
 ```
 
 Create folder "tutorials/MyPlugin/src/main/java/myplugin", create file "HelloWorld.java" in it, insert code:

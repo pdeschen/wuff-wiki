@@ -6,7 +6,7 @@ Create folder "tutorials/MyBundle", create file "build.gradle" in it, insert cod
 
 ```groovy
 apply plugin: 'java'
-apply plugin: 'osgi-bundle'
+apply plugin: 'org.akhikhl.wuff.osgi-bundle'
 ```
 
 Create folder "tutorials/MyBundle/src/main/java/mybundle", create file "HelloWorld.java" in it, insert code:

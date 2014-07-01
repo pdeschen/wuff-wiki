@@ -5,7 +5,7 @@ We already [created SWT library and used it in SWT app](Create-SWT-library-and-u
 Edit "tutorials/build.gradle", insert code:
 
 ```groovy
-apply plugin: 'eclipse-config'
+apply plugin: 'org.akhikhl.wuff.eclipse-config'
 
 wuff {
   languagePack 'de'

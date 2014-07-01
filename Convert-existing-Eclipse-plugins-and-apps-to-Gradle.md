@@ -77,9 +77,9 @@ First three parts of this tutorial are done in Eclipse IDE, the last part - in f
 
     apply plugin: 'java'
     if(name == 'MyRcpApp')
-      apply plugin: 'eclipse-rcp-app'
+      apply plugin: 'org.akhikhl.wuff.eclipse-rcp-app'
     else
-      apply plugin: 'eclipse-bundle'
+      apply plugin: 'org.akhikhl.wuff.eclipse-bundle'
   }
   ```
   Explanation: we configure maven repositories and include wuff-plugin. Then we iterate all subprojects and apply either 'eclipse-bundle' plugin or 'eclipse-rcp-app'.

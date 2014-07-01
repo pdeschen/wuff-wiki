@@ -30,7 +30,7 @@ subprojects {
 "tutorials/MyIdeApp/build.gradle":
 ```groovy
 apply plugin: 'java'
-apply plugin: 'eclipse-ide-app'
+apply plugin: 'org.akhikhl.wuff.eclipse-ide-app'
   
 products {
   product platform: 'linux', arch: 'x86_32'

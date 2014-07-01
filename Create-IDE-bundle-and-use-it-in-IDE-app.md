@@ -6,7 +6,7 @@ Create folder "tutorials/MyIdePlugin", create file "build.gradle" in it, insert 
 
 ```groovy
 apply plugin: 'java'
-apply plugin: 'eclipse-ide-bundle'
+apply plugin: 'org.akhikhl.wuff.eclipse-ide-bundle'
 
 dependencies {
   compile "${eclipseMavenGroup}:org.eclipse.core.commands:+"

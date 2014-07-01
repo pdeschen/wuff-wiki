@@ -17,7 +17,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'osgi-bundle'
+apply plugin: 'org.akhikhl.wuff.osgi-bundle'
 
 repositories {
   mavenLocal()
@@ -50,7 +50,7 @@ This is how the default manifest is generated:
 
 - Bundle-SymbolicName and Bundle-Name are assigned to project name.
 - Bundle-Version is assigned to project version. If project version is not specified in "build.gradle", the default value "1.0.0.0" is used for Bundle-Version.
-- Require-Bundle is assigned to "org.eclipse.osgi" because of `apply plugin: 'osgi-bundle'` in "build.gradle".
+- Require-Bundle is assigned to "org.eclipse.osgi" because of `apply plugin: 'org.akhikhl.wuff.osgi-bundle'` in "build.gradle".
 - Bundle-Classpath is assigned to "root folder" in the context of JAR-file.
 - All other fields are specific to BND-tool, which is invoked via chain Wuff -> gradle 'osgi' plugin -> BND-tool.
 

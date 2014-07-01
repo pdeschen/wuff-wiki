@@ -30,7 +30,7 @@ subprojects {
 "tutorials/MyRcpApp/build.gradle":
 ```groovy
 apply plugin: 'java'
-apply plugin: 'eclipse-rcp-app'
+apply plugin: 'org.akhikhl.wuff.eclipse-rcp-app'
   
 products {
   product platform: 'linux', arch: 'x86_32'

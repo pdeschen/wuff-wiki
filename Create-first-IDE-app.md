@@ -17,7 +17,7 @@ buildscript {
 }
 
 apply plugin: 'java'
-apply plugin: 'eclipse-ide-app'
+apply plugin: 'org.akhikhl.wuff.eclipse-ide-app'
 
 repositories {
   mavenLocal()
